@@ -12,7 +12,7 @@
         <div class="page-title d-flex align-items-center gap-1 me-3" data-kt-swapper="true" data-kt-swapper-mode="{default: 'prepend', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_content_container', lg: '#kt_app_header_wrapper'}">
             <!--begin::Title-->
             <span class="text-gray-900 fw-bolder fs-2x">
-                Gestión de Usuarios
+                Gestión de Cursos
             </span>
 
             <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-base ms-3">
@@ -75,10 +75,10 @@
                         <i class="ki-duotone ki-exit-up fs-2"><i class="path1"></i><i class="path2"></i></i> Export
                     </button>
 
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_1">
                         <i class="ki-duotone ki-plus fs-2"></i> Crear Usuario
                     </button>
-
+                    
                 </div>
 
             </div>
@@ -197,9 +197,14 @@
             </div>
         </div>
     </div>
+    
+</div>
+
+@include('Cursos.create')
 
     @section('script')
 
+    {{-- delete js --}}
     <script type="text/javascript">
         $(document).ready(function() {
             $("#kt_ecommerce_sales_table").DataTable(

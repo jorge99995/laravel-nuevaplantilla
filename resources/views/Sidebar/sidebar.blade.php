@@ -51,66 +51,17 @@
      </div>
 
      <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-         <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-chart-pie-4 fs-1"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i></span><span class="menu-title">Account</span><span class="menu-arrow"></span></span>
-         <!--end:Menu link-->
-         <!--begin:Menu sub-->
+         <span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-chart-pie-4 fs-1"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i></span><span class="menu-title">Gestión de Cursos</span><span class="menu-arrow"></span></span>
+
          <div class="menu-sub menu-sub-accordion">
              <!--begin:Menu item-->
              <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="account/overview.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Overview</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="account/settings.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Settings</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="account/security.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Security</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="account/activity.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Activity</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="account/billing.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Billing</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="account/statements.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Statements</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="account/referrals.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Referrals</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="account/api-keys.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">API Keys</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="account/logs.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Logs</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
+                <a class="menu-link" href="{{route('cursos')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lista de Cursos</span></a>
+
+            </div>
+
          </div>
-         <!--end:Menu sub-->
+
      </div>
      <!--end:Menu item-->
      <!--begin:Menu item-->
