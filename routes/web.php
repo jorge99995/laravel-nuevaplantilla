@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UsuariosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.Master');
+    return view('layouts.master');
 });
+
+Route::controller(HomeController::class)->group(function () {
+    Route::get('home', 'index')->name('home');
+
+});
+
+
+Route::controller(UsuariosController::class)->group(function () {
+    Route::get('usuarios', 'index')->name('usuarios');
+
+});
+
