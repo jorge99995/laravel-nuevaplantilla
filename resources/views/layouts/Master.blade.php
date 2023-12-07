@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
     <title>SISTEMA ESID | PERÚ</title>
-  
+
 
     <link rel="shortcut icon" href="{{ URL::to('assets/media/logos/favicon.ico') }}">
     <link href="{{URL::to('assets/plugins/custom/fullcalendar/fullcalendar.bundle.css')}}" rel="stylesheet">
@@ -137,63 +137,13 @@
             <!--begin::Wrapper-->
             <div class="app-wrapper  flex-column flex-row-fluid " id="kt_app_wrapper">
 
-                <!--begin::Toolbar-->
-                <div id="kt_app_toolbar" class="app-toolbar ">
 
-                    <!--begin::Toolbar container-->
-                    <div id="kt_app_toolbar_container" class="app-container  container-fluid d-flex flex-lg-column py-3 py-lg-6 ">
-
-
-
-
-                        <div class="page-title d-flex align-items-center gap-1 me-3" data-kt-swapper="true" data-kt-swapper-mode="{default: 'prepend', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_content_container', lg: '#kt_app_header_wrapper'}">
-                            <!--begin::Title-->
-                            <span class="text-gray-900 fw-bolder fs-2x">
-                                Account
-                            </span>
-
-                            <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-base ms-3">
-
-
-                                <li class="breadcrumb-item text-gray-700 fw-bold lh-1">
-                                    <a href="index.html" class="text-gray-700 text-hover-primary">
-                                        <i class="ki-duotone ki-home fs-3 text-gray-400 ms-2"></i>
-                                    </a>
-                                </li>
-
-                                <li class="breadcrumb-item">
-                                    <i class="ki-duotone ki-right fs-4 text-gray-700 mx-n2"></i>
-                                </li>
-
-                                <li class="breadcrumb-item text-gray-700 fw-bold lh-1">
-                                    Account </li>
-
-                                <li class="breadcrumb-item">
-                                    <i class="ki-duotone ki-right fs-4 text-gray-700 mx-n2"></i>
-                                </li>
-
-                                <li class="breadcrumb-item text-gray-500">
-                                    Overview </li>
-
-
-
-                            </ul>
-
-                        </div>
-
-                      
-                        <div class="app-toolbar-container-separator separator d-none d-lg-flex"></div>
-                        <!--end::Separator-->
-                    </div>
-                    <!--end::Toolbar container-->
-                </div>
-                <!--end::Toolbar-->
                 @yield('content')
                 <!--begin::Sidebar-->
                 <div id="kt_app_sidebar" class="app-sidebar  flex-column " data-kt-drawer="true" data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="300px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
 
 
-            
+
                     <div class="app-sidebar-header flex-column mx-10 pt-8" id="kt_app_sidebar_header">
                         <!--begin::Brand-->
                         <div class="d-flex flex-stack d-none d-lg-flex mb-13">
@@ -278,12 +228,12 @@
                     </div>
 
                     <div class="app-sidebar-navs flex-column-fluid pb-6" id="kt_app_sidebar_navs">
-                        <div id="kt_app_sidebar_navs_wrappers" class="hover-scroll-y my-2" data-kt-scroll="true" data-kt-scroll-activate="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_sidebar_header" data-kt-scroll-wrappers="#kt_app_sidebar_navs" data-kt-scroll-offset="5px"> 
+                        <div id="kt_app_sidebar_navs_wrappers" class="hover-scroll-y my-2" data-kt-scroll="true" data-kt-scroll-activate="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_sidebar_header" data-kt-scroll-wrappers="#kt_app_sidebar_navs" data-kt-scroll-offset="5px">
 
                             {{-- side bar --}}
                             @include('sidebar.sidebar')
                             {{-- content page --}}
-                         
+
                             <!--begin::Footer-->
                             <div id="kt_app_footer" class="app-footer ">
                                 <!--begin::Footer container-->
@@ -309,7 +259,7 @@
                             </div>
                             <!--end::Footer-->
                         </div>
-                      
+
                     </div>
 
 

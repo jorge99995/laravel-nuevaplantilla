@@ -9,7 +9,6 @@
 
      <div class="menu-item">
          <a class="menu-link active" href="{{ route('home') }}"><span class="menu-icon"><i class="ki-duotone ki-element-11 fs-1"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i></span><span class="menu-title">Dashboard</span></a>
-
      </div>
 
      {{-- <div class="menu-item">
@@ -32,49 +31,25 @@
      </div>
 
      <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-         <span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-colors-square fs-1"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i></span><span class="menu-title">Gestion de Usuarios</span><span class="menu-arrow"></span></span>
+         <span class="menu-link">
+             <span class="menu-icon">
+                 <i class="ki-duotone ki-shield-tick fs-1"><i class="path1"></i><i class="path2"></i></i>
+             </span>
+             <span class="menu-title">Gestion de Usuarios</span>
+             <span class="menu-arrow"></span>
+         </span>
 
          <div class="menu-sub menu-sub-accordion">
              <div class="menu-item">
-              <a class="menu-link" href="{{route('usuarios')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lista de Usuarios</span></a>
-             
+                 <a class="menu-link" href="{{route('usuarios')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lista de Usuarios</span></a>
+
              </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="pages/user-profile/projects.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Projects</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="pages/user-profile/campaigns.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Campaigns</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="pages/user-profile/documents.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Documents</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="pages/user-profile/followers.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Followers</span></a>
-                 <!--end:Menu link-->
-             </div>
-             <!--end:Menu item-->
-             <!--begin:Menu item-->
-             <div class="menu-item">
-                 <!--begin:Menu link--><a class="menu-link" href="pages/user-profile/activity.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Activity</span></a>
-                 <!--end:Menu link-->
-             </div>
+
              <!--end:Menu item-->
          </div>
          <!--end:Menu sub-->
      </div>
-     <!--end:Menu item-->
-     <!--begin:Menu item-->
+
      <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
          <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-chart-pie-4 fs-1"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i></span><span class="menu-title">Account</span><span class="menu-arrow"></span></span>
          <!--end:Menu link-->
