@@ -10,7 +10,7 @@
 
 
         <div class="page-title d-flex align-items-center gap-1 me-3" data-kt-swapper="true" data-kt-swapper-mode="{default: 'prepend', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_content_container', lg: '#kt_app_header_wrapper'}">
-            <!--begin::Title-->
+
             <span class="text-gray-900 fw-bolder fs-2x">
                 Gestión de Usuarios
             </span>
@@ -46,11 +46,11 @@
 
 
         <div class="app-toolbar-container-separator separator d-none d-lg-flex"></div>
-        <!--end::Separator-->
+
     </div>
-    <!--end::Toolbar container-->
+
 </div>
-<!--end::Toolbar-->
+
 <div id="kt_app_content_container" class="app-container  container-fluid ">
 
     <div class="card card-flush">
@@ -68,7 +68,7 @@
 
 
             <div class="card-toolbar">
-                <!--begin::Toolbar-->
+
                 <div class="d-flex justify-content-end" data-kt-user-table-toolbar="base">
 
                     <button type="button" class="btn btn-light-primary me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_export_users">

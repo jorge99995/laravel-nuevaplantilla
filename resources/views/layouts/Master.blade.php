@@ -9,11 +9,11 @@
     <title>SISTEMA ESID | PERÚ</title>
 
 
-    <link rel="shortcut icon" href="{{ URL::to('assets/media/logos/favicon.ico') }}">
-    <link href="{{URL::to('assets/plugins/custom/fullcalendar/fullcalendar.bundle.css')}}" rel="stylesheet">
-    <link href="{{URL::to('assets/plugins/custom/datatables/datatables.bundle.css')}}" rel="stylesheet">
-    <link href="{{URL::to('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet">
-    <link href="{{URL::to('assets/css/style.bundle.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.ico') }}">
+    <link href="{{asset('assets/plugins/custom/fullcalendar/fullcalendar.bundle.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/plugins/custom/datatables/datatables.bundle.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet">
+    <link href="{{asset('assets/css/style.bundle.css') }}" rel="stylesheet">
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -268,18 +268,24 @@
         </div>
     </div>
 
-    <script src="{{URL::to('assets/plugins/global/plugins.bundle.js') }}"></script>
-    <script src="{{URL::to('assets/js/scripts.bundle.js')}}"><script>
-    <script src="{{ URL::to('assets/plugins/custom/fullcalendar/fullcalendar.bundle.js')}}">
+    <script src="{{asset('assets/plugins/global/plugins.bundle.js') }}"></script>
+    <script src="{{asset('assets/js/scripts.bundle.js')}}"><script>
+    <script src="{{ asset('assets/plugins/custom/fullcalendar/fullcalendar.bundle.js')}}">
     </script>
-    <script src="{{ URL::to('assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
+    <script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
+    <script src="{{ asset('assets/plugins/custom/formrepeater/formrepeater.bundle.js') }}"></script>
+    <script src="{{ asset('assets/plugins/custom/fslightbox/fslightbox.bundle.js') }}"></script>
+    <script src="{{ asset('assets/plugins/custom/vis-timeline/vis-timeline.bundle.js') }}"></script>
+  
 
-    <script src="{{ URL::to('assets/js/widgets.bundle.js')}}"></script>
-    <script src="{{ URL::to('assets/js/custom/widgets.js')}}"></script>
+    <script src="{{ asset('assets/js/widgets.bundle.js')}}"></script>
+    <script src="{{ asset('assets/js/custom/widgets.js')}}"></script>
+   
+
     <script src="{{ URL::to('assets/js/custom/apps/chat/chat.js')}}"></script>
     <script src="{{ URL::to('assets/js/custom/utilities/modals/create-app.js')}}"></script>
     <script src="{{ URL::to('assets/js/custom/utilities/modals/upgrade-plan.js')}}"></script>
-    <script src="{{ URL::to('assets/js/custom/utilities/modals/users-search.js')}}"></script>
+    <script src="{{ asset('assets/js/custom/utilities/modals/users-search.js')}}"></script>
     @yield('script')
 
 </body>

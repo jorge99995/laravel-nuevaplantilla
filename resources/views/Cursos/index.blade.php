@@ -6,10 +6,7 @@
     <!--begin::Toolbar container-->
     <div id="kt_app_toolbar_container" class="app-container  container-fluid d-flex flex-lg-column py-3 py-lg-6 ">
 
-
-
-
-        <div class="page-title d-flex align-items-center gap-1 me-3" data-kt-swapper="true" data-kt-swapper-mode="{default: 'prepend', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_content_container', lg: '#kt_app_header_wrapper'}">
+       <div class="page-title d-flex align-items-center gap-1 me-3" data-kt-swapper="true" data-kt-swapper-mode="{default: 'prepend', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_content_container', lg: '#kt_app_header_wrapper'}">
             <!--begin::Title-->
             <span class="text-gray-900 fw-bolder fs-2x">
                 Gestión de Cursos
@@ -75,10 +72,10 @@
                         <i class="ki-duotone ki-exit-up fs-2"><i class="path1"></i><i class="path2"></i></i> Export
                     </button>
 
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_1">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_crear_curso">
                         <i class="ki-duotone ki-plus fs-2"></i> Crear Usuario
                     </button>
-                    
+
                 </div>
 
             </div>
@@ -92,21 +89,14 @@
 
                             <thead>
 
-                                <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
-
-                                    <th class="min-w-100px sorting" tabindex="0" aria-controls="kt_ecommerce_sales_table" rowspan="1" colspan="1" aria-label="Order ID: activate to sort column ascending" style="width: 163.844px;">Order ID</th>
-
-                                    <th class="min-w-175px sorting" tabindex="0" aria-controls="kt_ecommerce_sales_table" rowspan="1" colspan="1" aria-label="Customer: activate to sort column ascending" style="width: 312.156px;">Customer</th>
-
-                                    <th class="text-end min-w-70px sorting" tabindex="0" aria-controls="kt_ecommerce_sales_table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 120.469px;">Status</th>
-
-                                    <th class="text-end min-w-100px sorting" tabindex="0" aria-controls="kt_ecommerce_sales_table" rowspan="1" colspan="1" aria-label="Total: activate to sort column ascending" style="width: 163.844px;">Total</th>
-
-                                    <th class="text-end min-w-100px sorting" tabindex="0" aria-controls="kt_ecommerce_sales_table" rowspan="1" colspan="1" aria-label="Date Added: activate to sort column ascending" style="width: 163.844px;">Date Added</th>
-
-                                    <th class="text-end min-w-100px sorting" tabindex="0" aria-controls="kt_ecommerce_sales_table" rowspan="1" colspan="1" aria-label="Date Modified: activate to sort column ascending" style="width: 163.844px;">Date Modified</th>
-
-                                    <th class="text-end min-w-100px sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 163.859px;">Actions</th>
+                                <tr class="text-start text-muted fw-bold fs-7 text-uppercase gs-0">
+                                   
+                           
+                                    <th class="min-w-125px">Imagen</th>
+                                    <th class="min-w-125px">Categoria</th>
+                                    <th class="min-w-125px">Curso </th>
+                                    <th class="min-w-125px">Estado</th>
+                                    <th class="text-end min-w-100px">Acciones</th>
                                 </tr>
                                 <!--end::Table row-->
                             </thead>
@@ -118,48 +108,59 @@
                                 <tr class="odd">
 
 
-                                    <td data-kt-ecommerce-order-filter="order_id">
-                                        <a href="details.html" class="text-gray-800 text-hover-primary fw-bold">
-                                            13368 </a>
+                                    <td class="d-flex align-items-center">
+                                        <!--begin:: Avatar -->
+                                        <div
+                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                            <a href="view.html">
+                                                <div class="symbol-label">
+                                                    <img src="../../../assets/media/avatars/300-6.jpg"
+                                                        alt="Emma Smith" class="w-100">
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                        {{--  <div class="d-flex flex-column">
+                                            <a href="view.html"
+                                                class="text-gray-800 text-hover-primary mb-1">Emma
+                                                Smith</a>
+                                            <span>smith@kpmg.com</span>
+                                        </div>  --}}
+                                     
+
                                     </td>
 
-                                    <td>
-                                        <div class="d-flex align-items-center">
+                                    <td >
+                                        <span class="fw-bold">PROGRAMAS DE ESPECIALIZACION</span>
+                                    </td>
 
-                                            <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                <a href="../../user-management/users/view.html">
-                                                    <div class="symbol-label fs-3 bg-light-danger text-danger">
-                                                        M </div>
-                                                </a>
-                                            </div>
+                                    <td class="d-flex align-items-center">
+                                 
+                                        <div
+                                            class="symbol symbol-circle symbol-50px overflow-hidden me-3">
+                                            <a href="view.html">
+                                                <div class="symbol-label">
+                                                    <img src="../../../assets/media/avatars/300-25.jpg"
+                                                        alt="Brian Cox" class="w-100">
+                                                </div>
+                                            </a>
+                                        </div>
+                                       
+                                        <div class="d-flex flex-column">
+                                           
+                                                <span class="fw-bold">GESTION PUBLICA</span>
+                                        </div>
+                                
 
+                                    </td>
 
-                                            <div class="ms-5">
-                                                <!--begin::Title-->
-                                                <a href="../../user-management/users/view.html" class="text-gray-800 text-hover-primary fs-5 fw-bold">Melody
-                                                    Macy</a>
-
-                                            </div>
+                                    <td  >
+                                        <div class="badge badge-light-success fw-bold">
+                                            <span class="fw-bold">ACTIVO</span>
                                         </div>
                                     </td>
 
-                                    <td class="text-end pe-0" data-order="Denied">
-                                        <!--begin::Badges-->
-                                        <div class="badge badge-light-danger">Denied</div>
-
-                                    </td>
-
-                                    <td class="text-end pe-0">
-                                        <span class="fw-bold">$475.00</span>
-                                    </td>
-
-                                    <td class="text-end" data-order="2023-03-31">
-                                        <span class="fw-bold">31/03/2023</span>
-                                    </td>
-
-                                    <td class="text-end" data-order="2023-04-06">
-                                        <span class="fw-bold">06/04/2023</span>
-                                    </td>
+                                    
 
                                     <td class="text-end">
                                         <a href="#" onclick="return false" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
@@ -195,9 +196,11 @@
 
                 </div>
             </div>
+
+            
         </div>
     </div>
-    
+
 </div>
 
 @include('Cursos.create')

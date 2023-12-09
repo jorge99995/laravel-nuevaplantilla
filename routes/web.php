@@ -17,7 +17,7 @@ use App\Http\Controllers\UsuariosController;
 */
 
 Route::get('/', function () {
-    return view('layouts.master');
+    return view('welcome');
 });
 
 Route::controller(HomeController::class)->group(function () {
