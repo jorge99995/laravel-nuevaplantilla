@@ -56,7 +56,7 @@
          <div class="menu-sub menu-sub-accordion">
              <!--begin:Menu item-->
              <div class="menu-item">
-                <a class="menu-link" href="{{route('cursos')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lista de Cursos</span></a>
+                <a class="menu-link" href="{{route('categoria')}}"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Lista de Cursos</span></a>
 
             </div>
 

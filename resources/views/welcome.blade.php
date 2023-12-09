@@ -5,10 +5,8 @@
 <head>
     <title>Open HTML Pro- Bootstrap 5 HTML & Laravel</title>
     <meta charset="utf-8">
-    <meta name="description"
-        content="Open admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets.">
-    <meta name="keywords"
-        content="Open theme, bootstrap, bootstrap 5, admin themes, laravel, free admin themes, bootstrap admin, bootstrap dashboard">
+    <meta name="description" content="Open admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets.">
+    <meta name="keywords" content="Open theme, bootstrap, bootstrap 5, admin themes, laravel, free admin themes, bootstrap admin, bootstrap dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
@@ -19,12 +17,13 @@
     <link rel="shortcut icon" href="../../../assets/media/logos/favicon.ico">
 
     <!--begin::Fonts(mandatory for all pages)-->
-    <link rel="stylesheet" href="../../../../css?family=Inter:300,400,500,600,700"> <!--end::Fonts-->
+    <link rel="stylesheet" href="../../../../css?family=Inter:300,400,500,600,700">
+    <!--end::Fonts-->
 
     <!--begin::Vendor Stylesheets(used for this page only)-->
 
-    
 
+    <link rel="stylesheet" href="">
     <link href="../../../assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css">
     <!--end::Vendor Stylesheets-->
 
@@ -35,24 +34,30 @@
     <!--end::Global Stylesheets Bundle-->
 
     <!--Begin::Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5FS8GGP');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5FS8GGP');
+
+    </script>
     <!--End::Google Tag Manager -->
 </head>
 <!--end::Head-->
 
 <!--begin::Body-->
 
-<body id="kt_app_body" data-kt-app-header-fixed="true" data-kt-app-header-fixed-mobile="true"
-    data-kt-app-toolbar-enabled="true" data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true"
-    data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true"
-    data-kt-app-sidebar-push-footer="true" class="app-default">
+<body id="kt_app_body" data-kt-app-header-fixed="true" data-kt-app-header-fixed-mobile="true" data-kt-app-toolbar-enabled="true" data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" class="app-default">
     <!--begin::Theme mode setup on page load-->
     <script>
         var defaultThemeMode = "light";
@@ -75,11 +80,11 @@
 
             document.documentElement.setAttribute("data-bs-theme", themeMode);
         }
+
     </script>
     <!--end::Theme mode setup on page load-->
     <!--Begin::Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FS8GGP" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FS8GGP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!--End::Google Tag Manager (noscript) -->
 
 
@@ -90,17 +95,13 @@
 
 
             <!--begin::Header-->
-            <div id="kt_app_header" class="app-header " data-kt-sticky="true"
-                data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize"
-                data-kt-sticky-offset="{default: '200px', lg: '300px'}" data-kt-sticky-animation="false">
+            <div id="kt_app_header" class="app-header " data-kt-sticky="true" data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize" data-kt-sticky-offset="{default: '200px', lg: '300px'}" data-kt-sticky-animation="false">
 
                 <!--begin::Header container-->
-                <div class="app-container  container-fluid d-flex align-items-stretch flex-stack "
-                    id="kt_app_header_container">
+                <div class="app-container  container-fluid d-flex align-items-stretch flex-stack " id="kt_app_header_container">
                     <!--begin::Sidebar toggle-->
                     <div class="d-flex align-items-center d-block d-lg-none ms-n3" title="Show sidebar menu">
-                        <div class="btn btn-icon btn-color-gray-600 btn-active-color-primary w-35px h-35px me-1"
-                            id="kt_app_sidebar_mobile_toggle">
+                        <div class="btn btn-icon btn-color-gray-600 btn-active-color-primary w-35px h-35px me-1" id="kt_app_sidebar_mobile_toggle">
                             <i class="ki-duotone ki-abstract-14 fs-2"><i class="path1"></i><i class="path2"></i></i>
                         </div>
 
@@ -118,59 +119,44 @@
                         <div class="app-navbar-item d-flex align-items-center flex-lg-grow-1 me-2 me-lg-0">
 
                             <!--begin::Search-->
-                            <div id="kt_header_search" class="header-search d-flex align-items-center w-lg-350px"
-                                data-kt-search-keypress="true" data-kt-search-min-length="2"
-                                data-kt-search-enter="enter" data-kt-search-layout="menu"
-                                data-kt-search-responsive="true" data-kt-menu-trigger="auto"
-                                data-kt-menu-permanent="true" data-kt-menu-placement="bottom-end">
+                            <div id="kt_header_search" class="header-search d-flex align-items-center w-lg-350px" data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter" data-kt-search-layout="menu" data-kt-search-responsive="true" data-kt-menu-trigger="auto" data-kt-menu-permanent="true" data-kt-menu-placement="bottom-end">
 
                                 <!--begin::Tablet and mobile search toggle-->
-                                <div data-kt-search-element="toggle"
-                                    class="search-toggle-mobile d-flex d-lg-none align-items-center">
+                                <div data-kt-search-element="toggle" class="search-toggle-mobile d-flex d-lg-none align-items-center">
                                     <div class="d-flex ">
-                                        <i class="ki-duotone ki-magnifier fs-1 "><i class="path1"></i><i
-                                                class="path2"></i></i>
+                                        <i class="ki-duotone ki-magnifier fs-1 "><i class="path1"></i><i class="path2"></i></i>
                                     </div>
                                 </div>
-                                <!--end::Tablet and mobile search toggle-->
 
-                                <!--begin::Form(use d-none d-lg-block classes for responsive search)-->
-                                <form data-kt-search-element="form"
-                                    class="d-none d-lg-block w-100 position-relative mb-5 mb-lg-0" autocomplete="off">
+
+
+                                <form data-kt-search-element="form" class="d-none d-lg-block w-100 position-relative mb-5 mb-lg-0" autocomplete="off">
                                     <!--begin::Hidden input(Added to disable form autocomplete)-->
                                     <input type="hidden">
                                     <!--end::Hidden input-->
 
                                     <!--begin::Icon-->
-                                    <i
-                                        class="ki-duotone ki-magnifier search-icon fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-5"><i
-                                            class="path1"></i><i class="path2"></i></i> <!--end::Icon-->
+                                    <i class="ki-duotone ki-magnifier search-icon fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-5"><i class="path1"></i><i class="path2"></i></i>
+                                    <!--end::Icon-->
 
                                     <!--begin::Input-->
-                                    <input type="text" class="search-input form-control form-control rounded-1  ps-13"
-                                        name="search" value="" placeholder="Search..." data-kt-search-element="input">
+                                    <input type="text" class="search-input form-control form-control rounded-1  ps-13" name="search" value="" placeholder="Search..." data-kt-search-element="input">
                                     <!--end::Input-->
 
                                     <!--begin::Spinner-->
-                                    <span
-                                        class="search-spinner  position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5"
-                                        data-kt-search-element="spinner">
+                                    <span class="search-spinner  position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5" data-kt-search-element="spinner">
                                         <span class="spinner-border h-15px w-15px align-middle text-gray-400"></span>
                                     </span>
                                     <!--end::Spinner-->
 
                                     <!--begin::Reset-->
-                                    <span
-                                        class="search-reset  btn btn-flush btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-4"
-                                        data-kt-search-element="clear">
-                                        <i class="ki-duotone ki-cross fs-2 fs-lg-1 me-0"><i class="path1"></i><i
-                                                class="path2"></i></i> </span>
+                                    <span class="search-reset  btn btn-flush btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-4" data-kt-search-element="clear">
+                                        <i class="ki-duotone ki-cross fs-2 fs-lg-1 me-0"><i class="path1"></i><i class="path2"></i></i> </span>
                                     <!--end::Reset-->
                                 </form>
                                 <!--end::Form-->
                                 <!--begin::Menu-->
-                                <div data-kt-search-element="content"
-                                    class="menu menu-sub menu-sub-dropdown py-7 px-7 overflow-hidden w-300px w-md-350px">
+                                <div data-kt-search-element="content" class="menu menu-sub menu-sub-dropdown py-7 px-7 overflow-hidden w-300px w-md-350px">
                                     <!--begin::Wrapper-->
                                     <div data-kt-search-element="wrapper">
                                         <!--begin::Recently viewed-->
@@ -178,8 +164,7 @@
                                             <!--begin::Items-->
                                             <div class="scroll-y mh-200px mh-lg-350px">
                                                 <!--begin::Category title-->
-                                                <h3 class="fs-5 text-muted m-0  pb-5"
-                                                    data-kt-search-element="category-title">
+                                                <h3 class="fs-5 text-muted m-0  pb-5" data-kt-search-element="category-title">
                                                     Users </h3>
                                                 <!--end::Category title-->
 
@@ -187,8 +172,7 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <img src="../../../assets/media/avatars/300-6.jpg" alt="">
@@ -208,8 +192,7 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <img src="../../../assets/media/avatars/300-2.jpg" alt="">
@@ -229,8 +212,7 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <img src="../../../assets/media/avatars/300-9.jpg" alt="">
@@ -249,8 +231,7 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <img src="../../../assets/media/avatars/300-14.jpg" alt="">
@@ -269,8 +250,7 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <img src="../../../assets/media/avatars/300-11.jpg" alt="">
@@ -287,22 +267,18 @@
                                                 </a>
                                                 <!--end::Item-->
                                                 <!--begin::Category title-->
-                                                <h3 class="fs-5 text-muted m-0 pt-5 pb-5"
-                                                    data-kt-search-element="category-title">
+                                                <h3 class="fs-5 text-muted m-0 pt-5 pb-5" data-kt-search-element="category-title">
                                                     Customers </h3>
                                                 <!--end::Category title-->
 
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <img class="w-20px h-20px"
-                                                                src="../../../assets/media/svg/brand-logos/volicity-9.svg"
-                                                                alt="">
+                                                            <img class="w-20px h-20px" src="../../../assets/media/svg/brand-logos/volicity-9.svg" alt="">
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -319,14 +295,11 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <img class="w-20px h-20px"
-                                                                src="../../../assets/media/svg/brand-logos/tvit.svg"
-                                                                alt="">
+                                                            <img class="w-20px h-20px" src="../../../assets/media/svg/brand-logos/tvit.svg" alt="">
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -343,14 +316,11 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <img class="w-20px h-20px"
-                                                                src="../../../assets/media/svg/misc/infography.svg"
-                                                                alt="">
+                                                            <img class="w-20px h-20px" src="../../../assets/media/svg/misc/infography.svg" alt="">
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -367,14 +337,11 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <img class="w-20px h-20px"
-                                                                src="../../../assets/media/svg/brand-logos/leaf.svg"
-                                                                alt="">
+                                                            <img class="w-20px h-20px" src="../../../assets/media/svg/brand-logos/leaf.svg" alt="">
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -391,14 +358,11 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <img class="w-20px h-20px"
-                                                                src="../../../assets/media/svg/brand-logos/tower.svg"
-                                                                alt="">
+                                                            <img class="w-20px h-20px" src="../../../assets/media/svg/brand-logos/tower.svg" alt="">
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -413,22 +377,17 @@
                                                 <!--end::Item-->
 
                                                 <!--begin::Category title-->
-                                                <h3 class="fs-5 text-muted m-0 pt-5 pb-5"
-                                                    data-kt-search-element="category-title">
+                                                <h3 class="fs-5 text-muted m-0 pt-5 pb-5" data-kt-search-element="category-title">
                                                     Projects </h3>
                                                 <!--end::Category title-->
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-notepad fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i><i
-                                                                    class="path3"></i><i class="path4"></i><i
-                                                                    class="path5"></i></i>
+                                                            <i class="ki-duotone ki-notepad fs-2 text-primary"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i><i class="path5"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -445,14 +404,11 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-frame fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i><i
-                                                                    class="path3"></i><i class="path4"></i></i>
+                                                            <i class="ki-duotone ki-frame fs-2 text-primary"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -469,14 +425,11 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-message-text-2 fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i><i
-                                                                    class="path3"></i></i>
+                                                            <i class="ki-duotone ki-message-text-2 fs-2 text-primary"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -494,14 +447,11 @@
 
 
                                                 <!--begin::Item-->
-                                                <a href="#"
-                                                    class="d-flex text-dark text-hover-primary align-items-center mb-5">
+                                                <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-profile-circle fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i><i
-                                                                    class="path3"></i></i>
+                                                            <i class="ki-duotone ki-profile-circle fs-2 text-primary"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
@@ -531,18 +481,13 @@
                                                 <!--begin::Toolbar-->
                                                 <div class="d-flex" data-kt-search-element="toolbar">
                                                     <!--begin::Preferences toggle-->
-                                                    <div data-kt-search-element="preferences-show"
-                                                        class="btn btn-icon w-20px btn-sm btn-active-color-primary me-2 data-bs-toggle="
-                                                        tooltip"="" title="Show search preferences">
-                                                        <i class="ki-duotone ki-setting-2 fs-2"><i class="path1"></i><i
-                                                                class="path2"></i></i>
+                                                    <div data-kt-search-element="preferences-show" class="btn btn-icon w-20px btn-sm btn-active-color-primary me-2 data-bs-toggle=" tooltip"="" title="Show search preferences">
+                                                        <i class="ki-duotone ki-setting-2 fs-2"><i class="path1"></i><i class="path2"></i></i>
                                                     </div>
                                                     <!--end::Preferences toggle-->
 
                                                     <!--begin::Advanced search toggle-->
-                                                    <div data-kt-search-element="advanced-options-form-show"
-                                                        class="btn btn-icon w-20px btn-sm btn-active-color-primary me-n1"
-                                                        data-bs-toggle="tooltip" title="Show more search options">
+                                                    <div data-kt-search-element="advanced-options-form-show" class="btn btn-icon w-20px btn-sm btn-active-color-primary me-n1" data-bs-toggle="tooltip" title="Show more search options">
                                                         <i class="ki-duotone ki-down fs-2"></i>
                                                     </div>
                                                     <!--end::Advanced search toggle-->
@@ -558,16 +503,14 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-laptop fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i></i>
+                                                            <i class="ki-duotone ki-laptop fs-2 text-primary"><i class="path1"></i><i class="path2"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
 
                                                     <!--begin::Title-->
                                                     <div class="d-flex flex-column">
-                                                        <a href="#"
-                                                            class="fs-6 text-gray-800 text-hover-primary fw-semibold">BoomApp
+                                                        <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semibold">BoomApp
                                                             by Keenthemes</a>
                                                         <span class="fs-7 text-muted fw-semibold">#45789</span>
                                                     </div>
@@ -579,17 +522,14 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-chart-simple fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i><i
-                                                                    class="path3"></i><i class="path4"></i></i>
+                                                            <i class="ki-duotone ki-chart-simple fs-2 text-primary"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
 
                                                     <!--begin::Title-->
                                                     <div class="d-flex flex-column">
-                                                        <a href="#"
-                                                            class="fs-6 text-gray-800 text-hover-primary fw-semibold">"Kept
+                                                        <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semibold">"Kept
                                                             API Project Meeting</a>
                                                         <span class="fs-7 text-muted fw-semibold">#84050</span>
                                                     </div>
@@ -601,16 +541,14 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-chart fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i></i>
+                                                            <i class="ki-duotone ki-chart fs-2 text-primary"><i class="path1"></i><i class="path2"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
 
                                                     <!--begin::Title-->
                                                     <div class="d-flex flex-column">
-                                                        <a href="#"
-                                                            class="fs-6 text-gray-800 text-hover-primary fw-semibold">"KPI
+                                                        <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semibold">"KPI
                                                             Monitoring App Launch</a>
                                                         <span class="fs-7 text-muted fw-semibold">#84250</span>
                                                     </div>
@@ -622,16 +560,14 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-chart-line-down fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i></i>
+                                                            <i class="ki-duotone ki-chart-line-down fs-2 text-primary"><i class="path1"></i><i class="path2"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
 
                                                     <!--begin::Title-->
                                                     <div class="d-flex flex-column">
-                                                        <a href="#"
-                                                            class="fs-6 text-gray-800 text-hover-primary fw-semibold">Project
+                                                        <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semibold">Project
                                                             Reference FAQ</a>
                                                         <span class="fs-7 text-muted fw-semibold">#67945</span>
                                                     </div>
@@ -643,16 +579,14 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-sms fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i></i>
+                                                            <i class="ki-duotone ki-sms fs-2 text-primary"><i class="path1"></i><i class="path2"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
 
                                                     <!--begin::Title-->
                                                     <div class="d-flex flex-column">
-                                                        <a href="#"
-                                                            class="fs-6 text-gray-800 text-hover-primary fw-semibold">"FitPro
+                                                        <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semibold">"FitPro
                                                             App Development</a>
                                                         <span class="fs-7 text-muted fw-semibold">#84250</span>
                                                     </div>
@@ -664,16 +598,14 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-bank fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i></i>
+                                                            <i class="ki-duotone ki-bank fs-2 text-primary"><i class="path1"></i><i class="path2"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
 
                                                     <!--begin::Title-->
                                                     <div class="d-flex flex-column">
-                                                        <a href="#"
-                                                            class="fs-6 text-gray-800 text-hover-primary fw-semibold">Shopix
+                                                        <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semibold">Shopix
                                                             Mobile App</a>
                                                         <span class="fs-7 text-muted fw-semibold">#45690</span>
                                                     </div>
@@ -685,16 +617,14 @@
                                                     <!--begin::Symbol-->
                                                     <div class="symbol symbol-40px me-4">
                                                         <span class="symbol-label bg-light">
-                                                            <i class="ki-duotone ki-chart-line-down fs-2 text-primary"><i
-                                                                    class="path1"></i><i class="path2"></i></i>
+                                                            <i class="ki-duotone ki-chart-line-down fs-2 text-primary"><i class="path1"></i><i class="path2"></i></i>
                                                         </span>
                                                     </div>
                                                     <!--end::Symbol-->
 
                                                     <!--begin::Title-->
                                                     <div class="d-flex flex-column">
-                                                        <a href="#"
-                                                            class="fs-6 text-gray-800 text-hover-primary fw-semibold">"Landing
+                                                        <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-semibold">"Landing
                                                             UI Design" Launch</a>
                                                         <span class="fs-7 text-muted fw-semibold">#24005</span>
                                                     </div>
@@ -709,8 +639,7 @@
                                         <div data-kt-search-element="empty" class="text-center d-none">
                                             <!--begin::Icon-->
                                             <div class="pt-10 pb-10">
-                                                <i class="ki-duotone ki-search-list fs-4x opacity-50"><i
-                                                        class="path1"></i><i class="path2"></i><i class="path3"></i></i>
+                                                <i class="ki-duotone ki-search-list fs-4x opacity-50"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i>
                                             </div>
                                             <!--end::Icon-->
 
@@ -734,8 +663,7 @@
 
                                         <!--begin::Input group-->
                                         <div class="mb-5">
-                                            <input type="text" class="form-control form-control-sm form-control-solid"
-                                                placeholder="Contains the word" name="query">
+                                            <input type="text" class="form-control form-control-sm form-control-solid" placeholder="Contains the word" name="query">
                                         </div>
                                         <!--end::Input group-->
 
@@ -745,10 +673,8 @@
                                             <div class="nav-group nav-group-fluid">
                                                 <!--begin::Option-->
                                                 <label>
-                                                    <input type="radio" class="btn-check" name="type" value="has"
-                                                        checked="checked">
-                                                    <span
-                                                        class="btn btn-sm btn-color-muted btn-active btn-active-primary">
+                                                    <input type="radio" class="btn-check" name="type" value="has" checked="checked">
+                                                    <span class="btn btn-sm btn-color-muted btn-active btn-active-primary">
                                                         All
                                                     </span>
                                                 </label>
@@ -757,8 +683,7 @@
                                                 <!--begin::Option-->
                                                 <label>
                                                     <input type="radio" class="btn-check" name="type" value="users">
-                                                    <span
-                                                        class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4">
+                                                    <span class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4">
                                                         Users
                                                     </span>
                                                 </label>
@@ -767,8 +692,7 @@
                                                 <!--begin::Option-->
                                                 <label>
                                                     <input type="radio" class="btn-check" name="type" value="orders">
-                                                    <span
-                                                        class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4">
+                                                    <span class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4">
                                                         Orders
                                                     </span>
                                                 </label>
@@ -777,8 +701,7 @@
                                                 <!--begin::Option-->
                                                 <label>
                                                     <input type="radio" class="btn-check" name="type" value="projects">
-                                                    <span
-                                                        class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4">
+                                                    <span class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4">
                                                         Projects
                                                     </span>
                                                 </label>
@@ -790,17 +713,13 @@
 
                                         <!--begin::Input group-->
                                         <div class="mb-5">
-                                            <input type="text" name="assignedto"
-                                                class="form-control form-control-sm form-control-solid"
-                                                placeholder="Assigned to" value="">
+                                            <input type="text" name="assignedto" class="form-control form-control-sm form-control-solid" placeholder="Assigned to" value="">
                                         </div>
                                         <!--end::Input group-->
 
                                         <!--begin::Input group-->
                                         <div class="mb-5">
-                                            <input type="text" name="collaborators"
-                                                class="form-control form-control-sm form-control-solid"
-                                                placeholder="Collaborators" value="">
+                                            <input type="text" name="collaborators" class="form-control form-control-sm form-control-solid" placeholder="Collaborators" value="">
                                         </div>
                                         <!--end::Input group-->
 
@@ -810,10 +729,8 @@
                                             <div class="nav-group nav-group-fluid">
                                                 <!--begin::Option-->
                                                 <label>
-                                                    <input type="radio" class="btn-check" name="attachment" value="has"
-                                                        checked="checked">
-                                                    <span
-                                                        class="btn btn-sm btn-color-muted btn-active btn-active-primary">
+                                                    <input type="radio" class="btn-check" name="attachment" value="has" checked="checked">
+                                                    <span class="btn btn-sm btn-color-muted btn-active btn-active-primary">
                                                         Has attachment
                                                     </span>
                                                 </label>
@@ -822,8 +739,7 @@
                                                 <!--begin::Option-->
                                                 <label>
                                                     <input type="radio" class="btn-check" name="attachment" value="any">
-                                                    <span
-                                                        class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4">
+                                                    <span class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4">
                                                         Any
                                                     </span>
                                                 </label>
@@ -835,9 +751,7 @@
 
                                         <!--begin::Input group-->
                                         <div class="mb-5">
-                                            <select name="timezone" aria-label="Select a Timezone"
-                                                data-control="select2" data-placeholder="date_period"
-                                                class="form-select form-select-sm form-select-solid">
+                                            <select name="timezone" aria-label="Select a Timezone" data-control="select2" data-placeholder="date_period" class="form-select form-select-sm form-select-solid">
                                                 <option value="next">Within the next</option>
                                                 <option value="last">Within the last</option>
                                                 <option value="between">Between</option>
@@ -850,17 +764,13 @@
                                         <div class="row mb-8">
                                             <!--begin::Col-->
                                             <div class="col-6">
-                                                <input type="number" name="date_number"
-                                                    class="form-control form-control-sm form-control-solid"
-                                                    placeholder="Lenght" value="">
+                                                <input type="number" name="date_number" class="form-control form-control-sm form-control-solid" placeholder="Lenght" value="">
                                             </div>
                                             <!--end::Col-->
 
                                             <!--begin::Col-->
                                             <div class="col-6">
-                                                <select name="date_typer" aria-label="Select a Timezone"
-                                                    data-control="select2" data-placeholder="Period"
-                                                    class="form-select form-select-sm form-select-solid">
+                                                <select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-sm form-select-solid">
                                                     <option value="days">Days</option>
                                                     <option value="weeks">Weeks</option>
                                                     <option value="months">Months</option>
@@ -873,13 +783,9 @@
 
                                         <!--begin::Actions-->
                                         <div class="d-flex justify-content-end">
-                                            <button type="reset"
-                                                class="btn btn-sm btn-light fw-bold btn-active-light-primary me-2"
-                                                data-kt-search-element="advanced-options-form-cancel">Cancel</button>
+                                            <button type="reset" class="btn btn-sm btn-light fw-bold btn-active-light-primary me-2" data-kt-search-element="advanced-options-form-cancel">Cancel</button>
 
-                                            <a href="../../../pages/search/horizontal.html"
-                                                class="btn btn-sm fw-bold btn-primary"
-                                                data-kt-search-element="advanced-options-form-search">Search</a>
+                                            <a href="../../../pages/search/horizontal.html" class="btn btn-sm fw-bold btn-primary" data-kt-search-element="advanced-options-form-search">Search</a>
                                         </div>
                                         <!--end::Actions-->
                                     </form>
@@ -892,35 +798,30 @@
 
                                         <!--begin::Input group-->
                                         <div class="pb-4 border-bottom">
-                                            <label
-                                                class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack">
+                                            <label class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack">
                                                 <span class="form-check-label text-gray-700 fs-6 fw-semibold ms-0 me-2">
                                                     Projects
                                                 </span>
 
-                                                <input class="form-check-input" type="checkbox" value="1"
-                                                    checked="checked">
+                                                <input class="form-check-input" type="checkbox" value="1" checked="checked">
                                             </label>
                                         </div>
                                         <!--end::Input group-->
 
                                         <!--begin::Input group-->
                                         <div class="py-4 border-bottom">
-                                            <label
-                                                class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack">
+                                            <label class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack">
                                                 <span class="form-check-label text-gray-700 fs-6 fw-semibold ms-0 me-2">
                                                     Targets
                                                 </span>
-                                                <input class="form-check-input" type="checkbox" value="1"
-                                                    checked="checked">
+                                                <input class="form-check-input" type="checkbox" value="1" checked="checked">
                                             </label>
                                         </div>
                                         <!--end::Input group-->
 
                                         <!--begin::Input group-->
                                         <div class="py-4 border-bottom">
-                                            <label
-                                                class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack">
+                                            <label class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack">
                                                 <span class="form-check-label text-gray-700 fs-6 fw-semibold ms-0 me-2">
                                                     Affiliate Programs
                                                 </span>
@@ -931,21 +832,18 @@
 
                                         <!--begin::Input group-->
                                         <div class="py-4 border-bottom">
-                                            <label
-                                                class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack">
+                                            <label class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack">
                                                 <span class="form-check-label text-gray-700 fs-6 fw-semibold ms-0 me-2">
                                                     Referrals
                                                 </span>
-                                                <input class="form-check-input" type="checkbox" value="1"
-                                                    checked="checked">
+                                                <input class="form-check-input" type="checkbox" value="1" checked="checked">
                                             </label>
                                         </div>
                                         <!--end::Input group-->
 
                                         <!--begin::Input group-->
                                         <div class="py-4 border-bottom">
-                                            <label
-                                                class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack">
+                                            <label class="form-check form-switch form-switch-sm form-check-custom form-check-solid flex-stack">
                                                 <span class="form-check-label text-gray-700 fs-6 fw-semibold ms-0 me-2">
                                                     Users
                                                 </span>
@@ -956,9 +854,7 @@
 
                                         <!--begin::Actions-->
                                         <div class="d-flex justify-content-end pt-7">
-                                            <button type="reset"
-                                                class="btn btn-sm btn-light fw-bold btn-active-light-primary me-2"
-                                                data-kt-search-element="preferences-dismiss">Cancel</button>
+                                            <button type="reset" class="btn btn-sm btn-light fw-bold btn-active-light-primary me-2" data-kt-search-element="preferences-dismiss">Cancel</button>
                                             <button type="submit" class="btn btn-sm fw-bold btn-primary">Save
                                                 Changes</button>
                                         </div>
@@ -973,15 +869,12 @@
 
                         <!--begin::Actions-->
                         <div class="d-flex align-self-center flex-center flex-shrink-0">
-                            <a href="#" class="btn btn-sm btn-secondary d-flex flex-center ms-3 px-4 py-3"
-                                data-bs-toggle="modal" data-bs-target="#kt_modal_invite_friends">
-                                <i class="ki-duotone ki-plus-square fs-2 text-gray-400"><i class="path1"></i><i
-                                        class="path2"></i><i class="path3"></i></i>
+                            <a href="#" class="btn btn-sm btn-secondary d-flex flex-center ms-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#kt_modal_invite_friends">
+                                <i class="ki-duotone ki-plus-square fs-2 text-gray-400"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i>
                                 <span>Invite</span>
                             </a>
 
-                            <a href="#" class="btn btn-sm btn-success ms-3 px-4 py-3" data-bs-toggle="modal"
-                                data-bs-target="#kt_modal_create_app">Create App</a>
+                            <a href="#" class="btn btn-sm btn-success ms-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">Create App</a>
                         </div>
                         <!--end::Actions-->
 
@@ -1000,15 +893,12 @@
                 <div id="kt_app_toolbar" class="app-toolbar ">
 
                     <!--begin::Toolbar container-->
-                    <div id="kt_app_toolbar_container"
-                        class="app-container  container-fluid d-flex flex-lg-column py-3 py-lg-6 ">
+                    <div id="kt_app_toolbar_container" class="app-container  container-fluid d-flex flex-lg-column py-3 py-lg-6 ">
 
 
 
                         <!--begin::Page title-->
-                        <div class="page-title d-flex align-items-center gap-1 me-3" data-kt-swapper="true"
-                            data-kt-swapper-mode="{default: 'prepend', lg: 'prepend'}"
-                            data-kt-swapper-parent="{default: '#kt_app_content_container', lg: '#kt_app_header_wrapper'}">
+                        <div class="page-title d-flex align-items-center gap-1 me-3" data-kt-swapper="true" data-kt-swapper-mode="{default: 'prepend', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_content_container', lg: '#kt_app_header_wrapper'}">
                             <!--begin::Title-->
                             <span class="text-gray-900 fw-bolder fs-2x">
                                 Product Form
@@ -1081,10 +971,7 @@
 
 
                 <!--begin::Sidebar-->
-                <div id="kt_app_sidebar" class="app-sidebar  flex-column " data-kt-drawer="true"
-                    data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}"
-                    data-kt-drawer-overlay="true" data-kt-drawer-width="300px" data-kt-drawer-direction="start"
-                    data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+                <div id="kt_app_sidebar" class="app-sidebar  flex-column " data-kt-drawer="true" data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="300px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
 
 
                     <!--begin::Header-->
@@ -1093,8 +980,7 @@
                         <div class="d-flex flex-stack d-none d-lg-flex mb-13">
                             <!--begin::Logo-->
                             <a href="../../../index.html" class="app-sidebar-logo">
-                                <img alt="Logo" src="../../../assets/media/logos/default.svg"
-                                    class="h-30px app-sidebar-logo-default">
+                                <img alt="Logo" src="../../../assets/media/logos/default.svg" class="h-30px app-sidebar-logo-default">
                             </a>
                             <!--end::Logo-->
 
@@ -1103,21 +989,16 @@
 <b>Warning</b>:  Undefined variable $itemClass in <b>/var/www/preview.keenthemes.com/kt-products/open/releases/2023-03-01-140756-pro/themes/open/html/dist/view/layout/partials/sidebar/_header.php</b> on line <b>18</b><br />
 ">
                                 <!--begin::Menu wrapper-->
-                                <div class="btn btn-icon w-15px h-15px w-lg-20px h-lg-20px btn-color-success position-relative"
-                                    data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent"
-                                    data-kt-menu-placement="bottom-start">
+                                <div class="btn btn-icon w-15px h-15px w-lg-20px h-lg-20px btn-color-success position-relative" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-start">
                                     <i class="fonticon-stats fs-2"></i>
 
-                                    <span
-                                        class="bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle ms-7 mb-3 animation-blink">
+                                    <span class="bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle ms-7 mb-3 animation-blink">
                                     </span>
 
                                     <!--begin::Menu-->
-                                    <div class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px"
-                                        data-kt-menu="true" id="kt_menu_notifications">
+                                    <div class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px" data-kt-menu="true" id="kt_menu_notifications">
                                         <!--begin::Heading-->
-                                        <div class="d-flex flex-column bgi-no-repeat rounded-top"
-                                            style="background-image:url('/open-html-pro/assets/media/misc/menu-header-bg.jpg')">
+                                        <div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('/open-html-pro/assets/media/misc/menu-header-bg.jpg')">
                                             <!--begin::Title-->
                                             <h3 class="text-white fw-semibold px-9 mt-10 mb-6">
                                                 Notifications <span class="fs-8 opacity-75 ps-3">24 reports</span>
@@ -1127,20 +1008,15 @@
                                             <!--begin::Tabs-->
                                             <ul class="nav nav-line-tabs nav-line-tabs-2x nav-stretch fw-semibold px-9">
                                                 <li class="nav-item">
-                                                    <a class="nav-link text-white opacity-75 opacity-state-100 pb-4"
-                                                        data-bs-toggle="tab"
-                                                        href="#kt_topbar_notifications_1">Alerts</a>
+                                                    <a class="nav-link text-white opacity-75 opacity-state-100 pb-4" data-bs-toggle="tab" href="#kt_topbar_notifications_1">Alerts</a>
                                                 </li>
 
                                                 <li class="nav-item">
-                                                    <a class="nav-link text-white opacity-75 opacity-state-100 pb-4 active"
-                                                        data-bs-toggle="tab"
-                                                        href="#kt_topbar_notifications_2">Updates</a>
+                                                    <a class="nav-link text-white opacity-75 opacity-state-100 pb-4 active" data-bs-toggle="tab" href="#kt_topbar_notifications_2">Updates</a>
                                                 </li>
 
                                                 <li class="nav-item">
-                                                    <a class="nav-link text-white opacity-75 opacity-state-100 pb-4"
-                                                        data-bs-toggle="tab" href="#kt_topbar_notifications_3">Logs</a>
+                                                    <a class="nav-link text-white opacity-75 opacity-state-100 pb-4" data-bs-toggle="tab" href="#kt_topbar_notifications_3">Logs</a>
                                                 </li>
                                             </ul>
                                             <!--end::Tabs-->
@@ -1160,17 +1036,14 @@
                                                             <!--begin::Symbol-->
                                                             <div class="symbol symbol-35px me-4">
                                                                 <span class="symbol-label bg-light-primary">
-                                                                    <i
-                                                                        class="ki-duotone ki-abstract-28 fs-2 text-primary"><i
-                                                                            class="path1"></i><i class="path2"></i></i>
+                                                                    <i class="ki-duotone ki-abstract-28 fs-2 text-primary"><i class="path1"></i><i class="path2"></i></i>
                                                                 </span>
                                                             </div>
                                                             <!--end::Symbol-->
 
                                                             <!--begin::Title-->
                                                             <div class="mb-0 me-2">
-                                                                <a href="#"
-                                                                    class="fs-6 text-gray-800 text-hover-primary fw-bold">Project
+                                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Project
                                                                     Alice</a>
                                                                 <div class="text-gray-400 fs-7">Phase 1 development
                                                                 </div>
@@ -1191,18 +1064,14 @@
                                                             <!--begin::Symbol-->
                                                             <div class="symbol symbol-35px me-4">
                                                                 <span class="symbol-label bg-light-danger">
-                                                                    <i
-                                                                        class="ki-duotone ki-information fs-2 text-danger"><i
-                                                                            class="path1"></i><i class="path2"></i><i
-                                                                            class="path3"></i></i>
+                                                                    <i class="ki-duotone ki-information fs-2 text-danger"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i>
                                                                 </span>
                                                             </div>
                                                             <!--end::Symbol-->
 
                                                             <!--begin::Title-->
                                                             <div class="mb-0 me-2">
-                                                                <a href="#"
-                                                                    class="fs-6 text-gray-800 text-hover-primary fw-bold">HR
+                                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">HR
                                                                     Confidential</a>
                                                                 <div class="text-gray-400 fs-7">Confidential staff
                                                                     documents</div>
@@ -1223,17 +1092,14 @@
                                                             <!--begin::Symbol-->
                                                             <div class="symbol symbol-35px me-4">
                                                                 <span class="symbol-label bg-light-warning">
-                                                                    <i
-                                                                        class="ki-duotone ki-briefcase fs-2 text-warning"><i
-                                                                            class="path1"></i><i class="path2"></i></i>
+                                                                    <i class="ki-duotone ki-briefcase fs-2 text-warning"><i class="path1"></i><i class="path2"></i></i>
                                                                 </span>
                                                             </div>
                                                             <!--end::Symbol-->
 
                                                             <!--begin::Title-->
                                                             <div class="mb-0 me-2">
-                                                                <a href="#"
-                                                                    class="fs-6 text-gray-800 text-hover-primary fw-bold">Company
+                                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Company
                                                                     HR</a>
                                                                 <div class="text-gray-400 fs-7">Corporeate staff
                                                                     profiles</div>
@@ -1254,17 +1120,14 @@
                                                             <!--begin::Symbol-->
                                                             <div class="symbol symbol-35px me-4">
                                                                 <span class="symbol-label bg-light-success">
-                                                                    <i
-                                                                        class="ki-duotone ki-abstract-12 fs-2 text-success"><i
-                                                                            class="path1"></i><i class="path2"></i></i>
+                                                                    <i class="ki-duotone ki-abstract-12 fs-2 text-success"><i class="path1"></i><i class="path2"></i></i>
                                                                 </span>
                                                             </div>
                                                             <!--end::Symbol-->
 
                                                             <!--begin::Title-->
                                                             <div class="mb-0 me-2">
-                                                                <a href="#"
-                                                                    class="fs-6 text-gray-800 text-hover-primary fw-bold">Project
+                                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Project
                                                                     Redux</a>
                                                                 <div class="text-gray-400 fs-7">New frontend admin theme
                                                                 </div>
@@ -1285,18 +1148,14 @@
                                                             <!--begin::Symbol-->
                                                             <div class="symbol symbol-35px me-4">
                                                                 <span class="symbol-label bg-light-primary">
-                                                                    <i
-                                                                        class="ki-duotone ki-colors-square fs-2 text-primary"><i
-                                                                            class="path1"></i><i class="path2"></i><i
-                                                                            class="path3"></i><i class="path4"></i></i>
+                                                                    <i class="ki-duotone ki-colors-square fs-2 text-primary"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i>
                                                                 </span>
                                                             </div>
                                                             <!--end::Symbol-->
 
                                                             <!--begin::Title-->
                                                             <div class="mb-0 me-2">
-                                                                <a href="#"
-                                                                    class="fs-6 text-gray-800 text-hover-primary fw-bold">Project
+                                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Project
                                                                     Breafing</a>
                                                                 <div class="text-gray-400 fs-7">Product launch status
                                                                     update</div>
@@ -1325,8 +1184,7 @@
 
                                                             <!--begin::Title-->
                                                             <div class="mb-0 me-2">
-                                                                <a href="#"
-                                                                    class="fs-6 text-gray-800 text-hover-primary fw-bold">Banner
+                                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Banner
                                                                     Assets</a>
                                                                 <div class="text-gray-400 fs-7">Collection of banner
                                                                     images</div>
@@ -1347,27 +1205,14 @@
                                                             <!--begin::Symbol-->
                                                             <div class="symbol symbol-35px me-4">
                                                                 <span class="symbol-label bg-light-warning">
-                                                                    <i
-                                                                        class="ki-duotone ki-color-swatch fs-2 text-warning"><i
-                                                                            class="path1"></i><i class="path2"></i><i
-                                                                            class="path3"></i><i class="path4"></i><i
-                                                                            class="path5"></i><i class="path6"></i><i
-                                                                            class="path7"></i><i class="path8"></i><i
-                                                                            class="path9"></i><i class="path10"></i><i
-                                                                            class="path11"></i><i class="path12"></i><i
-                                                                            class="path13"></i><i class="path14"></i><i
-                                                                            class="path15"></i><i class="path16"></i><i
-                                                                            class="path17"></i><i class="path18"></i><i
-                                                                            class="path19"></i><i class="path20"></i><i
-                                                                            class="path21"></i></i>
+                                                                    <i class="ki-duotone ki-color-swatch fs-2 text-warning"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i><i class="path5"></i><i class="path6"></i><i class="path7"></i><i class="path8"></i><i class="path9"></i><i class="path10"></i><i class="path11"></i><i class="path12"></i><i class="path13"></i><i class="path14"></i><i class="path15"></i><i class="path16"></i><i class="path17"></i><i class="path18"></i><i class="path19"></i><i class="path20"></i><i class="path21"></i></i>
                                                                 </span>
                                                             </div>
                                                             <!--end::Symbol-->
 
                                                             <!--begin::Title-->
                                                             <div class="mb-0 me-2">
-                                                                <a href="#"
-                                                                    class="fs-6 text-gray-800 text-hover-primary fw-bold">Icon
+                                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Icon
                                                                     Assets</a>
                                                                 <div class="text-gray-400 fs-7">Collection of SVG icons
                                                                 </div>
@@ -1387,19 +1232,16 @@
 
                                                 <!--begin::View more-->
                                                 <div class="py-3 text-center border-top">
-                                                    <a href="../../../pages/user-profile/activity.html"
-                                                        class="btn btn-color-gray-600 btn-active-color-primary">
+                                                    <a href="../../../pages/user-profile/activity.html" class="btn btn-color-gray-600 btn-active-color-primary">
                                                         View All
-                                                        <i class="ki-duotone ki-arrow-right fs-5"><i
-                                                                class="path1"></i><i class="path2"></i></i> </a>
+                                                        <i class="ki-duotone ki-arrow-right fs-5"><i class="path1"></i><i class="path2"></i></i> </a>
                                                 </div>
                                                 <!--end::View more-->
                                             </div>
                                             <!--end::Tab panel-->
 
                                             <!--begin::Tab panel-->
-                                            <div class="tab-pane fade show active" id="kt_topbar_notifications_2"
-                                                role="tabpanel">
+                                            <div class="tab-pane fade show active" id="kt_topbar_notifications_2" role="tabpanel">
                                                 <!--begin::Wrapper-->
                                                 <div class="d-flex flex-column px-9">
                                                     <!--begin::Section-->
@@ -1419,9 +1261,7 @@
 
                                                         <!--begin::Action-->
                                                         <div class="text-center mt-5 mb-9">
-                                                            <a href="#" class="btn btn-sm btn-primary px-6"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#kt_modal_upgrade_plan">Upgrade</a>
+                                                            <a href="#" class="btn btn-sm btn-primary px-6" data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">Upgrade</a>
                                                         </div>
                                                         <!--end::Action-->
                                                     </div>
@@ -1429,8 +1269,7 @@
 
                                                     <!--begin::Illustration-->
                                                     <div class="text-center px-4">
-                                                        <img class="mw-100 mh-200px" alt="image"
-                                                            src="../../../assets/media/illustrations/dozzy-1/1.png">
+                                                        <img class="mw-100 mh-200px" alt="image" src="../../../assets/media/illustrations/dozzy-1/1.png">
                                                     </div>
                                                     <!--end::Illustration-->
                                                 </div>
@@ -1452,8 +1291,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">New
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">New
                                                                 order</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1474,8 +1312,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">New
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">New
                                                                 customer</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1496,8 +1333,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">Payment
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">Payment
                                                                 process</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1518,8 +1354,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">Search
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">Search
                                                                 query</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1540,8 +1375,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">API
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">API
                                                                 connection</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1562,8 +1396,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">Database
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">Database
                                                                 restore</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1584,8 +1417,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">System
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">System
                                                                 update</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1606,8 +1438,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">Server
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">Server
                                                                 OS update</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1628,8 +1459,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">API
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">API
                                                                 rollback</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1650,8 +1480,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">Refund
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">Refund
                                                                 process</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1672,8 +1501,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">Withdrawal
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">Withdrawal
                                                                 process</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1694,8 +1522,7 @@
                                                             <!--end::Code-->
 
                                                             <!--begin::Title-->
-                                                            <a href="#"
-                                                                class="text-gray-800 text-hover-primary fw-semibold">Mail
+                                                            <a href="#" class="text-gray-800 text-hover-primary fw-semibold">Mail
                                                                 tasks</a>
                                                             <!--end::Title-->
                                                         </div>
@@ -1712,11 +1539,9 @@
 
                                                 <!--begin::View more-->
                                                 <div class="py-3 text-center border-top">
-                                                    <a href="../../../pages/user-profile/activity.html"
-                                                        class="btn btn-color-gray-600 btn-active-color-primary">
+                                                    <a href="../../../pages/user-profile/activity.html" class="btn btn-color-gray-600 btn-active-color-primary">
                                                         View All
-                                                        <i class="ki-duotone ki-arrow-right fs-5"><i
-                                                                class="path1"></i><i class="path2"></i></i> </a>
+                                                        <i class="ki-duotone ki-arrow-right fs-5"><i class="path1"></i><i class="path2"></i></i> </a>
                                                 </div>
                                                 <!--end::View more-->
                                             </div>
@@ -1733,9 +1558,7 @@
                         <!--end::Brand-->
 
                         <!--begin::User-->
-                        <div class="d-flex  btn btn-outline btn-custom align-items-center w-200 mb-2"
-                            data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent"
-                            data-kt-menu-placement="bottom-start">
+                        <div class="d-flex  btn btn-outline btn-custom align-items-center w-200 mb-2" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-start">
                             <!--begin::User-->
                             <div class="cursor-pointer symbol symbol-35px symbol-lg-40px me-3 ms-n2">
                                 <img class="" src="../../../assets/media/avatars/300-3.jpg" alt="user">
@@ -1744,11 +1567,9 @@
 
                             <!--begin:Info-->
                             <div class="d-flex flex-column align-items-start flex-grow-1">
-                                <a href="../../../pages/user-profile/projects.html"
-                                    class="btn-title fs-6 fw-bold">Johnson</a>
+                                <a href="../../../pages/user-profile/projects.html" class="btn-title fs-6 fw-bold">Johnson</a>
 
-                                <a href="../../../pages/user-profile/overview.html"
-                                    class="btn-desc fs-7 fw-bold d-block">React Developer</a>
+                                <a href="../../../pages/user-profile/overview.html" class="btn-desc fs-7 fw-bold d-block">React Developer</a>
                             </div>
                             <!--end:Info-->
 
@@ -1757,8 +1578,7 @@
 
 
                         <!--begin::User account menu-->
-                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px"
-                            data-kt-menu="true">
+                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px" data-kt-menu="true">
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
                                 <div class="menu-content d-flex align-items-center px-3">
@@ -1771,8 +1591,7 @@
                                     <!--begin::Username-->
                                     <div class="d-flex flex-column">
                                         <div class="fw-bold d-flex align-items-center fs-5">
-                                            Johnson <span
-                                                class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span>
+                                            Johnson <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span>
                                         </div>
 
                                         <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">
@@ -1807,8 +1626,7 @@
                             <!--end::Menu item-->
 
                             <!--begin::Menu item-->
-                            <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
-                                data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
+                            <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
                                 <a href="#" class="menu-link px-5">
                                     <span class="menu-title">My Subscription</span>
                                     <span class="menu-arrow"></span>
@@ -1842,8 +1660,7 @@
 
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-3">
-                                        <a href="../../../account/statements.html"
-                                            class="menu-link d-flex flex-stack px-5">
+                                        <a href="../../../account/statements.html" class="menu-link d-flex flex-stack px-5">
                                             Statements
 
                                             <span class="ms-2" data-bs-toggle="tooltip" title="View your statements">
@@ -1860,8 +1677,7 @@
                                     <div class="menu-item px-3">
                                         <div class="menu-content px-3">
                                             <label class="form-check form-switch form-check-custom form-check-solid">
-                                                <input class="form-check-input w-30px h-20px" type="checkbox" value="1"
-                                                    checked="checked" name="notifications">
+                                                <input class="form-check-input w-30px h-20px" type="checkbox" value="1" checked="checked" name="notifications">
                                                 <span class="form-check-label text-muted fs-7">
                                                     Notifications
                                                 </span>
@@ -1887,36 +1703,23 @@
                             <!--end::Menu separator-->
 
                             <!--begin::Menu item-->
-                            <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
-                                data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
+                            <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
                                 <a href="#" class="menu-link px-5">
                                     <span class="menu-title position-relative">
                                         Mode
 
                                         <span class="ms-5 position-absolute translate-middle-y top-50 end-0">
-                                            <i class="ki-duotone ki-night-day theme-light-show fs-2"><i
-                                                    class="path1"></i><i class="path2"></i><i class="path3"></i><i
-                                                    class="path4"></i><i class="path5"></i><i class="path6"></i><i
-                                                    class="path7"></i><i class="path8"></i><i class="path9"></i><i
-                                                    class="path10"></i></i> <i
-                                                class="ki-duotone ki-moon theme-dark-show fs-2"><i class="path1"></i><i
-                                                    class="path2"></i></i> </span>
+                                            <i class="ki-duotone ki-night-day theme-light-show fs-2"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i><i class="path5"></i><i class="path6"></i><i class="path7"></i><i class="path8"></i><i class="path9"></i><i class="path10"></i></i> <i class="ki-duotone ki-moon theme-dark-show fs-2"><i class="path1"></i><i class="path2"></i></i> </span>
                                     </span>
                                 </a>
 
                                 <!--begin::Menu-->
-                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-title-gray-700 menu-icon-gray-500 menu-active-bg menu-state-color fw-semibold py-4 fs-base w-150px"
-                                    data-kt-menu="true" data-kt-element="theme-mode-menu">
+                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-title-gray-700 menu-icon-gray-500 menu-active-bg menu-state-color fw-semibold py-4 fs-base w-150px" data-kt-menu="true" data-kt-element="theme-mode-menu">
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-3 my-0">
-                                        <a href="#" class="menu-link px-3 py-2" data-kt-element="mode"
-                                            data-kt-value="light">
+                                        <a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="light">
                                             <span class="menu-icon" data-kt-element="icon">
-                                                <i class="ki-duotone ki-night-day fs-2"><i class="path1"></i><i
-                                                        class="path2"></i><i class="path3"></i><i class="path4"></i><i
-                                                        class="path5"></i><i class="path6"></i><i class="path7"></i><i
-                                                        class="path8"></i><i class="path9"></i><i
-                                                        class="path10"></i></i> </span>
+                                                <i class="ki-duotone ki-night-day fs-2"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i><i class="path5"></i><i class="path6"></i><i class="path7"></i><i class="path8"></i><i class="path9"></i><i class="path10"></i></i> </span>
                                             <span class="menu-title">
                                                 Light
                                             </span>
@@ -1926,11 +1729,9 @@
 
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-3 my-0">
-                                        <a href="#" class="menu-link px-3 py-2" data-kt-element="mode"
-                                            data-kt-value="dark">
+                                        <a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="dark">
                                             <span class="menu-icon" data-kt-element="icon">
-                                                <i class="ki-duotone ki-moon fs-2"><i class="path1"></i><i
-                                                        class="path2"></i></i> </span>
+                                                <i class="ki-duotone ki-moon fs-2"><i class="path1"></i><i class="path2"></i></i> </span>
                                             <span class="menu-title">
                                                 Dark
                                             </span>
@@ -1940,11 +1741,9 @@
 
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-3 my-0">
-                                        <a href="#" class="menu-link px-3 py-2" data-kt-element="mode"
-                                            data-kt-value="system">
+                                        <a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="system">
                                             <span class="menu-icon" data-kt-element="icon">
-                                                <i class="ki-duotone ki-screen fs-2"><i class="path1"></i><i
-                                                        class="path2"></i><i class="path3"></i><i class="path4"></i></i>
+                                                <i class="ki-duotone ki-screen fs-2"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i>
                                             </span>
                                             <span class="menu-title">
                                                 System
@@ -1959,16 +1758,13 @@
                             <!--end::Menu item-->
 
                             <!--begin::Menu item-->
-                            <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
-                                data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
+                            <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
                                 <a href="#" class="menu-link px-5">
                                     <span class="menu-title position-relative">
                                         Language
 
-                                        <span
-                                            class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">
-                                            English <img class="w-15px h-15px rounded-1 ms-2"
-                                                src="../../../assets/media/flags/united-states.svg" alt="">
+                                        <span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">
+                                            English <img class="w-15px h-15px rounded-1 ms-2" src="../../../assets/media/flags/united-states.svg" alt="">
                                         </span>
                                     </span>
                                 </a>
@@ -1979,8 +1775,7 @@
                                     <div class="menu-item px-3">
                                         <a href="../../../account/settings.html" class="menu-link d-flex px-5 active">
                                             <span class="symbol symbol-20px me-4">
-                                                <img class="rounded-1"
-                                                    src="../../../assets/media/flags/united-states.svg" alt="">
+                                                <img class="rounded-1" src="../../../assets/media/flags/united-states.svg" alt="">
                                             </span>
                                             English
                                         </a>
@@ -1991,8 +1786,7 @@
                                     <div class="menu-item px-3">
                                         <a href="../../../account/settings.html" class="menu-link d-flex px-5">
                                             <span class="symbol symbol-20px me-4">
-                                                <img class="rounded-1" src="../../../assets/media/flags/spain.svg"
-                                                    alt="">
+                                                <img class="rounded-1" src="../../../assets/media/flags/spain.svg" alt="">
                                             </span>
                                             Spanish
                                         </a>
@@ -2003,8 +1797,7 @@
                                     <div class="menu-item px-3">
                                         <a href="../../../account/settings.html" class="menu-link d-flex px-5">
                                             <span class="symbol symbol-20px me-4">
-                                                <img class="rounded-1" src="../../../assets/media/flags/germany.svg"
-                                                    alt="">
+                                                <img class="rounded-1" src="../../../assets/media/flags/germany.svg" alt="">
                                             </span>
                                             German
                                         </a>
@@ -2015,8 +1808,7 @@
                                     <div class="menu-item px-3">
                                         <a href="../../../account/settings.html" class="menu-link d-flex px-5">
                                             <span class="symbol symbol-20px me-4">
-                                                <img class="rounded-1" src="../../../assets/media/flags/japan.svg"
-                                                    alt="">
+                                                <img class="rounded-1" src="../../../assets/media/flags/japan.svg" alt="">
                                             </span>
                                             Japanese
                                         </a>
@@ -2027,8 +1819,7 @@
                                     <div class="menu-item px-3">
                                         <a href="../../../account/settings.html" class="menu-link d-flex px-5">
                                             <span class="symbol symbol-20px me-4">
-                                                <img class="rounded-1" src="../../../assets/media/flags/france.svg"
-                                                    alt="">
+                                                <img class="rounded-1" src="../../../assets/media/flags/france.svg" alt="">
                                             </span>
                                             French
                                         </a>
@@ -2063,670 +1854,718 @@
 
                     <!--begin::Navs-->
                     <div class="app-sidebar-navs flex-column-fluid pb-6" id="kt_app_sidebar_navs">
-                        <div id="kt_app_sidebar_navs_wrappers" class="hover-scroll-y my-2" data-kt-scroll="true"
-                            data-kt-scroll-activate="true" data-kt-scroll-height="auto"
-                            data-kt-scroll-dependencies="#kt_app_sidebar_header"
-                            data-kt-scroll-wrappers="#kt_app_sidebar_navs" data-kt-scroll-offset="5px">
+                        <div id="kt_app_sidebar_navs_wrappers" class="hover-scroll-y my-2" data-kt-scroll="true" data-kt-scroll-activate="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_sidebar_header" data-kt-scroll-wrappers="#kt_app_sidebar_navs" data-kt-scroll-offset="5px">
 
                             <!--begin::Sidebar menu-->
-                            <div id="#kt_app_sidebar_menu" data-kt-menu="true" data-kt-menu-expand="false"
-                                class="menu menu-column menu-rounded menu-sub-indention menu-active-bg mb-7">
+                            <div id="#kt_app_sidebar_menu" data-kt-menu="true" data-kt-menu-expand="false" class="menu menu-column menu-rounded menu-sub-indention menu-active-bg mb-7">
 
                                 <!--begin:Menu item-->
-                                <div class="menu-item pt-5"><!--begin:Menu content-->
-                                    <div class="menu-content"><span
-                                            class="menu-heading fw-bold text-uppercase fs-5">Dashboards</span></div>
+                                <div class="menu-item pt-5">
+                                    <!--begin:Menu content-->
+                                    <div class="menu-content"><span class="menu-heading fw-bold text-uppercase fs-5">Dashboards</span></div>
                                     <!--end:Menu content-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                        href="../../../index.html"><span class="menu-icon"><i
-                                                class="ki-duotone ki-element-11 fs-1"><i class="path1"></i><i
-                                                    class="path2"></i><i class="path3"></i><i
-                                                    class="path4"></i></i></span><span
-                                            class="menu-title">Default</span></a><!--end:Menu link--></div>
-                                <!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                        href="../../../dashboards/projects.html"><span class="menu-icon"><i
-                                                class="ki-duotone ki-some-files fs-1"><i class="path1"></i><i
-                                                    class="path2"></i></i></span><span
-                                            class="menu-title">Projects</span></a><!--end:Menu link--></div>
-                                <!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                        href="../../../dashboards/ecommerce.html"><span class="menu-icon"><i
-                                                class="ki-duotone ki-chart-line-star fs-1"><i class="path1"></i><i
-                                                    class="path2"></i><i class="path3"></i></i></span><span
-                                            class="menu-title">eCommerce</span></a><!--end:Menu link--></div>
-                                <!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                        href="../../../dashboards/bidding.html"><span class="menu-icon"><i
-                                                class="ki-duotone ki-rescue fs-1"><i class="path1"></i><i
-                                                    class="path2"></i></i></span><span
-                                            class="menu-title">Bidding</span></a><!--end:Menu link--></div>
-                                <!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item pt-7"><!--begin:Menu content-->
-                                    <div class="menu-content"><span
-                                            class="menu-heading fw-bold text-uppercase fs-5">Pages</span></div>
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item">
+                                    <!--begin:Menu link--><a class="menu-link" href="../../../index.html"><span class="menu-icon"><i class="ki-duotone ki-element-11 fs-1"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i></span><span class="menu-title">Default</span></a>
+                                    <!--end:Menu link-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item">
+                                    <!--begin:Menu link--><a class="menu-link" href="../../../dashboards/projects.html"><span class="menu-icon"><i class="ki-duotone ki-some-files fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">Projects</span></a>
+                                    <!--end:Menu link-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item">
+                                    <!--begin:Menu link--><a class="menu-link" href="../../../dashboards/ecommerce.html"><span class="menu-icon"><i class="ki-duotone ki-chart-line-star fs-1"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i></span><span class="menu-title">eCommerce</span></a>
+                                    <!--end:Menu link-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item">
+                                    <!--begin:Menu link--><a class="menu-link" href="../../../dashboards/bidding.html"><span class="menu-icon"><i class="ki-duotone ki-rescue fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">Bidding</span></a>
+                                    <!--end:Menu link-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item pt-7">
+                                    <!--begin:Menu content-->
+                                    <div class="menu-content"><span class="menu-heading fw-bold text-uppercase fs-5">Pages</span></div>
                                     <!--end:Menu content-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
                                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i
-                                                class="ki-duotone ki-colors-square fs-1"><i class="path1"></i><i
-                                                    class="path2"></i><i class="path3"></i><i
-                                                    class="path4"></i></i></span><span class="menu-title">User
-                                            Profile</span><span
-                                            class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                    <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/user-profile/overview.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Overview</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/user-profile/projects.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Projects</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/user-profile/campaigns.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Campaigns</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/user-profile/documents.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Documents</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/user-profile/followers.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Followers</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/user-profile/activity.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Activity</span></a><!--end:Menu link--></div>
+                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-colors-square fs-1"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i></span><span class="menu-title">User
+                                            Profile</span><span class="menu-arrow"></span></span>
+                                    <!--end:Menu link-->
+                                    <!--begin:Menu sub-->
+                                    <div class="menu-sub menu-sub-accordion">
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/user-profile/overview.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Overview</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
                                         <!--end:Menu item-->
-                                    </div><!--end:Menu sub-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i
-                                                class="ki-duotone ki-chart-pie-4 fs-1"><i class="path1"></i><i
-                                                    class="path2"></i><i class="path3"></i></i></span><span
-                                            class="menu-title">Account</span><span
-                                            class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                    <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../account/overview.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Overview</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../account/settings.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Settings</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../account/security.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Security</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../account/activity.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Activity</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../account/billing.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Billing</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../account/statements.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Statements</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../account/referrals.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Referrals</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../account/api-keys.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">API Keys</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../account/logs.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Logs</span></a><!--end:Menu link--></div>
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/user-profile/projects.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Projects</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
                                         <!--end:Menu item-->
-                                    </div><!--end:Menu sub-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/user-profile/campaigns.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Campaigns</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/user-profile/documents.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Documents</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/user-profile/followers.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Followers</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/user-profile/activity.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Activity</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                    </div>
+                                    <!--end:Menu sub-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
                                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i
-                                                class="ki-duotone ki-user fs-1"><i class="path1"></i><i
-                                                    class="path2"></i></i></span><span
-                                            class="menu-title">Authentication</span><span
-                                            class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                    <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
+                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-chart-pie-4 fs-1"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i></span><span class="menu-title">Account</span><span class="menu-arrow"></span></span>
+                                    <!--end:Menu link-->
+                                    <!--begin:Menu sub-->
+                                    <div class="menu-sub menu-sub-accordion">
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../account/overview.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Overview</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../account/settings.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Settings</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../account/security.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Security</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../account/activity.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Activity</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../account/billing.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Billing</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../account/statements.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Statements</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../account/referrals.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Referrals</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../account/api-keys.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">API Keys</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../account/logs.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Logs</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                    </div>
+                                    <!--end:Menu sub-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-user fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">Authentication</span><span class="menu-arrow"></span></span>
+                                    <!--end:Menu link-->
+                                    <!--begin:Menu sub-->
+                                    <div class="menu-sub menu-sub-accordion">
+                                        <!--begin:Menu item-->
                                         <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                            <!--begin:Menu link--><span class="menu-link"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Sign In</span><span
-                                                    class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
+                                            <!--begin:Menu link--><span class="menu-link"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Sign In</span><span class="menu-arrow"></span></span>
+                                            <!--end:Menu link-->
+                                            <!--begin:Menu sub-->
                                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                                 <!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/sign-in/basic.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Basic</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/sign-in/two-steps.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Two Steps</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/sign-in/password-reset.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Password
-                                                            Reset</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/sign-in/new-password.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">New
-                                                            Password</span></a><!--end:Menu link--></div>
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/sign-in/basic.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Basic</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
                                                 <!--end:Menu item-->
-                                            </div><!--end:Menu sub-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                            <!--begin:Menu link--><span class="menu-link"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Sign Up</span><span
-                                                    class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                            <div class="menu-sub menu-sub-accordion menu-active-bg">
                                                 <!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/sign-up/basic.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Basic</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/sign-up/multi-steps.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Multi-steps</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/sign-up/free-trial.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Free Trial</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/sign-up/coming-soon.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Coming
-                                                            Soon</span></a><!--end:Menu link--></div>
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/sign-in/two-steps.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Two Steps</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
                                                 <!--end:Menu item-->
-                                            </div><!--end:Menu sub-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../authentication/general/welcome.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Welcome Message</span></a><!--end:Menu link-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../authentication/general/verify-email.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Verify Email</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../authentication/general/password-confirmation.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Password
-                                                    Confirmation</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../authentication/general/deactivation.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Account
-                                                    Deactivation</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../authentication/general/error-404.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Error 404</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../authentication/general/error-500.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Error 500</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                            <!--begin:Menu link--><span class="menu-link"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Email Templates</span><span
-                                                    class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                            <div class="menu-sub menu-sub-accordion menu-active-bg">
                                                 <!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/email/verify-email.html"
-                                                        target="_blank"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Verify
-                                                            Email</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/email/invitation.html"
-                                                        target="_blank"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Account
-                                                            Invitation</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/email/password-reset.html"
-                                                        target="_blank"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Password
-                                                            Reset</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../../authentication/email/password-change.html"
-                                                        target="_blank"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Password
-                                                            Changed</span></a><!--end:Menu link--></div>
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/sign-in/password-reset.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Password
+                                                            Reset</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
                                                 <!--end:Menu item-->
-                                            </div><!--end:Menu sub-->
-                                        </div><!--end:Menu item-->
-                                    </div><!--end:Menu sub-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i
-                                                class="ki-duotone ki-rocket fs-1"><i class="path1"></i><i
-                                                    class="path2"></i></i></span><span
-                                            class="menu-title">General</span><span
-                                            class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                    <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/general/about.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">About Us</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/general/invoice.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Invoice</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/general/faq.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">FAQ</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/general/wizard.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Wizard</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../../pages/general/pricing.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Pricing</span></a><!--end:Menu link--></div>
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/sign-in/new-password.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">New
+                                                            Password</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                            </div>
+                                            <!--end:Menu sub-->
+                                        </div>
                                         <!--end:Menu item-->
-                                    </div><!--end:Menu sub-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item pt-7"><!--begin:Menu content-->
-                                    <div class="menu-content"><span
-                                            class="menu-heading fw-bold text-uppercase fs-5">APPS</span></div>
+                                        <!--begin:Menu item-->
+                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                            <!--begin:Menu link--><span class="menu-link"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Sign Up</span><span class="menu-arrow"></span></span>
+                                            <!--end:Menu link-->
+                                            <!--begin:Menu sub-->
+                                            <div class="menu-sub menu-sub-accordion menu-active-bg">
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/sign-up/basic.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Basic</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/sign-up/multi-steps.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Multi-steps</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/sign-up/free-trial.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Free Trial</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/sign-up/coming-soon.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Coming
+                                                            Soon</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                            </div>
+                                            <!--end:Menu sub-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../authentication/general/welcome.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Welcome Message</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../authentication/general/verify-email.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Verify Email</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../authentication/general/password-confirmation.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Password
+                                                    Confirmation</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../authentication/general/deactivation.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Account
+                                                    Deactivation</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../authentication/general/error-404.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Error 404</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../authentication/general/error-500.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Error 500</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                            <!--begin:Menu link--><span class="menu-link"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Email Templates</span><span class="menu-arrow"></span></span>
+                                            <!--end:Menu link-->
+                                            <!--begin:Menu sub-->
+                                            <div class="menu-sub menu-sub-accordion menu-active-bg">
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/email/verify-email.html" target="_blank"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Verify
+                                                            Email</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/email/invitation.html" target="_blank"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Account
+                                                            Invitation</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/email/password-reset.html" target="_blank"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Password
+                                                            Reset</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../../authentication/email/password-change.html" target="_blank"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Password
+                                                            Changed</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                            </div>
+                                            <!--end:Menu sub-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                    </div>
+                                    <!--end:Menu sub-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-rocket fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">General</span><span class="menu-arrow"></span></span>
+                                    <!--end:Menu link-->
+                                    <!--begin:Menu sub-->
+                                    <div class="menu-sub menu-sub-accordion">
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/general/about.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">About Us</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/general/invoice.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Invoice</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/general/faq.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">FAQ</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/general/wizard.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Wizard</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../../pages/general/pricing.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Pricing</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                    </div>
+                                    <!--end:Menu sub-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item pt-7">
+                                    <!--begin:Menu content-->
+                                    <div class="menu-content"><span class="menu-heading fw-bold text-uppercase fs-5">APPS</span></div>
                                     <!--end:Menu content-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
                                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i
-                                                class="ki-duotone ki-abstract-41 fs-1"><i class="path1"></i><i
-                                                    class="path2"></i></i></span><span
-                                            class="menu-title">Projects</span><span
-                                            class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                    <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../projects/list.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">My Projects</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../projects/project.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">View Project</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../projects/targets.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Targets</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../projects/budget.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Budget</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../projects/users.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Users</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../projects/files.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Files</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../projects/activity.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Activity</span></a><!--end:Menu link--></div>
-                                        <!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../projects/settings.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Settings</span></a><!--end:Menu link--></div>
+                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-abstract-41 fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">Projects</span><span class="menu-arrow"></span></span>
+                                    <!--end:Menu link-->
+                                    <!--begin:Menu sub-->
+                                    <div class="menu-sub menu-sub-accordion">
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../projects/list.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">My Projects</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
                                         <!--end:Menu item-->
-                                    </div><!--end:Menu sub-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../projects/project.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">View Project</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../projects/targets.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Targets</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../projects/budget.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Budget</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../projects/users.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Users</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../projects/files.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Files</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../projects/activity.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Activity</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../projects/settings.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Settings</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                    </div>
+                                    <!--end:Menu sub-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
                                 <div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
-                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i
-                                                class="ki-duotone ki-basket fs-1"><i class="path1"></i><i
-                                                    class="path2"></i><i class="path3"></i><i
-                                                    class="path4"></i></i></span><span
-                                            class="menu-title">eCommerce</span><span
-                                            class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                    <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
+                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-basket fs-1"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i></span><span class="menu-title">eCommerce</span><span class="menu-arrow"></span></span>
+                                    <!--end:Menu link-->
+                                    <!--begin:Menu sub-->
+                                    <div class="menu-sub menu-sub-accordion">
+                                        <!--begin:Menu item-->
                                         <div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
-                                            <!--begin:Menu link--><span class="menu-link"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Catalog</span><span
-                                                    class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                            <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="products.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Products</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="categories.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Categories</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link active"
-                                                        href="add-product.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Add
-                                                            Product</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="edit-product.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Edit
-                                                            Product</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="add-category.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Add
-                                                            Category</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="edit-category.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Edit
-                                                            Category</span></a><!--end:Menu link--></div>
+                                            <!--begin:Menu link--><span class="menu-link"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Catalog</span><span class="menu-arrow"></span></span>
+                                            <!--end:Menu link-->
+                                            <!--begin:Menu sub-->
+                                            <div class="menu-sub menu-sub-accordion">
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="products.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Products</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
                                                 <!--end:Menu item-->
-                                            </div><!--end:Menu sub-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                            <!--begin:Menu link--><span class="menu-link"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Sales</span><span
-                                                    class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                            <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../sales/listing.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Orders
-                                                            Listing</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../sales/details.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Order
-                                                            Details</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../sales/add-order.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Add Order</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../sales/edit-order.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Edit Order</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item-->
-                                            </div><!--end:Menu sub-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                            <!--begin:Menu link--><span class="menu-link"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Customers</span><span
-                                                    class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                            <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../customers/listing.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Customer
-                                                            Listing</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../customers/details.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Customer
-                                                            Details</span></a><!--end:Menu link--></div>
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="categories.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Categories</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
                                                 <!--end:Menu item-->
-                                            </div><!--end:Menu sub-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                            <!--begin:Menu link--><span class="menu-link"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Reports</span><span
-                                                    class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                            <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../reports/view.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Products
-                                                            Viewed</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../reports/sales.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Sales</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../reports/returns.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Returns</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../reports/customer-orders.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Customer
-                                                            Orders</span></a><!--end:Menu link--></div>
-                                                <!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../reports/shipping.html"><span class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Shipping</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item-->
-                                            </div><!--end:Menu sub-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../settings.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Settings</span></a><!--end:Menu link--></div>
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link active" href="add-product.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Add
+                                                            Product</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="edit-product.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Edit
+                                                            Product</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="add-category.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Add
+                                                            Category</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="edit-category.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Edit
+                                                            Category</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                            </div>
+                                            <!--end:Menu sub-->
+                                        </div>
                                         <!--end:Menu item-->
-                                    </div><!--end:Menu sub-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                            <!--begin:Menu link--><span class="menu-link"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Sales</span><span class="menu-arrow"></span></span>
+                                            <!--end:Menu link-->
+                                            <!--begin:Menu sub-->
+                                            <div class="menu-sub menu-sub-accordion">
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../sales/listing.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Orders
+                                                            Listing</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../sales/details.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Order
+                                                            Details</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../sales/add-order.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Add Order</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../sales/edit-order.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Edit Order</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                            </div>
+                                            <!--end:Menu sub-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                            <!--begin:Menu link--><span class="menu-link"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Customers</span><span class="menu-arrow"></span></span>
+                                            <!--end:Menu link-->
+                                            <!--begin:Menu sub-->
+                                            <div class="menu-sub menu-sub-accordion">
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../customers/listing.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Customer
+                                                            Listing</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../customers/details.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Customer
+                                                            Details</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                            </div>
+                                            <!--end:Menu sub-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                            <!--begin:Menu link--><span class="menu-link"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Reports</span><span class="menu-arrow"></span></span>
+                                            <!--end:Menu link-->
+                                            <!--begin:Menu sub-->
+                                            <div class="menu-sub menu-sub-accordion">
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../reports/view.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Products
+                                                            Viewed</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../reports/sales.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Sales</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../reports/returns.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Returns</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../reports/customer-orders.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Customer
+                                                            Orders</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../reports/shipping.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Shipping</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                            </div>
+                                            <!--end:Menu sub-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../settings.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Settings</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                    </div>
+                                    <!--end:Menu sub-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
                                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i
-                                                class="ki-duotone ki-abstract-28 fs-1"><i class="path1"></i><i
-                                                    class="path2"></i></i></span><span class="menu-title">User
-                                            Management</span><span
-                                            class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                    <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
+                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-abstract-28 fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">User
+                                            Management</span><span class="menu-arrow"></span></span>
+                                    <!--end:Menu link-->
+                                    <!--begin:Menu sub-->
+                                    <div class="menu-sub menu-sub-accordion">
+                                        <!--begin:Menu item-->
                                         <div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
-                                            <!--begin:Menu link--><span class="menu-link"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Users</span><span
-                                                    class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                            <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../user-management/users/list.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Users List</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../user-management/users/view.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">View User</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item-->
-                                            </div><!--end:Menu sub-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                            <!--begin:Menu link--><span class="menu-link"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Roles</span><span
-                                                    class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                            <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../user-management/roles/list.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">Roles List</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                        href="../../user-management/roles/view.html"><span
-                                                            class="menu-bullet"><span
-                                                                class="bullet bullet-dot"></span></span><span
-                                                            class="menu-title">View Role</span></a><!--end:Menu link-->
-                                                </div><!--end:Menu item-->
-                                            </div><!--end:Menu sub-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../user-management/permissions.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Permissions</span></a><!--end:Menu link--></div>
+                                            <!--begin:Menu link--><span class="menu-link"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Users</span><span class="menu-arrow"></span></span>
+                                            <!--end:Menu link-->
+                                            <!--begin:Menu sub-->
+                                            <div class="menu-sub menu-sub-accordion">
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../user-management/users/list.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Users List</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../user-management/users/view.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">View User</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                            </div>
+                                            <!--end:Menu sub-->
+                                        </div>
                                         <!--end:Menu item-->
-                                    </div><!--end:Menu sub-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                                            <!--begin:Menu link--><span class="menu-link"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Roles</span><span class="menu-arrow"></span></span>
+                                            <!--end:Menu link-->
+                                            <!--begin:Menu sub-->
+                                            <div class="menu-sub menu-sub-accordion">
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../user-management/roles/list.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Roles List</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                                <!--begin:Menu item-->
+                                                <div class="menu-item">
+                                                    <!--begin:Menu link--><a class="menu-link" href="../../user-management/roles/view.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">View Role</span></a>
+                                                    <!--end:Menu link-->
+                                                </div>
+                                                <!--end:Menu item-->
+                                            </div>
+                                            <!--end:Menu sub-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../user-management/permissions.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Permissions</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                    </div>
+                                    <!--end:Menu sub-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
                                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i
-                                                class="ki-duotone ki-abstract-9 fs-1"><i class="path1"></i><i
-                                                    class="path2"></i></i></span><span
-                                            class="menu-title">Subscription</span><span
-                                            class="menu-arrow"></span></span><!--end:Menu link--><!--begin:Menu sub-->
-                                    <div class="menu-sub menu-sub-accordion"><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../subscriptions/getting-started.html"><span
-                                                    class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Getting Started</span></a><!--end:Menu link-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../subscriptions/list.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Subscription List</span></a><!--end:Menu link-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../subscriptions/add.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">Add Subscription</span></a><!--end:Menu link-->
-                                        </div><!--end:Menu item--><!--begin:Menu item-->
-                                        <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                                href="../../subscriptions/view.html"><span class="menu-bullet"><span
-                                                        class="bullet bullet-dot"></span></span><span
-                                                    class="menu-title">View Subscription</span></a><!--end:Menu link-->
-                                        </div><!--end:Menu item-->
-                                    </div><!--end:Menu sub-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item pt-7"><!--begin:Menu content-->
-                                    <div class="menu-content"><span
-                                            class="menu-heading fw-bold text-uppercase fs-5">Resources</span></div>
+                                    <!--begin:Menu link--><span class="menu-link"><span class="menu-icon"><i class="ki-duotone ki-abstract-9 fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">Subscription</span><span class="menu-arrow"></span></span>
+                                    <!--end:Menu link-->
+                                    <!--begin:Menu sub-->
+                                    <div class="menu-sub menu-sub-accordion">
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../subscriptions/getting-started.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Getting Started</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../subscriptions/list.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Subscription List</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../subscriptions/add.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Add Subscription</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link--><a class="menu-link" href="../../subscriptions/view.html"><span class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">View Subscription</span></a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                    </div>
+                                    <!--end:Menu sub-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item pt-7">
+                                    <!--begin:Menu content-->
+                                    <div class="menu-content"><span class="menu-heading fw-bold text-uppercase fs-5">Resources</span></div>
                                     <!--end:Menu content-->
-                                </div><!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                        href="https://preview.keenthemes.com/html/open-html-pro/docs/base/utilities"
-                                        target="_blank"
-                                        title="Check out over 200 in-house components, plugins and ready for use solutions"
-                                        data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click"
-                                        data-bs-placement="right"><span class="menu-icon"><i
-                                                class="ki-duotone ki-element-8 fs-1"><i class="path1"></i><i
-                                                    class="path2"></i></i></span><span
-                                            class="menu-title">Components</span></a><!--end:Menu link--></div>
-                                <!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                        href="https://preview.keenthemes.com/html/open-html-pro/docs" target="_blank"
-                                        title="Check out the complete documentation" data-bs-toggle="tooltip"
-                                        data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right"><span
-                                            class="menu-icon"><i class="ki-duotone ki-abstract-14 fs-1"><i
-                                                    class="path1"></i><i class="path2"></i></i></span><span
-                                            class="menu-title">Documentation</span></a><!--end:Menu link--></div>
-                                <!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                        href="../../../layout-builder.html"
-                                        title="Build your layout, preview and export HTML for server side integration"
-                                        data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click"
-                                        data-bs-placement="right"><span class="menu-icon"><i
-                                                class="ki-duotone ki-switch fs-1"><i class="path1"></i><i
-                                                    class="path2"></i></i></span><span class="menu-title">Layout
-                                            Builder</span></a><!--end:Menu link--></div>
-                                <!--end:Menu item--><!--begin:Menu item-->
-                                <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                                        href="https://preview.keenthemes.com/html/open-html-pro/docs/getting-started/changelog"
-                                        target="_blank"><span class="menu-icon"><i
-                                                class="ki-duotone ki-arrows-loop fs-1"><i class="path1"></i><i
-                                                    class="path2"></i></i></span><span class="menu-title">Changelog
-                                            v1.0.0</span></a><!--end:Menu link--></div><!--end:Menu item-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item">
+                                    <!--begin:Menu link--><a class="menu-link" href="https://preview.keenthemes.com/html/open-html-pro/docs/base/utilities" target="_blank" title="Check out over 200 in-house components, plugins and ready for use solutions" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right"><span class="menu-icon"><i class="ki-duotone ki-element-8 fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">Components</span></a>
+                                    <!--end:Menu link-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item">
+                                    <!--begin:Menu link--><a class="menu-link" href="https://preview.keenthemes.com/html/open-html-pro/docs" target="_blank" title="Check out the complete documentation" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right"><span class="menu-icon"><i class="ki-duotone ki-abstract-14 fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">Documentation</span></a>
+                                    <!--end:Menu link-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item">
+                                    <!--begin:Menu link--><a class="menu-link" href="../../../layout-builder.html" title="Build your layout, preview and export HTML for server side integration" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right"><span class="menu-icon"><i class="ki-duotone ki-switch fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">Layout
+                                            Builder</span></a>
+                                    <!--end:Menu link-->
+                                </div>
+                                <!--end:Menu item-->
+                                <!--begin:Menu item-->
+                                <div class="menu-item">
+                                    <!--begin:Menu link--><a class="menu-link" href="https://preview.keenthemes.com/html/open-html-pro/docs/getting-started/changelog" target="_blank"><span class="menu-icon"><i class="ki-duotone ki-arrows-loop fs-1"><i class="path1"></i><i class="path2"></i></i></span><span class="menu-title">Changelog
+                                            v1.0.0</span></a>
+                                    <!--end:Menu link-->
+                                </div>
+                                <!--end:Menu item-->
                             </div>
                             <!--end::Sidebar menu-->
 
@@ -2923,12 +2762,9 @@
                                 <!--begin::Collapse toggle-->
                                 <div class="menu-item">
                                     <!--begin::Toggle-->
-                                    <a class="menu-link menu-collapse-toggle toggle collapsible collapsed"
-                                        data-bs-toggle="collapse" href="#kt_app_sidebar_menu_projects_collapse"
-                                        data-kt-toggle-text="Show less">
+                                    <a class="menu-link menu-collapse-toggle toggle collapsible collapsed" data-bs-toggle="collapse" href="#kt_app_sidebar_menu_projects_collapse" data-kt-toggle-text="Show less">
                                         <span class="menu-icon">
-                                            <i class="ki-duotone ki-down toggle-off fs-3 me-0"></i> <i
-                                                class="ki-duotone ki-up toggle-on fs-3 me-0"></i> </span>
+                                            <i class="ki-duotone ki-down toggle-off fs-3 me-0"></i> <i class="ki-duotone ki-up toggle-on fs-3 me-0"></i> </span>
 
                                         <!--begin::Title-->
                                         <span class="menu-title" data-kt-toggle-text-target="true">
@@ -2960,8 +2796,7 @@
                             <!--begin::Content container-->
                             <div id="kt_app_content_container" class="app-container  container-fluid ">
                                 <!--begin::Form-->
-                                <form id="kt_ecommerce_add_product_form" class="form d-flex flex-column flex-lg-row"
-                                    data-kt-redirect="/open-html-pro/apps/ecommerce/catalog/products.html">
+                                <form id="kt_ecommerce_add_product_form" class="form d-flex flex-column flex-lg-row" data-kt-redirect="/open-html-pro/apps/ecommerce/catalog/products.html">
                                     <!--begin::Aside column-->
                                     <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
                                         <!--begin::Thumbnail settings-->
@@ -2988,22 +2823,18 @@
                                                     [data-bs-theme="dark"] .image-input-placeholder {
                                                         background-image: url('../../../assets/media/svg/files/blank-image-dark.svg');
                                                     }
+
                                                 </style>
                                                 <!--end::Image input placeholder-->
 
-                                                <div class="image-input image-input-empty image-input-outline image-input-placeholder mb-3"
-                                                    data-kt-image-input="true">
+                                                <div class="image-input image-input-empty image-input-outline image-input-placeholder mb-3" data-kt-image-input="true">
                                                     <!--begin::Preview existing avatar-->
                                                     <div class="image-input-wrapper w-150px h-150px"></div>
                                                     <!--end::Preview existing avatar-->
 
                                                     <!--begin::Label-->
-                                                    <label
-                                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                                        data-kt-image-input-action="change" data-bs-toggle="tooltip"
-                                                        title="Change avatar">
-                                                        <i class="ki-duotone ki-pencil fs-7"><i class="path1"></i><i
-                                                                class="path2"></i></i>
+                                                    <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
+                                                        <i class="ki-duotone ki-pencil fs-7"><i class="path1"></i><i class="path2"></i></i>
                                                         <!--begin::Inputs-->
                                                         <input type="file" name="avatar" accept=".png, .jpg, .jpeg">
                                                         <input type="hidden" name="avatar_remove">
@@ -3012,21 +2843,13 @@
                                                     <!--end::Label-->
 
                                                     <!--begin::Cancel-->
-                                                    <span
-                                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                                        data-kt-image-input-action="cancel" data-bs-toggle="tooltip"
-                                                        title="Cancel avatar">
-                                                        <i class="ki-duotone ki-cross fs-2"><i class="path1"></i><i
-                                                                class="path2"></i></i> </span>
+                                                    <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel avatar">
+                                                        <i class="ki-duotone ki-cross fs-2"><i class="path1"></i><i class="path2"></i></i> </span>
                                                     <!--end::Cancel-->
 
                                                     <!--begin::Remove-->
-                                                    <span
-                                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                                        data-kt-image-input-action="remove" data-bs-toggle="tooltip"
-                                                        title="Remove avatar">
-                                                        <i class="ki-duotone ki-cross fs-2"><i class="path1"></i><i
-                                                                class="path2"></i></i> </span>
+                                                    <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
+                                                        <i class="ki-duotone ki-cross fs-2"><i class="path1"></i><i class="path2"></i></i> </span>
                                                     <!--end::Remove-->
                                                 </div>
                                                 <!--end::Image input-->
@@ -3051,8 +2874,7 @@
 
                                                 <!--begin::Card toolbar-->
                                                 <div class="card-toolbar">
-                                                    <div class="rounded-circle bg-success w-15px h-15px"
-                                                        id="kt_ecommerce_add_product_status"></div>
+                                                    <div class="rounded-circle bg-success w-15px h-15px" id="kt_ecommerce_add_product_status"></div>
                                                 </div>
                                                 <!--begin::Card toolbar-->
                                             </div>
@@ -3061,9 +2883,7 @@
                                             <!--begin::Card body-->
                                             <div class="card-body pt-0">
                                                 <!--begin::Select2-->
-                                                <select class="form-select mb-2" data-control="select2"
-                                                    data-hide-search="true" data-placeholder="Select an option"
-                                                    id="kt_ecommerce_add_product_status_select">
+                                                <select class="form-select mb-2" data-control="select2" data-hide-search="true" data-placeholder="Select an option" id="kt_ecommerce_add_product_status_select">
                                                     <option></option>
                                                     <option value="published" selected="">Published</option>
                                                     <option value="draft">Draft</option>
@@ -3078,11 +2898,8 @@
 
                                                 <!--begin::Datepicker-->
                                                 <div class="d-none mt-10">
-                                                    <label for="kt_ecommerce_add_product_status_datepicker"
-                                                        class="form-label">Select publishing date and time</label>
-                                                    <input class="form-control"
-                                                        id="kt_ecommerce_add_product_status_datepicker"
-                                                        placeholder="Pick date & time">
+                                                    <label for="kt_ecommerce_add_product_status_datepicker" class="form-label">Select publishing date and time</label>
+                                                    <input class="form-control" id="kt_ecommerce_add_product_status_datepicker" placeholder="Pick date & time">
                                                 </div>
                                                 <!--end::Datepicker-->
                                             </div>
@@ -3110,9 +2927,7 @@
                                                 <!--end::Label-->
 
                                                 <!--begin::Select2-->
-                                                <select class="form-select mb-2" data-control="select2"
-                                                    data-placeholder="Select an option" data-allow-clear="true"
-                                                    multiple="multiple">
+                                                <select class="form-select mb-2" data-control="select2" data-placeholder="Select an option" data-allow-clear="true" multiple="multiple">
                                                     <option></option>
                                                     <option value="Computers">Computers</option>
                                                     <option value="Watches">Watches</option>
@@ -3144,9 +2959,7 @@
                                                 <!--end::Label-->
 
                                                 <!--begin::Input-->
-                                                <input id="kt_ecommerce_add_product_tags"
-                                                    name="kt_ecommerce_add_product_tags" class="form-control mb-2"
-                                                    value="">
+                                                <input id="kt_ecommerce_add_product_tags" name="kt_ecommerce_add_product_tags" class="form-control mb-2" value="">
                                                 <!--end::Input-->
 
                                                 <!--begin::Description-->
@@ -3192,14 +3005,11 @@
                                             <!--begin::Card body-->
                                             <div class="card-body pt-0">
                                                 <!--begin::Select store template-->
-                                                <label for="kt_ecommerce_add_product_store_template"
-                                                    class="form-label">Select a product template</label>
+                                                <label for="kt_ecommerce_add_product_store_template" class="form-label">Select a product template</label>
                                                 <!--end::Select store template-->
 
                                                 <!--begin::Select2-->
-                                                <select class="form-select mb-2" data-control="select2"
-                                                    data-hide-search="true" data-placeholder="Select an option"
-                                                    id="kt_ecommerce_add_product_store_template">
+                                                <select class="form-select mb-2" data-control="select2" data-hide-search="true" data-placeholder="Select an option" id="kt_ecommerce_add_product_store_template">
                                                     <option></option>
                                                     <option value="default" selected="">Default template</option>
                                                     <option value="electronics">Electronics</option>
@@ -3222,19 +3032,16 @@
                                     <!--begin::Main column-->
                                     <div class="d-flex flex-column flex-row-fluid gap-7 gap-lg-10">
                                         <!--begin:::Tabs-->
-                                        <ul
-                                            class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-semibold mb-n2">
+                                        <ul class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-semibold mb-n2">
                                             <!--begin:::Tab item-->
                                             <li class="nav-item">
-                                                <a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab"
-                                                    href="#kt_ecommerce_add_product_general">General</a>
+                                                <a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab" href="#kt_ecommerce_add_product_general">General</a>
                                             </li>
                                             <!--end:::Tab item-->
 
                                             <!--begin:::Tab item-->
                                             <li class="nav-item">
-                                                <a class="nav-link text-active-primary pb-4" data-bs-toggle="tab"
-                                                    href="#kt_ecommerce_add_product_advanced">Advanced</a>
+                                                <a class="nav-link text-active-primary pb-4" data-bs-toggle="tab" href="#kt_ecommerce_add_product_advanced">Advanced</a>
                                             </li>
                                             <!--end:::Tab item-->
 
@@ -3243,8 +3050,7 @@
                                         <!--begin::Tab content-->
                                         <div class="tab-content">
                                             <!--begin::Tab pane-->
-                                            <div class="tab-pane fade show active" id="kt_ecommerce_add_product_general"
-                                                role="tab-panel">
+                                            <div class="tab-pane fade show active" id="kt_ecommerce_add_product_general" role="tab-panel">
                                                 <div class="d-flex flex-column gap-7 gap-lg-10">
 
                                                     <!--begin::General options-->
@@ -3266,9 +3072,7 @@
                                                                 <!--end::Label-->
 
                                                                 <!--begin::Input-->
-                                                                <input type="text" name="product_name"
-                                                                    class="form-control mb-2" placeholder="Product name"
-                                                                    value="">
+                                                                <input type="text" name="product_name" class="form-control mb-2" placeholder="Product name" value="">
                                                                 <!--end::Input-->
 
                                                                 <!--begin::Description-->
@@ -3285,9 +3089,7 @@
                                                                 <!--end::Label-->
 
                                                                 <!--begin::Editor-->
-                                                                <div id="kt_ecommerce_add_product_description"
-                                                                    name="kt_ecommerce_add_product_description"
-                                                                    class="min-h-200px mb-2"></div>
+                                                                <div id="kt_ecommerce_add_product_description" name="kt_ecommerce_add_product_description" class="min-h-200px mb-2"></div>
                                                                 <!--end::Editor-->
 
                                                                 <!--begin::Description-->
@@ -3315,21 +3117,18 @@
                                                             <!--begin::Input group-->
                                                             <div class="fv-row mb-2">
                                                                 <!--begin::Dropzone-->
-                                                                <div class="dropzone"
-                                                                    id="kt_ecommerce_add_product_media">
+                                                                <div class="dropzone" id="kt_ecommerce_add_product_media">
                                                                     <!--begin::Message-->
                                                                     <div class="dz-message needsclick">
                                                                         <!--begin::Icon-->
-                                                                        <i
-                                                                            class="bi bi-file-earmark-arrow-up text-primary fs-3x"></i>
+                                                                        <i class="bi bi-file-earmark-arrow-up text-primary fs-3x"></i>
                                                                         <!--end::Icon-->
 
                                                                         <!--begin::Info-->
                                                                         <div class="ms-4">
                                                                             <h3 class="fs-5 fw-bold text-gray-900 mb-1">
                                                                                 Drop files here or click to upload.</h3>
-                                                                            <span
-                                                                                class="fs-7 fw-semibold text-gray-400">Upload
+                                                                            <span class="fs-7 fw-semibold text-gray-400">Upload
                                                                                 up to 10 files</span>
                                                                         </div>
                                                                         <!--end::Info-->
@@ -3367,9 +3166,7 @@
                                                                 <!--end::Label-->
 
                                                                 <!--begin::Input-->
-                                                                <input type="text" name="price"
-                                                                    class="form-control mb-2"
-                                                                    placeholder="Product price" value="">
+                                                                <input type="text" name="price" class="form-control mb-2" placeholder="Product price" value="">
                                                                 <!--end::Input-->
 
                                                                 <!--begin::Description-->
@@ -3384,35 +3181,25 @@
                                                                 <!--begin::Label-->
                                                                 <label class="fs-6 fw-semibold mb-2">
                                                                     Discount Type
-                                                                    <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                                        data-bs-toggle="tooltip"
-                                                                        title="Select a discount type that will be applied to this product"></i>
+                                                                    <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Select a discount type that will be applied to this product"></i>
                                                                 </label>
                                                                 <!--End::Label-->
 
                                                                 <!--begin::Row-->
-                                                                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9"
-                                                                    data-kt-buttons="true"
-                                                                    data-kt-buttons-target="[data-kt-button='true']">
+                                                                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button='true']">
                                                                     <!--begin::Col-->
                                                                     <div class="col">
                                                                         <!--begin::Option-->
-                                                                        <label
-                                                                            class="btn btn-outline btn-outline-dashed btn-active-light-primary active d-flex text-start p-6"
-                                                                            data-kt-button="true">
+                                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary active d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio-->
-                                                                            <span
-                                                                                class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                                <input class="form-check-input"
-                                                                                    type="radio" name="discount_option"
-                                                                                    value="1" checked="checked">
+                                                                            <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+                                                                                <input class="form-check-input" type="radio" name="discount_option" value="1" checked="checked">
                                                                             </span>
                                                                             <!--end::Radio-->
 
                                                                             <!--begin::Info-->
                                                                             <span class="ms-5">
-                                                                                <span
-                                                                                    class="fs-4 fw-bold text-gray-800 d-block">No
+                                                                                <span class="fs-4 fw-bold text-gray-800 d-block">No
                                                                                     Discount</span>
                                                                             </span>
                                                                             <!--end::Info-->
@@ -3424,22 +3211,16 @@
                                                                     <!--begin::Col-->
                                                                     <div class="col">
                                                                         <!--begin::Option-->
-                                                                        <label
-                                                                            class="btn btn-outline btn-outline-dashed btn-active-light-primary  d-flex text-start p-6"
-                                                                            data-kt-button="true">
+                                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary  d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio-->
-                                                                            <span
-                                                                                class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                                <input class="form-check-input"
-                                                                                    type="radio" name="discount_option"
-                                                                                    value="2">
+                                                                            <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+                                                                                <input class="form-check-input" type="radio" name="discount_option" value="2">
                                                                             </span>
                                                                             <!--end::Radio-->
 
                                                                             <!--begin::Info-->
                                                                             <span class="ms-5">
-                                                                                <span
-                                                                                    class="fs-4 fw-bold text-gray-800 d-block">Percentage
+                                                                                <span class="fs-4 fw-bold text-gray-800 d-block">Percentage
                                                                                     %</span>
                                                                             </span>
                                                                             <!--end::Info-->
@@ -3451,22 +3232,16 @@
                                                                     <!--begin::Col-->
                                                                     <div class="col">
                                                                         <!--begin::Option-->
-                                                                        <label
-                                                                            class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6"
-                                                                            data-kt-button="true">
+                                                                        <label class="btn btn-outline btn-outline-dashed btn-active-light-primary d-flex text-start p-6" data-kt-button="true">
                                                                             <!--begin::Radio-->
-                                                                            <span
-                                                                                class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-                                                                                <input class="form-check-input"
-                                                                                    type="radio" name="discount_option"
-                                                                                    value="3">
+                                                                            <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
+                                                                                <input class="form-check-input" type="radio" name="discount_option" value="3">
                                                                             </span>
                                                                             <!--end::Radio-->
 
                                                                             <!--begin::Info-->
                                                                             <span class="ms-5">
-                                                                                <span
-                                                                                    class="fs-4 fw-bold text-gray-800 d-block">Fixed
+                                                                                <span class="fs-4 fw-bold text-gray-800 d-block">Fixed
                                                                                     Price</span>
                                                                             </span>
                                                                             <!--end::Info-->
@@ -3480,8 +3255,7 @@
                                                             <!--end::Input group-->
 
                                                             <!--begin::Input group-->
-                                                            <div class="d-none mb-10 fv-row"
-                                                                id="kt_ecommerce_add_product_discount_percentage">
+                                                            <div class="d-none mb-10 fv-row" id="kt_ecommerce_add_product_discount_percentage">
                                                                 <!--begin::Label-->
                                                                 <label class="form-label">Set Discount
                                                                     Percentage</label>
@@ -3489,14 +3263,11 @@
 
                                                                 <!--begin::Slider-->
                                                                 <div class="d-flex flex-column text-center mb-5">
-                                                                    <div
-                                                                        class="d-flex align-items-start justify-content-center mb-7">
-                                                                        <span class="fw-bold fs-3x"
-                                                                            id="kt_ecommerce_add_product_discount_label">0</span>
+                                                                    <div class="d-flex align-items-start justify-content-center mb-7">
+                                                                        <span class="fw-bold fs-3x" id="kt_ecommerce_add_product_discount_label">0</span>
                                                                         <span class="fw-bold fs-4 mt-1 ms-2">%</span>
                                                                     </div>
-                                                                    <div id="kt_ecommerce_add_product_discount_slider"
-                                                                        class="noUi-sm"></div>
+                                                                    <div id="kt_ecommerce_add_product_discount_slider" class="noUi-sm"></div>
                                                                 </div>
                                                                 <!--end::Slider-->
 
@@ -3508,16 +3279,13 @@
                                                             <!--end::Input group-->
 
                                                             <!--begin::Input group-->
-                                                            <div class="d-none mb-10 fv-row"
-                                                                id="kt_ecommerce_add_product_discount_fixed">
+                                                            <div class="d-none mb-10 fv-row" id="kt_ecommerce_add_product_discount_fixed">
                                                                 <!--begin::Label-->
                                                                 <label class="form-label">Fixed Discounted Price</label>
                                                                 <!--end::Label-->
 
                                                                 <!--begin::Input-->
-                                                                <input type="text" name="dicsounted_price"
-                                                                    class="form-control mb-2"
-                                                                    placeholder="Discounted price">
+                                                                <input type="text" name="dicsounted_price" class="form-control mb-2" placeholder="Discounted price">
                                                                 <!--end::Input-->
 
                                                                 <!--begin::Description-->
@@ -3537,9 +3305,7 @@
                                                                     <!--end::Label-->
 
                                                                     <!--begin::Select2-->
-                                                                    <select class="form-select mb-2" name="tax"
-                                                                        data-control="select2" data-hide-search="true"
-                                                                        data-placeholder="Select an option">
+                                                                    <select class="form-select mb-2" name="tax" data-control="select2" data-hide-search="true" data-placeholder="Select an option">
                                                                         <option></option>
                                                                         <option value="0">Tax Free</option>
                                                                         <option value="1">Taxable Goods</option>
@@ -3561,8 +3327,7 @@
                                                                     <!--end::Label-->
 
                                                                     <!--begin::Input-->
-                                                                    <input type="text" class="form-control mb-2"
-                                                                        value="">
+                                                                    <input type="text" class="form-control mb-2" value="">
                                                                     <!--end::Input-->
 
                                                                     <!--begin::Description-->
@@ -3582,8 +3347,7 @@
                                             <!--end::Tab pane-->
 
                                             <!--begin::Tab pane-->
-                                            <div class="tab-pane fade" id="kt_ecommerce_add_product_advanced"
-                                                role="tab-panel">
+                                            <div class="tab-pane fade" id="kt_ecommerce_add_product_advanced" role="tab-panel">
                                                 <div class="d-flex flex-column gap-7 gap-lg-10">
 
                                                     <!--begin::Inventory-->
@@ -3605,8 +3369,7 @@
                                                                 <!--end::Label-->
 
                                                                 <!--begin::Input-->
-                                                                <input type="text" name="sku" class="form-control mb-2"
-                                                                    placeholder="SKU Number" value="">
+                                                                <input type="text" name="sku" class="form-control mb-2" placeholder="SKU Number" value="">
                                                                 <!--end::Input-->
 
                                                                 <!--begin::Description-->
@@ -3623,8 +3386,7 @@
                                                                 <!--end::Label-->
 
                                                                 <!--begin::Input-->
-                                                                <input type="text" name="sku" class="form-control mb-2"
-                                                                    placeholder="Barcode Number" value="">
+                                                                <input type="text" name="sku" class="form-control mb-2" placeholder="Barcode Number" value="">
                                                                 <!--end::Input-->
 
                                                                 <!--begin::Description-->
@@ -3642,12 +3404,8 @@
 
                                                                 <!--begin::Input-->
                                                                 <div class="d-flex gap-3">
-                                                                    <input type="number" name="shelf"
-                                                                        class="form-control mb-2" placeholder="On shelf"
-                                                                        value="">
-                                                                    <input type="number" name="warehouse"
-                                                                        class="form-control mb-2"
-                                                                        placeholder="In warehouse">
+                                                                    <input type="number" name="shelf" class="form-control mb-2" placeholder="On shelf" value="">
+                                                                    <input type="number" name="warehouse" class="form-control mb-2" placeholder="In warehouse">
                                                                 </div>
                                                                 <!--end::Input-->
 
@@ -3665,10 +3423,8 @@
                                                                 <!--end::Label-->
 
                                                                 <!--begin::Input-->
-                                                                <div
-                                                                    class="form-check form-check-custom form-check-solid mb-2">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        value="">
+                                                                <div class="form-check form-check-custom form-check-solid mb-2">
+                                                                    <input class="form-check-input" type="checkbox" value="">
                                                                     <label class="form-check-label">
                                                                         Yes
                                                                     </label>
@@ -3699,8 +3455,7 @@
                                                         <!--begin::Card body-->
                                                         <div class="card-body pt-0">
                                                             <!--begin::Input group-->
-                                                            <div class=""
-                                                                data-kt-ecommerce-catalog-add-product="auto-options">
+                                                            <div class="" data-kt-ecommerce-catalog-add-product="auto-options">
                                                                 <!--begin::Label-->
                                                                 <label class="form-label">Add Product Variations</label>
                                                                 <!--end::Label-->
@@ -3709,16 +3464,11 @@
                                                                 <div id="kt_ecommerce_add_product_options">
                                                                     <!--begin::Form group-->
                                                                     <div class="form-group">
-                                                                        <div data-repeater-list="kt_ecommerce_add_product_options"
-                                                                            class="d-flex flex-column gap-3">
-                                                                            <div data-repeater-item=""
-                                                                                class="form-group d-flex flex-wrap align-items-center gap-5">
+                                                                        <div data-repeater-list="kt_ecommerce_add_product_options" class="d-flex flex-column gap-3">
+                                                                            <div data-repeater-item="" class="form-group d-flex flex-wrap align-items-center gap-5">
                                                                                 <!--begin::Select2-->
                                                                                 <div class="w-100 w-md-200px">
-                                                                                    <select class="form-select"
-                                                                                        name="product_option"
-                                                                                        data-placeholder="Select a variation"
-                                                                                        data-kt-ecommerce-catalog-add-product="product_option">
+                                                                                    <select class="form-select" name="product_option" data-placeholder="Select a variation" data-kt-ecommerce-catalog-add-product="product_option">
                                                                                         <option></option>
                                                                                         <option value="color">Color
                                                                                         </option>
@@ -3733,18 +3483,11 @@
                                                                                 <!--end::Select2-->
 
                                                                                 <!--begin::Input-->
-                                                                                <input type="text"
-                                                                                    class="form-control mw-100 w-200px"
-                                                                                    name="product_option_value"
-                                                                                    placeholder="Variation">
+                                                                                <input type="text" class="form-control mw-100 w-200px" name="product_option_value" placeholder="Variation">
                                                                                 <!--end::Input-->
 
-                                                                                <button type="button"
-                                                                                    data-repeater-delete=""
-                                                                                    class="btn btn-sm btn-icon btn-light-danger">
-                                                                                    <i class="ki-duotone ki-cross fs-1"><i
-                                                                                            class="path1"></i><i
-                                                                                            class="path2"></i></i>
+                                                                                <button type="button" data-repeater-delete="" class="btn btn-sm btn-icon btn-light-danger">
+                                                                                    <i class="ki-duotone ki-cross fs-1"><i class="path1"></i><i class="path2"></i></i>
                                                                                 </button>
                                                                             </div>
                                                                         </div>
@@ -3753,8 +3496,7 @@
 
                                                                     <!--begin::Form group-->
                                                                     <div class="form-group mt-5">
-                                                                        <button type="button" data-repeater-create=""
-                                                                            class="btn btn-sm btn-light-primary">
+                                                                        <button type="button" data-repeater-create="" class="btn btn-sm btn-light-primary">
                                                                             <i class="ki-duotone ki-plus fs-2"></i> Add
                                                                             another variation
                                                                         </button>
@@ -3784,11 +3526,8 @@
                                                             <!--begin::Input group-->
                                                             <div class="fv-row">
                                                                 <!--begin::Input-->
-                                                                <div
-                                                                    class="form-check form-check-custom form-check-solid mb-2">
-                                                                    <input class="form-check-input" type="checkbox"
-                                                                        id="kt_ecommerce_add_product_shipping_checkbox"
-                                                                        value="1">
+                                                                <div class="form-check form-check-custom form-check-solid mb-2">
+                                                                    <input class="form-check-input" type="checkbox" id="kt_ecommerce_add_product_shipping_checkbox" value="1">
                                                                     <label class="form-check-label">
                                                                         This is a physical product
                                                                     </label>
@@ -3804,8 +3543,7 @@
                                                             <!--end::Input group-->
 
                                                             <!--begin::Shipping form-->
-                                                            <div id="kt_ecommerce_add_product_shipping"
-                                                                class="d-none mt-10">
+                                                            <div id="kt_ecommerce_add_product_shipping" class="d-none mt-10">
                                                                 <!--begin::Input group-->
                                                                 <div class="mb-10 fv-row">
                                                                     <!--begin::Label-->
@@ -3813,9 +3551,7 @@
                                                                     <!--end::Label-->
 
                                                                     <!--begin::Editor-->
-                                                                    <input type="text" name="weight"
-                                                                        class="form-control mb-2"
-                                                                        placeholder="Product weight" value="">
+                                                                    <input type="text" name="weight" class="form-control mb-2" placeholder="Product weight" value="">
                                                                     <!--end::Editor-->
 
                                                                     <!--begin::Description-->
@@ -3833,15 +3569,9 @@
 
                                                                     <!--begin::Input-->
                                                                     <div class="d-flex flex-wrap flex-sm-nowrap gap-3">
-                                                                        <input type="number" name="width"
-                                                                            class="form-control mb-2"
-                                                                            placeholder="Width (w)" value="">
-                                                                        <input type="number" name="height"
-                                                                            class="form-control mb-2"
-                                                                            placeholder="Height (h)" value="">
-                                                                        <input type="number" name="length"
-                                                                            class="form-control mb-2"
-                                                                            placeholder="Lengtn (l)" value="">
+                                                                        <input type="number" name="width" class="form-control mb-2" placeholder="Width (w)" value="">
+                                                                        <input type="number" name="height" class="form-control mb-2" placeholder="Height (h)" value="">
+                                                                        <input type="number" name="length" class="form-control mb-2" placeholder="Lengtn (l)" value="">
                                                                     </div>
                                                                     <!--end::Input-->
 
@@ -3876,8 +3606,7 @@
                                                                 <!--end::Label-->
 
                                                                 <!--begin::Input-->
-                                                                <input type="text" class="form-control mb-2"
-                                                                    name="meta_title" placeholder="Meta tag name">
+                                                                <input type="text" class="form-control mb-2" name="meta_title" placeholder="Meta tag name">
                                                                 <!--end::Input-->
 
                                                                 <!--begin::Description-->
@@ -3894,9 +3623,7 @@
                                                                 <!--end::Label-->
 
                                                                 <!--begin::Editor-->
-                                                                <div id="kt_ecommerce_add_product_meta_description"
-                                                                    name="kt_ecommerce_add_product_meta_description"
-                                                                    class="min-h-100px mb-2"></div>
+                                                                <div id="kt_ecommerce_add_product_meta_description" name="kt_ecommerce_add_product_meta_description" class="min-h-100px mb-2"></div>
                                                                 <!--end::Editor-->
 
                                                                 <!--begin::Description-->
@@ -3913,9 +3640,7 @@
                                                                 <!--end::Label-->
 
                                                                 <!--begin::Editor-->
-                                                                <input id="kt_ecommerce_add_product_meta_keywords"
-                                                                    name="kt_ecommerce_add_product_meta_keywords"
-                                                                    class="form-control mb-2">
+                                                                <input id="kt_ecommerce_add_product_meta_keywords" name="kt_ecommerce_add_product_meta_keywords" class="form-control mb-2">
                                                                 <!--end::Editor-->
 
                                                                 <!--begin::Description-->
@@ -3939,21 +3664,18 @@
 
                                         <div class="d-flex justify-content-end">
                                             <!--begin::Button-->
-                                            <a href="products.html" id="kt_ecommerce_add_product_cancel"
-                                                class="btn btn-light me-5">
+                                            <a href="products.html" id="kt_ecommerce_add_product_cancel" class="btn btn-light me-5">
                                                 Cancel
                                             </a>
                                             <!--end::Button-->
 
                                             <!--begin::Button-->
-                                            <button type="submit" id="kt_ecommerce_add_product_submit"
-                                                class="btn btn-primary">
+                                            <button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
                                                 <span class="indicator-label">
                                                     Save Changes
                                                 </span>
                                                 <span class="indicator-progress">
-                                                    Please wait... <span
-                                                        class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                                    Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
                                                 </span>
                                             </button>
                                             <!--end::Button-->
@@ -3973,26 +3695,21 @@
                     <!--begin::Footer-->
                     <div id="kt_app_footer" class="app-footer ">
                         <!--begin::Footer container-->
-                        <div
-                            class="app-container  container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-3 ">
+                        <div class="app-container  container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-3 ">
                             <!--begin::Copyright-->
                             <div class="text-dark order-2 order-md-1">
                                 <span class="text-muted fw-semibold me-1">2023&copy;</span>
-                                <a href="https://keenthemes.com" target="_blank"
-                                    class="text-gray-800 text-hover-primary">Keenthemes</a>
+                                <a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
                             </div>
                             <!--end::Copyright-->
 
                             <!--begin::Menu-->
                             <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-                                <li class="menu-item"><a href="https://keenthemes.com" target="_blank"
-                                        class="menu-link px-2">About</a></li>
+                                <li class="menu-item"><a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a></li>
 
-                                <li class="menu-item"><a href="https://devs.keenthemes.com" target="_blank"
-                                        class="menu-link px-2">Support</a></li>
+                                <li class="menu-item"><a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a></li>
 
-                                <li class="menu-item"><a href="https://keenthemes.com/products/open-html-pro"
-                                        target="_blank" class="menu-link px-2">Purchase</a></li>
+                                <li class="menu-item"><a href="https://keenthemes.com/products/open-html-pro" target="_blank" class="menu-link px-2">Purchase</a></li>
                             </ul>
                             <!--end::Menu-->
                         </div>
@@ -4014,17 +3731,12 @@
 
 
     <!--begin::App layout builder-->
-    <div id="kt_app_layout_builder" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="app-settings"
-        data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
-        data-kt-drawer-width="{default:'300px', 'lg': '380px'}" data-kt-drawer-direction="end"
-        data-kt-drawer-toggle="#kt_app_layout_builder_toggle" data-kt-drawer-close="#kt_app_layout_builder_close">
+    <div id="kt_app_layout_builder" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="app-settings" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'lg': '380px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_app_layout_builder_toggle" data-kt-drawer-close="#kt_app_layout_builder_close">
 
         <!--begin::Card-->
         <div class="card border-0 shadow-none rounded-0 w-100">
             <!--begin::Card header-->
-            <div class="card-header bgi-position-y-bottom bgi-position-x-end bgi-size-cover bgi-no-repeat rounded-0 border-0 py-4"
-                id="kt_app_layout_builder_header"
-                style="background-image:url('../../../assets/media/misc/layout/customizer-header-bg.jpg')">
+            <div class="card-header bgi-position-y-bottom bgi-position-x-end bgi-size-cover bgi-no-repeat rounded-0 border-0 py-4" id="kt_app_layout_builder_header" style="background-image:url('../../../assets/media/misc/layout/customizer-header-bg.jpg')">
 
                 <!--begin::Card title-->
                 <h3 class="card-title fs-3 fw-bold text-white flex-column m-0">
@@ -4038,9 +3750,7 @@
 
                 <!--begin::Card toolbar-->
                 <div class="card-toolbar">
-                    <button type="button"
-                        class="btn btn-sm btn-icon bg-white bg-opacity-25 btn-color-white p-0 w-20px h-20px rounded-1"
-                        id="kt_app_layout_builder_close">
+                    <button type="button" class="btn btn-sm btn-icon bg-white bg-opacity-25 btn-color-white p-0 w-20px h-20px rounded-1" id="kt_app_layout_builder_close">
                         <i class="ki-duotone ki-cross-square fs-2"><i class="path1"></i><i class="path2"></i></i>
                     </button>
                 </div>
@@ -4050,10 +3760,7 @@
             <!--begin::Card body-->
             <div class="card-body position-relative" id="kt_app_layout_builder_body">
                 <!--begin::Content-->
-                <div id="kt_app_settings_content" class="position-relative scroll-y me-n5 pe-5" data-kt-scroll="true"
-                    data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_app_layout_builder_body"
-                    data-kt-scroll-dependencies="#kt_app_layout_builder_header, #kt_app_layout_builder_footer"
-                    data-kt-scroll-offset="5px">
+                <div id="kt_app_settings_content" class="position-relative scroll-y me-n5 pe-5" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_app_layout_builder_body" data-kt-scroll-dependencies="#kt_app_layout_builder_header, #kt_app_layout_builder_footer" data-kt-scroll-offset="5px">
 
                     <!--begin::Form-->
                     <form class="form" method="POST" id="kt_app_layout_builder_form" action="/open-html-pro/index.php">
@@ -4069,32 +3776,26 @@
                                     <div class="fw-semibold text-muted fs-7 d-block lh-1">
                                         Enjoy Dark & Light modes.
 
-                                        <a class="fw-semibold"
-                                            href="https://preview.keenthemes.com/html/open-html-pro/docs/getting-started/dark-mode"
-                                            target="_blank">See docs</a>
+                                        <a class="fw-semibold" href="https://preview.keenthemes.com/html/open-html-pro/docs/getting-started/dark-mode" target="_blank">See docs</a>
                                     </div>
                                 </div>
                                 <!--end::Heading-->
 
                                 <!--begin::Options-->
-                                <div class="row " data-kt-buttons="true"
-                                    data-kt-buttons-target=".form-check-image,.form-check-input">
+                                <div class="row " data-kt-buttons="true" data-kt-buttons-target=".form-check-image,.form-check-input">
                                     <!--begin::Col-->
                                     <div class="col-6">
                                         <!--begin::Option-->
                                         <label class="form-check-image form-check-success">
                                             <!--begin::Image-->
                                             <div class="form-check-wrapper border-gray-200 border-2">
-                                                <img src="../../../assets/media/preview/light.png"
-                                                    class="mw-100 mh-250px" alt="">
+                                                <img src="../../../assets/media/preview/light.png" class="mw-100 mh-250px" alt="">
                                             </div>
                                             <!--end::Image-->
 
                                             <!--begin::Check-->
-                                            <div
-                                                class="form-check form-check-custom form-check-solid form-check-sm form-check-success">
-                                                <input class="form-check-input" type="radio" value="light"
-                                                    name="theme_mode" id="kt_layout_builder_theme_mode_light">
+                                            <div class="form-check form-check-custom form-check-solid form-check-sm form-check-success">
+                                                <input class="form-check-input" type="radio" value="light" name="theme_mode" id="kt_layout_builder_theme_mode_light">
 
                                                 <!--begin::Label-->
                                                 <div class="form-check-label text-gray-700">
@@ -4112,16 +3813,13 @@
                                         <label class="form-check-image form-check-success">
                                             <!--begin::Image-->
                                             <div class="form-check-wrapper border-gray-200 border-2">
-                                                <img src="../../../assets/media/preview/dark.png"
-                                                    class="mw-100 mh-250px" alt="">
+                                                <img src="../../../assets/media/preview/dark.png" class="mw-100 mh-250px" alt="">
                                             </div>
                                             <!--end::Image-->
 
                                             <!--begin::Check-->
-                                            <div
-                                                class="form-check form-check-custom form-check-solid form-check-sm form-check-success">
-                                                <input class="form-check-input" type="radio" value="dark"
-                                                    name="theme_mode" id="kt_layout_builder_theme_mode_dark">
+                                            <div class="form-check form-check-custom form-check-solid form-check-sm form-check-success">
+                                                <input class="form-check-input" type="radio" value="dark" name="theme_mode" id="kt_layout_builder_theme_mode_dark">
 
                                                 <!--begin::Label-->
                                                 <div class="form-check-label text-gray-700">
@@ -4148,9 +3846,7 @@
                                     <div class="fs-7 fw-semibold text-muted">
                                         Change Language Direction.
 
-                                        <a class="fw-semibold"
-                                            href="https://preview.keenthemes.com/html/open-html-pro/docs/getting-started/rtl"
-                                            target="_blank">See docs</a>
+                                        <a class="fw-semibold" href="https://preview.keenthemes.com/html/open-html-pro/docs/getting-started/rtl" target="_blank">See docs</a>
                                     </div>
                                 </div>
                                 <!--end::Heading-->
@@ -4158,13 +3854,10 @@
                                 <!--begin::Option-->
                                 <div class="d-flex justify-content-end">
                                     <!--begin::Check-->
-                                    <div
-                                        class="form-check form-check-custom form-check-solid form-check-success form-switch">
-                                        <input type="hidden" value="false"
-                                            name="layout-builder[layout][app][general][rtl]">
+                                    <div class="form-check form-check-custom form-check-solid form-check-success form-switch">
+                                        <input type="hidden" value="false" name="layout-builder[layout][app][general][rtl]">
 
-                                        <input class="form-check-input w-45px h-30px" type="checkbox" value="true"
-                                            name="layout-builder[layout][app][general][rtl]">
+                                        <input class="form-check-input w-45px h-30px" type="checkbox" value="true" name="layout-builder[layout][app][general][rtl]">
                                     </div>
                                     <!--end::Check-->
                                 </div>
@@ -4186,43 +3879,31 @@
                                 <!--begin::Options-->
                                 <div class="d-flex gap-7">
                                     <!--begin::Check-->
-                                    <div
-                                        class="form-check form-check-custom form-check-success form-check-solid form-check-sm">
-                                        <input class="form-check-input" type="radio" checked="" value="default"
-                                            id="kt_layout_builder_page_width_default"
-                                            name="layout-builder[layout][app][general][page-width]">
+                                    <div class="form-check form-check-custom form-check-success form-check-solid form-check-sm">
+                                        <input class="form-check-input" type="radio" checked="" value="default" id="kt_layout_builder_page_width_default" name="layout-builder[layout][app][general][page-width]">
 
                                         <!--begin::Label-->
-                                        <label class="form-check-label text-gray-700 fw-bold text-nowrap"
-                                            for="kt_layout_builder_page_width_default">
+                                        <label class="form-check-label text-gray-700 fw-bold text-nowrap" for="kt_layout_builder_page_width_default">
                                             Default </label>
                                         <!--end::Label-->
                                     </div>
                                     <!--end::Check-->
                                     <!--begin::Check-->
-                                    <div
-                                        class="form-check form-check-custom form-check-success form-check-solid form-check-sm">
-                                        <input class="form-check-input" type="radio" value="fluid"
-                                            id="kt_layout_builder_page_width_fluid"
-                                            name="layout-builder[layout][app][general][page-width]">
+                                    <div class="form-check form-check-custom form-check-success form-check-solid form-check-sm">
+                                        <input class="form-check-input" type="radio" value="fluid" id="kt_layout_builder_page_width_fluid" name="layout-builder[layout][app][general][page-width]">
 
                                         <!--begin::Label-->
-                                        <label class="form-check-label text-gray-700 fw-bold text-nowrap"
-                                            for="kt_layout_builder_page_width_fluid">
+                                        <label class="form-check-label text-gray-700 fw-bold text-nowrap" for="kt_layout_builder_page_width_fluid">
                                             Fluid </label>
                                         <!--end::Label-->
                                     </div>
                                     <!--end::Check-->
                                     <!--begin::Check-->
-                                    <div
-                                        class="form-check form-check-custom form-check-success form-check-solid form-check-sm">
-                                        <input class="form-check-input" type="radio" value="fixed"
-                                            id="kt_layout_builder_page_width_fixed"
-                                            name="layout-builder[layout][app][general][page-width]">
+                                    <div class="form-check form-check-custom form-check-success form-check-solid form-check-sm">
+                                        <input class="form-check-input" type="radio" value="fixed" id="kt_layout_builder_page_width_fixed" name="layout-builder[layout][app][general][page-width]">
 
                                         <!--begin::Label-->
-                                        <label class="form-check-label text-gray-700 fw-bold text-nowrap"
-                                            for="kt_layout_builder_page_width_fixed">
+                                        <label class="form-check-label text-gray-700 fw-bold text-nowrap" for="kt_layout_builder_page_width_fixed">
                                             Fixed </label>
                                         <!--end::Label-->
                                     </div>
@@ -4242,82 +3923,60 @@
 
                                     <div>
                                         <span class="fs-7 fw-semibold text-muted">Select global UI icons style.</span>
-                                        <a class="fw-semibold"
-                                            href="https://preview.keenthemes.com/html/open-html-pro/docs/icons/keenicons"
-                                            target="_blank">Learn more</a>
+                                        <a class="fw-semibold" href="https://preview.keenthemes.com/html/open-html-pro/docs/icons/keenicons" target="_blank">Learn more</a>
                                     </div>
                                 </div>
                                 <!--end::Heading-->
 
                                 <!--begin::Options-->
-                                <div class="d-flex flex-stack gap-3 " data-kt-buttons="true"
-                                    data-kt-buttons-target=".form-check-image,.form-check-input">
+                                <div class="d-flex flex-stack gap-3 " data-kt-buttons="true" data-kt-buttons-target=".form-check-image,.form-check-input">
 
                                     <!--begin::Option-->
-                                    <label
-                                        class="form-check-image form-check-success w-100 parent-active parent-hover active">
+                                    <label class="form-check-image form-check-success w-100 parent-active parent-hover active">
                                         <!--begin::Image-->
-                                        <div
-                                            class="form-check-wrapper d-flex flex-center border-gray-200 border-2 mb-0 py-3 px-4">
-                                            <i
-                                                class="ki-duotone ki-picture fs-1 text-gray-500 parent-active-gray-700 parent-hover-gray-700"><i
-                                                    class="path1"></i><i class="path2"></i></i>
-                                            <span
-                                                class="fs-7 fw-semibold ms-2 text-gray-500 parent-active-gray-700 parent-hover-gray-700">Duotone</span>
+                                        <div class="form-check-wrapper d-flex flex-center border-gray-200 border-2 mb-0 py-3 px-4">
+                                            <i class="ki-duotone ki-picture fs-1 text-gray-500 parent-active-gray-700 parent-hover-gray-700"><i class="path1"></i><i class="path2"></i></i>
+                                            <span class="fs-7 fw-semibold ms-2 text-gray-500 parent-active-gray-700 parent-hover-gray-700">Duotone</span>
                                         </div>
                                         <!--end::Image-->
 
                                         <!--begin::Check-->
-                                        <div
-                                            style="visibility: hidden; height: 0 !important; width: 0 !importnat; overflow:hidden">
-                                            <input class="form-check-input" type="radio" value="duotone" checked=""
-                                                name="layout-builder[layout][app][general][icons]">
+                                        <div style="visibility: hidden; height: 0 !important; width: 0 !importnat; overflow:hidden">
+                                            <input class="form-check-input" type="radio" value="duotone" checked="" name="layout-builder[layout][app][general][icons]">
                                         </div>
                                         <!--end::Check-->
                                     </label>
                                     <!--end::Option-->
 
                                     <!--begin::Option-->
-                                    <label
-                                        class="form-check-image form-check-success w-100 parent-active parent-hover ">
+                                    <label class="form-check-image form-check-success w-100 parent-active parent-hover ">
                                         <!--begin::Image-->
-                                        <div
-                                            class="form-check-wrapper d-flex flex-center border-gray-200 border-2 mb-0 py-3 px-4">
-                                            <i
-                                                class="ki-outline ki-picture fs-1 text-gray-500 parent-active-gray-700 parent-hover-gray-700"></i>
-                                            <span
-                                                class="fs-7 fw-semibold ms-2 text-gray-500 parent-active-gray-700 parent-hover-gray-700">Outline</span>
+                                        <div class="form-check-wrapper d-flex flex-center border-gray-200 border-2 mb-0 py-3 px-4">
+                                            <i class="ki-outline ki-picture fs-1 text-gray-500 parent-active-gray-700 parent-hover-gray-700"></i>
+                                            <span class="fs-7 fw-semibold ms-2 text-gray-500 parent-active-gray-700 parent-hover-gray-700">Outline</span>
                                         </div>
                                         <!--end::Image-->
 
                                         <!--begin::Check-->
-                                        <div
-                                            style="visibility: hidden; height: 0 !important; width: 0 !importnat; overflow:hidden">
-                                            <input class="form-check-input" type="radio" value="outline"
-                                                name="layout-builder[layout][app][general][icons]">
+                                        <div style="visibility: hidden; height: 0 !important; width: 0 !importnat; overflow:hidden">
+                                            <input class="form-check-input" type="radio" value="outline" name="layout-builder[layout][app][general][icons]">
                                         </div>
                                         <!--end::Check-->
                                     </label>
                                     <!--end::Option-->
 
                                     <!--begin::Option-->
-                                    <label
-                                        class="form-check-image form-check-success w-100 parent-active parent-hover ">
+                                    <label class="form-check-image form-check-success w-100 parent-active parent-hover ">
                                         <!--begin::Image-->
-                                        <div
-                                            class="form-check-wrapper d-flex flex-center border-gray-200 border-2 mb-0 py-3 px-4">
-                                            <i
-                                                class="ki-solid ki-picture fs-1 text-gray-500 parent-active-gray-700 parent-hover-gray-700"></i>
-                                            <span
-                                                class="fs-7 fw-semibold ms-2 text-gray-500 parent-active-gray-700 parent-hover-gray-700">Solid</span>
+                                        <div class="form-check-wrapper d-flex flex-center border-gray-200 border-2 mb-0 py-3 px-4">
+                                            <i class="ki-solid ki-picture fs-1 text-gray-500 parent-active-gray-700 parent-hover-gray-700"></i>
+                                            <span class="fs-7 fw-semibold ms-2 text-gray-500 parent-active-gray-700 parent-hover-gray-700">Solid</span>
                                         </div>
                                         <!--end::Image-->
 
                                         <!--begin::Check-->
-                                        <div
-                                            style="visibility: hidden; height: 0 !important; width: 0 !importnat; overflow:hidden">
-                                            <input class="form-check-input" type="radio" value="solid"
-                                                name="layout-builder[layout][app][general][icons]">
+                                        <div style="visibility: hidden; height: 0 !important; width: 0 !importnat; overflow:hidden">
+                                            <input class="form-check-input" type="radio" value="solid" name="layout-builder[layout][app][general][icons]">
                                         </div>
                                         <!--end::Check-->
                                     </label>
@@ -4349,14 +4008,10 @@
                                 <!--begin::Option-->
                                 <div class="d-flex justify-content-end">
                                     <!--begin::Check-->
-                                    <div
-                                        class="form-check form-check-solid form-check-custom form-check-success form-switch">
-                                        <input type="hidden" value="false"
-                                            name="layout-builder[layout][app][header][default][fixed][desktop]">
+                                    <div class="form-check form-check-solid form-check-custom form-check-success form-switch">
+                                        <input type="hidden" value="false" name="layout-builder[layout][app][header][default][fixed][desktop]">
 
-                                        <input class="form-check-input w-45px h-30px" type="checkbox" checked=""
-                                            value="true"
-                                            name="layout-builder[layout][app][header][default][fixed][desktop]">
+                                        <input class="form-check-input w-45px h-30px" type="checkbox" checked="" value="true" name="layout-builder[layout][app][header][default][fixed][desktop]">
                                     </div>
                                     <!--end::Check-->
                                 </div>
@@ -4375,8 +4030,7 @@
 
             <!--begin::Card footer-->
             <div class="card-footer border-0 d-flex gap-3 pb-9 pt-0" id="kt_app_layout_builder_footer">
-                <button type="button" id="kt_app_layout_builder_preview"
-                    class="btn btn-primary flex-grow-1 fw-semibold">
+                <button type="button" id="kt_app_layout_builder_preview" class="btn btn-primary flex-grow-1 fw-semibold">
 
                     <!--begin::Indicator label-->
                     <span class="indicator-label">
@@ -4409,18 +4063,13 @@
     <!--end::App layout builder-->
 
     <!--begin::App settings toggle-->
-    <button id="kt_app_layout_builder_toggle" class="btn btn-dark app-layout-builder-toggle lh-1 py-4 "
-        title="Open HTML Pro Builder" data-bs-custom-class="tooltip-inverse" data-bs-toggle="tooltip"
-        data-bs-placement="left" data-bs-dismiss="click" data-bs-trigger="hover">
+    <button id="kt_app_layout_builder_toggle" class="btn btn-dark app-layout-builder-toggle lh-1 py-4 " title="Open HTML Pro Builder" data-bs-custom-class="tooltip-inverse" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-dismiss="click" data-bs-trigger="hover">
         <i class="ki-duotone ki-setting-4 fs-4 me-1"></i> Customize
     </button>
     <!--end::App settings toggle-->
     <!--begin::Drawers-->
     <!--begin::Activities drawer-->
-    <div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities"
-        data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
-        data-kt-drawer-width="{default:'300px', 'lg': '900px'}" data-kt-drawer-direction="end"
-        data-kt-drawer-toggle="#kt_activities_toggle" data-kt-drawer-close="#kt_activities_close">
+    <div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'lg': '900px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_activities_toggle" data-kt-drawer-close="#kt_activities_close">
 
         <div class="card shadow-none border-0 rounded-0">
             <!--begin::Header-->
@@ -4428,8 +4077,7 @@
                 <h3 class="card-title fw-bold text-dark">Activity Logs</h3>
 
                 <div class="card-toolbar">
-                    <button type="button" class="btn btn-sm btn-icon btn-active-light-primary me-n5"
-                        id="kt_activities_close">
+                    <button type="button" class="btn btn-sm btn-icon btn-active-light-primary me-n5" id="kt_activities_close">
                         <i class="ki-duotone ki-cross fs-1"><i class="path1"></i><i class="path2"></i></i> </button>
                 </div>
             </div>
@@ -4438,10 +4086,7 @@
             <!--begin::Body-->
             <div class="card-body position-relative" id="kt_activities_body">
                 <!--begin::Content-->
-                <div id="kt_activities_scroll" class="position-relative scroll-y me-n5 pe-5" data-kt-scroll="true"
-                    data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_activities_body"
-                    data-kt-scroll-dependencies="#kt_activities_header, #kt_activities_footer"
-                    data-kt-scroll-offset="5px">
+                <div id="kt_activities_scroll" class="position-relative scroll-y me-n5 pe-5" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_activities_body" data-kt-scroll-dependencies="#kt_activities_header, #kt_activities_footer" data-kt-scroll-offset="5px">
 
                     <!--begin::Timeline items-->
                     <div class="timeline">
@@ -4454,8 +4099,7 @@
                             <!--begin::Timeline icon-->
                             <div class="timeline-icon symbol symbol-circle symbol-40px me-4">
                                 <div class="symbol-label bg-light">
-                                    <i class="ki-duotone ki-message-text-2 fs-2 text-gray-500"><i class="path1"></i><i
-                                            class="path2"></i><i class="path3"></i></i>
+                                    <i class="ki-duotone ki-message-text-2 fs-2 text-gray-500"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i>
                                 </div>
                             </div>
                             <!--end::Timeline icon-->
@@ -4476,8 +4120,7 @@
                                         <!--end::Info-->
 
                                         <!--begin::User-->
-                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip"
-                                            data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
+                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
                                             <img src="../../../assets/media/avatars/300-14.jpg" alt="img">
                                         </div>
                                         <!--end::User-->
@@ -4489,11 +4132,9 @@
                                 <!--begin::Timeline details-->
                                 <div class="overflow-auto pb-5">
                                     <!--begin::Record-->
-                                    <div
-                                        class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-5">
+                                    <div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-5">
                                         <!--begin::Title-->
-                                        <a href="../../projects/project.html"
-                                            class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Meeting
+                                        <a href="../../projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Meeting
                                             with customer</a>
                                         <!--end::Title-->
 
@@ -4519,8 +4160,7 @@
 
                                             <!--begin::User-->
                                             <div class="symbol symbol-circle symbol-25px">
-                                                <div
-                                                    class="symbol-label fs-8 fw-semibold bg-primary text-inverse-primary">
+                                                <div class="symbol-label fs-8 fw-semibold bg-primary text-inverse-primary">
                                                     A</div>
                                             </div>
                                             <!--end::User-->
@@ -4534,18 +4174,15 @@
                                         <!--end::Progress-->
 
                                         <!--begin::Action-->
-                                        <a href="../../projects/project.html"
-                                            class="btn btn-sm btn-light btn-active-light-primary">View</a>
+                                        <a href="../../projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
                                         <!--end::Action-->
                                     </div>
                                     <!--end::Record-->
 
                                     <!--begin::Record-->
-                                    <div
-                                        class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-0">
+                                    <div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-0">
                                         <!--begin::Title-->
-                                        <a href="../../projects/project.html"
-                                            class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Project
+                                        <a href="../../projects/project.html" class="fs-5 text-dark text-hover-primary fw-semibold w-375px min-w-200px">Project
                                             Delivery Preparation</a>
                                         <!--end::Title-->
 
@@ -4565,8 +4202,7 @@
 
                                             <!--begin::User-->
                                             <div class="symbol symbol-circle symbol-25px">
-                                                <div
-                                                    class="symbol-label fs-8 fw-semibold bg-success text-inverse-primary">
+                                                <div class="symbol-label fs-8 fw-semibold bg-success text-inverse-primary">
                                                     B</div>
                                             </div>
                                             <!--end::User-->
@@ -4580,8 +4216,7 @@
                                         <!--end::Progress-->
 
                                         <!--begin::Action-->
-                                        <a href="../../projects/project.html"
-                                            class="btn btn-sm btn-light btn-active-light-primary">View</a>
+                                        <a href="../../projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
                                         <!--end::Action-->
                                     </div>
                                     <!--end::Record-->
@@ -4600,8 +4235,7 @@
                             <!--begin::Timeline icon-->
                             <div class="timeline-icon symbol symbol-circle symbol-40px">
                                 <div class="symbol-label bg-light">
-                                    <i class="ki-duotone ki-flag fs-2 text-gray-500"><i class="path1"></i><i
-                                            class="path2"></i></i>
+                                    <i class="ki-duotone ki-flag fs-2 text-gray-500"><i class="path1"></i><i class="path2"></i></i>
                                 </div>
                             </div>
                             <!--end::Timeline icon-->
@@ -4622,8 +4256,7 @@
                                         <!--end::Info-->
 
                                         <!--begin::User-->
-                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip"
-                                            data-bs-boundary="window" data-bs-placement="top" title="Alan Nilson">
+                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Alan Nilson">
                                             <img src="../../../assets/media/avatars/300-1.jpg" alt="img">
                                         </div>
                                         <!--end::User-->
@@ -4644,9 +4277,7 @@
                             <!--begin::Timeline icon-->
                             <div class="timeline-icon symbol symbol-circle symbol-40px">
                                 <div class="symbol-label bg-light">
-                                    <i class="ki-duotone ki-disconnect fs-2 text-gray-500"><i class="path1"></i><i
-                                            class="path2"></i><i class="path3"></i><i class="path4"></i><i
-                                            class="path5"></i></i>
+                                    <i class="ki-duotone ki-disconnect fs-2 text-gray-500"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i><i class="path5"></i></i>
                                 </div>
                             </div>
                             <!--end::Timeline icon-->
@@ -4667,8 +4298,7 @@
                                         <!--end::Info-->
 
                                         <!--begin::User-->
-                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip"
-                                            data-bs-boundary="window" data-bs-placement="top" title="Jan Hummer">
+                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Jan Hummer">
                                             <img src="../../../assets/media/avatars/300-23.jpg" alt="img">
                                         </div>
                                         <!--end::User-->
@@ -4679,20 +4309,17 @@
 
                                 <!--begin::Timeline details-->
                                 <div class="overflow-auto pb-5">
-                                    <div
-                                        class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-5">
+                                    <div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-5">
                                         <!--begin::Item-->
                                         <div class="d-flex flex-aligns-center pe-10 pe-lg-20">
                                             <!--begin::Icon-->
-                                            <img alt="" class="w-30px me-3"
-                                                src="../../../assets/media/svg/files/pdf.svg">
+                                            <img alt="" class="w-30px me-3" src="../../../assets/media/svg/files/pdf.svg">
                                             <!--end::Icon-->
 
                                             <!--begin::Info-->
                                             <div class="ms-1 fw-semibold">
                                                 <!--begin::Desc-->
-                                                <a href="../../projects/project.html"
-                                                    class="fs-6 text-hover-primary fw-bold">Finance KPI App
+                                                <a href="../../projects/project.html" class="fs-6 text-hover-primary fw-bold">Finance KPI App
                                                     Guidelines</a>
                                                 <!--end::Desc-->
 
@@ -4707,8 +4334,7 @@
                                         <!--begin::Item-->
                                         <div class="d-flex flex-aligns-center pe-10 pe-lg-20">
                                             <!--begin::Icon-->
-                                            <img alt="/open-html-pro/apps/projects/project.html" class="w-30px me-3"
-                                                src="../../../assets/media/svg/files/doc.svg">
+                                            <img alt="/open-html-pro/apps/projects/project.html" class="w-30px me-3" src="../../../assets/media/svg/files/doc.svg">
                                             <!--end::Icon-->
 
                                             <!--begin::Info-->
@@ -4729,8 +4355,7 @@
                                         <!--begin::Item-->
                                         <div class="d-flex flex-aligns-center">
                                             <!--begin::Icon-->
-                                            <img alt="/open-html-pro/apps/projects/project.html" class="w-30px me-3"
-                                                src="../../../assets/media/svg/files/css.svg">
+                                            <img alt="/open-html-pro/apps/projects/project.html" class="w-30px me-3" src="../../../assets/media/svg/files/css.svg">
                                             <!--end::Icon-->
 
                                             <!--begin::Info-->
@@ -4762,8 +4387,7 @@
                             <!--begin::Timeline icon-->
                             <div class="timeline-icon symbol symbol-circle symbol-40px">
                                 <div class="symbol-label bg-light">
-                                    <i class="ki-duotone ki-abstract-26 fs-2 text-gray-500"><i class="path1"></i><i
-                                            class="path2"></i></i>
+                                    <i class="ki-duotone ki-abstract-26 fs-2 text-gray-500"><i class="path1"></i><i class="path2"></i></i>
                                 </div>
                             </div>
                             <!--end::Timeline icon-->
@@ -4787,8 +4411,7 @@
                                         <!--end::Info-->
 
                                         <!--begin::User-->
-                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip"
-                                            data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
+                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
                                             <img src="../../../assets/media/avatars/300-14.jpg" alt="img">
                                         </div>
                                         <!--end::User-->
@@ -4809,8 +4432,7 @@
                             <!--begin::Timeline icon-->
                             <div class="timeline-icon symbol symbol-circle symbol-40px">
                                 <div class="symbol-label bg-light">
-                                    <i class="ki-duotone ki-pencil fs-2 text-gray-500"><i class="path1"></i><i
-                                            class="path2"></i></i>
+                                    <i class="ki-duotone ki-pencil fs-2 text-gray-500"><i class="path1"></i><i class="path2"></i></i>
                                 </div>
                             </div>
                             <!--end::Timeline icon-->
@@ -4830,8 +4452,7 @@
                                         <!--end::Info-->
 
                                         <!--begin::User-->
-                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip"
-                                            data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
+                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
                                             <img src="../../../assets/media/avatars/300-2.jpg" alt="img">
                                         </div>
                                         <!--end::User-->
@@ -4842,14 +4463,12 @@
 
                                 <!--begin::Timeline details-->
                                 <div class="overflow-auto pb-5">
-                                    <div
-                                        class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-7">
+                                    <div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-7">
                                         <!--begin::Item-->
                                         <div class="overlay me-10">
                                             <!--begin::Image-->
                                             <div class="overlay-wrapper">
-                                                <img alt="img" class="rounded w-150px"
-                                                    src="../../../assets/media/stock/600x400/img-29.jpg">
+                                                <img alt="img" class="rounded w-150px" src="../../../assets/media/stock/600x400/img-29.jpg">
                                             </div>
                                             <!--end::Image-->
 
@@ -4865,8 +4484,7 @@
                                         <div class="overlay me-10">
                                             <!--begin::Image-->
                                             <div class="overlay-wrapper">
-                                                <img alt="img" class="rounded w-150px"
-                                                    src="../../../assets/media/stock/600x400/img-31.jpg">
+                                                <img alt="img" class="rounded w-150px" src="../../../assets/media/stock/600x400/img-31.jpg">
                                             </div>
                                             <!--end::Image-->
 
@@ -4882,8 +4500,7 @@
                                         <div class="overlay">
                                             <!--begin::Image-->
                                             <div class="overlay-wrapper">
-                                                <img alt="img" class="rounded w-150px"
-                                                    src="../../../assets/media/stock/600x400/img-40.jpg">
+                                                <img alt="img" class="rounded w-150px" src="../../../assets/media/stock/600x400/img-40.jpg">
                                             </div>
                                             <!--end::Image-->
 
@@ -4910,8 +4527,7 @@
                             <!--begin::Timeline icon-->
                             <div class="timeline-icon symbol symbol-circle symbol-40px">
                                 <div class="symbol-label bg-light">
-                                    <i class="ki-duotone ki-sms fs-2 text-gray-500"><i class="path1"></i><i
-                                            class="path2"></i></i>
+                                    <i class="ki-duotone ki-sms fs-2 text-gray-500"><i class="path1"></i><i class="path2"></i></i>
                                 </div>
                             </div>
                             <!--end::Timeline icon-->
@@ -4957,8 +4573,7 @@
                             <!--begin::Timeline icon-->
                             <div class="timeline-icon symbol symbol-circle symbol-40px">
                                 <div class="symbol-label bg-light">
-                                    <i class="ki-duotone ki-pencil fs-2 text-gray-500"><i class="path1"></i><i
-                                            class="path2"></i></i>
+                                    <i class="ki-duotone ki-pencil fs-2 text-gray-500"><i class="path1"></i><i class="path2"></i></i>
                                 </div>
                             </div>
                             <!--end::Timeline icon-->
@@ -4978,8 +4593,7 @@
                                         <!--end::Info-->
 
                                         <!--begin::User-->
-                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip"
-                                            data-bs-boundary="window" data-bs-placement="top" title="Robert Rich">
+                                        <div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Robert Rich">
                                             <img src="../../../assets/media/avatars/300-4.jpg" alt="img">
                                         </div>
                                         <!--end::User-->
@@ -4992,11 +4606,9 @@
                                 <div class="overflow-auto pb-5">
 
                                     <!--begin::Notice-->
-                                    <div
-                                        class="notice d-flex bg-light-primary rounded border-primary border border-dashed min-w-lg-600px flex-shrink-0 p-6">
+                                    <div class="notice d-flex bg-light-primary rounded border-primary border border-dashed min-w-lg-600px flex-shrink-0 p-6">
                                         <!--begin::Icon-->
-                                        <i class="ki-duotone ki-devices-2 fs-2tx text-primary me-4"><i
-                                                class="path1"></i><i class="path2"></i><i class="path3"></i></i>
+                                        <i class="ki-duotone ki-devices-2 fs-2tx text-primary me-4"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i>
                                         <!--end::Icon-->
 
                                         <!--begin::Wrapper-->
@@ -5035,8 +4647,7 @@
                             <!--begin::Timeline icon-->
                             <div class="timeline-icon symbol symbol-circle symbol-40px">
                                 <div class="symbol-label bg-light">
-                                    <i class="ki-duotone ki-basket fs-2 text-gray-500"><i class="path1"></i><i
-                                            class="path2"></i><i class="path3"></i><i class="path4"></i></i>
+                                    <i class="ki-duotone ki-basket fs-2 text-gray-500"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i>
                                 </div>
                             </div>
                             <!--end::Timeline icon-->
@@ -5079,8 +4690,7 @@
             <!--begin::Footer-->
             <div class="card-footer py-5 text-center" id="kt_activities_footer">
                 <a href="../../../pages/user-profile/activity.html" class="btn btn-bg-body text-primary">
-                    View All Activities <i class="ki-duotone ki-arrow-right fs-3 text-primary"><i class="path1"></i><i
-                            class="path2"></i></i> </a>
+                    View All Activities <i class="ki-duotone ki-arrow-right fs-3 text-primary"><i class="path1"></i><i class="path2"></i></i> </a>
             </div>
             <!--end::Footer-->
         </div>
@@ -5088,10 +4698,7 @@
     <!--end::Activities drawer-->
 
     <!--begin::Chat drawer-->
-    <div id="kt_drawer_chat" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="chat"
-        data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
-        data-kt-drawer-width="{default:'300px', 'md': '500px'}" data-kt-drawer-direction="end"
-        data-kt-drawer-toggle="#kt_drawer_chat_toggle" data-kt-drawer-close="#kt_drawer_chat_close">
+    <div id="kt_drawer_chat" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="chat" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'md': '500px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_drawer_chat_toggle" data-kt-drawer-close="#kt_drawer_chat_close">
 
         <!--begin::Messenger-->
         <div class="card w-100 rounded-0 border-0" id="kt_drawer_chat_messenger">
@@ -5118,14 +4725,11 @@
                 <div class="card-toolbar">
                     <!--begin::Menu-->
                     <div class="me-2">
-                        <button class="btn btn-sm btn-icon btn-active-light-primary" data-kt-menu-trigger="click"
-                            data-kt-menu-placement="bottom-end">
-                            <i class="ki-duotone ki-dots-square fs-3"><i class="path1"></i><i class="path2"></i><i
-                                    class="path3"></i><i class="path4"></i></i> </button>
+                        <button class="btn btn-sm btn-icon btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+                            <i class="ki-duotone ki-dots-square fs-3"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i> </button>
 
                         <!--begin::Menu 3-->
-                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px py-3"
-                            data-kt-menu="true">
+                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px py-3" data-kt-menu="true">
                             <!--begin::Heading-->
                             <div class="menu-item px-3">
                                 <div class="menu-content text-muted pb-2 px-3 fs-7 text-uppercase">
@@ -5136,8 +4740,7 @@
 
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
-                                <a href="#" class="menu-link px-3" data-bs-toggle="modal"
-                                    data-bs-target="#kt_modal_users_search">
+                                <a href="#" class="menu-link px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_users_search">
                                     Add Contact
                                 </a>
                             </div>
@@ -5145,20 +4748,17 @@
 
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
-                                <a href="#" class="menu-link flex-stack px-3" data-bs-toggle="modal"
-                                    data-bs-target="#kt_modal_invite_friends">
+                                <a href="#" class="menu-link flex-stack px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_invite_friends">
                                     Invite Contacts
 
-                                    <span class="ms-2" data-bs-toggle="tooltip"
-                                        title="Specify a contact email to send an invitation">
+                                    <span class="ms-2" data-bs-toggle="tooltip" title="Specify a contact email to send an invitation">
                                     </span>
                                 </a>
                             </div>
                             <!--end::Menu item-->
 
                             <!--begin::Menu item-->
-                            <div class="menu-item px-3" data-kt-menu-trigger="hover"
-                                data-kt-menu-placement="right-start">
+                            <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-start">
                                 <a href="#" class="menu-link px-3">
                                     <span class="menu-title">Groups</span>
                                     <span class="menu-arrow"></span>
@@ -5219,10 +4819,7 @@
             <!--begin::Card body-->
             <div class="card-body" id="kt_drawer_chat_messenger_body">
                 <!--begin::Messages-->
-                <div class="scroll-y me-n5 pe-5" data-kt-element="messages" data-kt-scroll="true"
-                    data-kt-scroll-activate="true" data-kt-scroll-height="auto"
-                    data-kt-scroll-dependencies="#kt_drawer_chat_messenger_header, #kt_drawer_chat_messenger_footer"
-                    data-kt-scroll-wrappers="#kt_drawer_chat_messenger_body" data-kt-scroll-offset="0px">
+                <div class="scroll-y me-n5 pe-5" data-kt-element="messages" data-kt-scroll="true" data-kt-scroll-activate="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_drawer_chat_messenger_header, #kt_drawer_chat_messenger_footer" data-kt-scroll-wrappers="#kt_drawer_chat_messenger_body" data-kt-scroll-offset="0px">
 
 
 
@@ -5233,8 +4830,8 @@
                             <!--begin::User-->
                             <div class="d-flex align-items-center mb-2">
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic"
-                                        src="../../../assets/media/avatars/300-25.jpg"></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../../../assets/media/avatars/300-25.jpg"></div>
+                                <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
                                     <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -5246,8 +4843,7 @@
                             <!--end::User-->
 
                             <!--begin::Text-->
-                            <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start"
-                                data-kt-element="message-text">
+                            <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start" data-kt-element="message-text">
                                 How likely are you to recommend our company to your friends and family ? </div>
                             <!--end::Text-->
                         </div>
@@ -5269,14 +4865,13 @@
                                 <!--end::Details-->
 
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic"
-                                        src="../../../assets/media/avatars/300-1.jpg"></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../../../assets/media/avatars/300-1.jpg"></div>
+                                <!--end::Avatar-->
                             </div>
                             <!--end::User-->
 
                             <!--begin::Text-->
-                            <div class="p-5 rounded bg-light-primary text-dark fw-semibold mw-lg-400px text-end"
-                                data-kt-element="message-text">
+                            <div class="p-5 rounded bg-light-primary text-dark fw-semibold mw-lg-400px text-end" data-kt-element="message-text">
                                 Hey there, we’re just writing to let you know that you’ve been subscribed to a
                                 repository on GitHub. </div>
                             <!--end::Text-->
@@ -5292,8 +4887,8 @@
                             <!--begin::User-->
                             <div class="d-flex align-items-center mb-2">
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic"
-                                        src="../../../assets/media/avatars/300-25.jpg"></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../../../assets/media/avatars/300-25.jpg"></div>
+                                <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
                                     <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -5305,8 +4900,7 @@
                             <!--end::User-->
 
                             <!--begin::Text-->
-                            <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start"
-                                data-kt-element="message-text">
+                            <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start" data-kt-element="message-text">
                                 Ok, Understood! </div>
                             <!--end::Text-->
                         </div>
@@ -5328,14 +4922,13 @@
                                 <!--end::Details-->
 
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic"
-                                        src="../../../assets/media/avatars/300-1.jpg"></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../../../assets/media/avatars/300-1.jpg"></div>
+                                <!--end::Avatar-->
                             </div>
                             <!--end::User-->
 
                             <!--begin::Text-->
-                            <div class="p-5 rounded bg-light-primary text-dark fw-semibold mw-lg-400px text-end"
-                                data-kt-element="message-text">
+                            <div class="p-5 rounded bg-light-primary text-dark fw-semibold mw-lg-400px text-end" data-kt-element="message-text">
                                 You’ll receive notifications for all issues, pull requests! </div>
                             <!--end::Text-->
                         </div>
@@ -5350,8 +4943,8 @@
                             <!--begin::User-->
                             <div class="d-flex align-items-center mb-2">
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic"
-                                        src="../../../assets/media/avatars/300-25.jpg"></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../../../assets/media/avatars/300-25.jpg"></div>
+                                <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
                                     <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -5363,10 +4956,8 @@
                             <!--end::User-->
 
                             <!--begin::Text-->
-                            <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start"
-                                data-kt-element="message-text">
-                                You can unwatch this repository immediately by clicking here: <a
-                                    href="https://keenthemes.com">Keenthemes.com</a> </div>
+                            <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start" data-kt-element="message-text">
+                                You can unwatch this repository immediately by clicking here: <a href="https://keenthemes.com">Keenthemes.com</a> </div>
                             <!--end::Text-->
                         </div>
                         <!--end::Wrapper-->
@@ -5387,14 +4978,13 @@
                                 <!--end::Details-->
 
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic"
-                                        src="../../../assets/media/avatars/300-1.jpg"></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../../../assets/media/avatars/300-1.jpg"></div>
+                                <!--end::Avatar-->
                             </div>
                             <!--end::User-->
 
                             <!--begin::Text-->
-                            <div class="p-5 rounded bg-light-primary text-dark fw-semibold mw-lg-400px text-end"
-                                data-kt-element="message-text">
+                            <div class="p-5 rounded bg-light-primary text-dark fw-semibold mw-lg-400px text-end" data-kt-element="message-text">
                                 Most purchased Business courses during this sale! </div>
                             <!--end::Text-->
                         </div>
@@ -5409,8 +4999,8 @@
                             <!--begin::User-->
                             <div class="d-flex align-items-center mb-2">
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic"
-                                        src="../../../assets/media/avatars/300-25.jpg"></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../../../assets/media/avatars/300-25.jpg"></div>
+                                <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
                                     <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -5422,8 +5012,7 @@
                             <!--end::User-->
 
                             <!--begin::Text-->
-                            <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start"
-                                data-kt-element="message-text">
+                            <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start" data-kt-element="message-text">
                                 Company BBQ to celebrate the last quater achievements and goals. Food and drinks
                                 provided </div>
                             <!--end::Text-->
@@ -5446,14 +5035,13 @@
                                 <!--end::Details-->
 
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic"
-                                        src="../../../assets/media/avatars/300-1.jpg"></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../../../assets/media/avatars/300-1.jpg"></div>
+                                <!--end::Avatar-->
                             </div>
                             <!--end::User-->
 
                             <!--begin::Text-->
-                            <div class="p-5 rounded bg-light-primary text-dark fw-semibold mw-lg-400px text-end"
-                                data-kt-element="message-text">
+                            <div class="p-5 rounded bg-light-primary text-dark fw-semibold mw-lg-400px text-end" data-kt-element="message-text">
                             </div>
                             <!--end::Text-->
                         </div>
@@ -5468,8 +5056,8 @@
                             <!--begin::User-->
                             <div class="d-flex align-items-center mb-2">
                                 <!--begin::Avatar-->
-                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic"
-                                        src="../../../assets/media/avatars/300-25.jpg"></div><!--end::Avatar-->
+                                <div class="symbol  symbol-35px symbol-circle "><img alt="Pic" src="../../../assets/media/avatars/300-25.jpg"></div>
+                                <!--end::Avatar-->
                                 <!--begin::Details-->
                                 <div class="ms-3">
                                     <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
@@ -5481,8 +5069,7 @@
                             <!--end::User-->
 
                             <!--begin::Text-->
-                            <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start"
-                                data-kt-element="message-text">
+                            <div class="p-5 rounded bg-light-info text-dark fw-semibold mw-lg-400px text-start" data-kt-element="message-text">
                                 Right before vacation season we have the next Big Deal for you. </div>
                             <!--end::Text-->
                         </div>
@@ -5497,8 +5084,7 @@
             <!--begin::Card footer-->
             <div class="card-footer pt-4" id="kt_drawer_chat_messenger_footer">
                 <!--begin::Input-->
-                <textarea class="form-control form-control-flush mb-3" rows="1" data-kt-element="input"
-                    placeholder="Type a message">
+                <textarea class="form-control form-control-flush mb-3" rows="1" data-kt-element="input" placeholder="Type a message">
 
             </textarea>
                 <!--end::Input-->
@@ -5507,11 +5093,9 @@
                 <div class="d-flex flex-stack">
                     <!--begin::Actions-->
                     <div class="d-flex align-items-center me-2">
-                        <button class="btn btn-sm btn-icon btn-active-light-primary me-1" type="button"
-                            data-bs-toggle="tooltip" title="Coming soon">
+                        <button class="btn btn-sm btn-icon btn-active-light-primary me-1" type="button" data-bs-toggle="tooltip" title="Coming soon">
                             <i class="ki-duotone ki-paper-clip fs-3"></i> </button>
-                        <button class="btn btn-sm btn-icon btn-active-light-primary me-1" type="button"
-                            data-bs-toggle="tooltip" title="Coming soon">
+                        <button class="btn btn-sm btn-icon btn-active-light-primary me-1" type="button" data-bs-toggle="tooltip" title="Coming soon">
                             <i class="ki-duotone ki-cloud-add fs-3"><i class="path1"></i><i class="path2"></i></i>
                         </button>
                     </div>
@@ -5530,10 +5114,7 @@
     <!--end::Chat drawer-->
 
     <!--begin::Chat drawer-->
-    <div id="kt_shopping_cart" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="cart"
-        data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
-        data-kt-drawer-width="{default:'300px', 'md': '500px'}" data-kt-drawer-direction="end"
-        data-kt-drawer-toggle="#kt_drawer_shopping_cart_toggle" data-kt-drawer-close="#kt_drawer_shopping_cart_close">
+    <div id="kt_shopping_cart" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="cart" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'md': '500px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_drawer_shopping_cart_toggle" data-kt-drawer-close="#kt_drawer_shopping_cart_close">
 
         <!--begin::Messenger-->
         <div class="card card-flush w-100 rounded-0">
@@ -5564,8 +5145,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="../sales/details.html"
-                                class="text-gray-800 text-hover-primary fs-4 fw-bold">Iblender</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Iblender</a>
 
                             <span class="text-gray-400 fw-semibold d-block">The best kitchen gadget in 2022</span>
                         </div>
@@ -5577,8 +5157,7 @@
                             <span class="text-muted mx-2">for</span>
                             <span class="fw-bold text-gray-800 fs-5 me-3">5</span>
 
-                            <a href="#"
-                                class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
+                            <a href="#" class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
                                 <i class="ki-duotone ki-minus fs-4"></i> </a>
 
                             <a href="#" class="btn btn-sm btn-light-success btn-icon w-25px h-25px">
@@ -5607,8 +5186,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="../sales/details.html"
-                                class="text-gray-800 text-hover-primary fs-4 fw-bold">SmartCleaner</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">SmartCleaner</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Smart tool for cooking</span>
                         </div>
@@ -5620,8 +5198,7 @@
                             <span class="text-muted mx-2">for</span>
                             <span class="fw-bold text-gray-800 fs-5 me-3">4</span>
 
-                            <a href="#"
-                                class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
+                            <a href="#" class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
                                 <i class="ki-duotone ki-minus fs-4"></i> </a>
 
                             <a href="#" class="btn btn-sm btn-light-success btn-icon w-25px h-25px">
@@ -5650,8 +5227,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="../sales/details.html"
-                                class="text-gray-800 text-hover-primary fs-4 fw-bold">CameraMaxr</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">CameraMaxr</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Professional camera for edge</span>
                         </div>
@@ -5663,8 +5239,7 @@
                             <span class="text-muted mx-2">for</span>
                             <span class="fw-bold text-gray-800 fs-5 me-3">3</span>
 
-                            <a href="#"
-                                class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
+                            <a href="#" class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
                                 <i class="ki-duotone ki-minus fs-4"></i> </a>
 
                             <a href="#" class="btn btn-sm btn-light-success btn-icon w-25px h-25px">
@@ -5706,8 +5281,7 @@
                             <span class="text-muted mx-2">for</span>
                             <span class="fw-bold text-gray-800 fs-5 me-3">7</span>
 
-                            <a href="#"
-                                class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
+                            <a href="#" class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
                                 <i class="ki-duotone ki-minus fs-4"></i> </a>
 
                             <a href="#" class="btn btn-sm btn-light-success btn-icon w-25px h-25px">
@@ -5736,8 +5310,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="../sales/details.html"
-                                class="text-gray-800 text-hover-primary fs-4 fw-bold">MotionWire</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">MotionWire</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Perfect animation tool</span>
                         </div>
@@ -5749,8 +5322,7 @@
                             <span class="text-muted mx-2">for</span>
                             <span class="fw-bold text-gray-800 fs-5 me-3">7</span>
 
-                            <a href="#"
-                                class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
+                            <a href="#" class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
                                 <i class="ki-duotone ki-minus fs-4"></i> </a>
 
                             <a href="#" class="btn btn-sm btn-light-success btn-icon w-25px h-25px">
@@ -5779,8 +5351,7 @@
                     <div class="d-flex flex-column me-3">
                         <!--begin::Section-->
                         <div class="mb-3">
-                            <a href="../sales/details.html"
-                                class="text-gray-800 text-hover-primary fs-4 fw-bold">Samsung</a>
+                            <a href="../sales/details.html" class="text-gray-800 text-hover-primary fs-4 fw-bold">Samsung</a>
 
                             <span class="text-gray-400 fw-semibold d-block">Profile info,Timeline etc</span>
                         </div>
@@ -5792,8 +5363,7 @@
                             <span class="text-muted mx-2">for</span>
                             <span class="fw-bold text-gray-800 fs-5 me-3">6</span>
 
-                            <a href="#"
-                                class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
+                            <a href="#" class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
                                 <i class="ki-duotone ki-minus fs-4"></i> </a>
 
                             <a href="#" class="btn btn-sm btn-light-success btn-icon w-25px h-25px">
@@ -5835,8 +5405,7 @@
                             <span class="text-muted mx-2">for</span>
                             <span class="fw-bold text-gray-800 fs-5 me-3">8</span>
 
-                            <a href="#"
-                                class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
+                            <a href="#" class="btn btn-sm btn-light-success btn-icon-success btn-icon w-25px h-25px me-2">
                                 <i class="ki-duotone ki-minus fs-4"></i> </a>
 
                             <a href="#" class="btn btn-sm btn-light-success btn-icon w-25px h-25px">
@@ -5886,13 +5455,11 @@
         <!--end::Messenger-->
     </div>
     <!--end::Chat drawer-->
-    <!--end::Drawers--> <!--begin::Engage drawers-->
+    <!--end::Drawers-->
+    <!--begin::Engage drawers-->
 
     <!--begin::Exolore drawer-->
-    <div id="kt_explore" class="explore bg-body" data-kt-drawer="true" data-kt-drawer-name="explore"
-        data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
-        data-kt-drawer-width="{default:'300px', 'lg': '440px'}" data-kt-drawer-direction="end"
-        data-kt-drawer-toggle="#kt_explore_toggle" data-kt-drawer-close="#kt_explore_close">
+    <div id="kt_explore" class="explore bg-body" data-kt-drawer="true" data-kt-drawer-name="explore" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'lg': '440px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_explore_toggle" data-kt-drawer-close="#kt_explore_close">
 
         <!--begin::Card-->
         <div class="card shadow-none rounded-0 w-100">
@@ -5911,9 +5478,7 @@
             <!--begin::Body-->
             <div class="card-body" id="kt_explore_body">
                 <!--begin::Content-->
-                <div id="kt_explore_scroll" class="scroll-y me-n5 pe-5" data-kt-scroll="true"
-                    data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_explore_body"
-                    data-kt-scroll-dependencies="#kt_explore_header, #kt_explore_footer" data-kt-scroll-offset="5px">
+                <div id="kt_explore_scroll" class="scroll-y me-n5 pe-5" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_explore_body" data-kt-scroll-dependencies="#kt_explore_header, #kt_explore_footer" data-kt-scroll-offset="5px">
 
                     <!--begin::License-->
                     <div class="rounded border border-dashed border-gray-300 py-6 px-8 mb-5">
@@ -5934,8 +5499,7 @@
 
                         <!--begin::Purchase-->
                         <div class="mb-7">
-                            <a href="https://keenthemes.com/products/open-html-pro"
-                                class="btn btn-lg explore-btn-primary w-100">
+                            <a href="https://keenthemes.com/products/open-html-pro" class="btn btn-lg explore-btn-primary w-100">
                                 Buy Now
                             </a>
                         </div>
@@ -5945,24 +5509,19 @@
                         <div class="d-flex flex-column flex-center mb-3">
                             <!--begin::Heading-->
                             <div class="mb-3 text-gray-500 fw-semibold fs-6">
-                                Secured Payment by <a href="https://www.2checkout.com/" target="_black"
-                                    class="fw-bold text-dark explore-link-hover me-1">2Checkout</a> with:
+                                Secured Payment by <a href="https://www.2checkout.com/" target="_black" class="fw-bold text-dark explore-link-hover me-1">2Checkout</a> with:
                             </div>
                             <!--end::Heading-->
 
                             <!--begin::Payment methods-->
                             <div class="mb-2">
-                                <img src="../../../assets/media/svg/payment-methods/paypal.svg" alt=""
-                                    class="h-30px me-3 rounded-1">
+                                <img src="../../../assets/media/svg/payment-methods/paypal.svg" alt="" class="h-30px me-3 rounded-1">
 
-                                <img src="../../../assets/media/svg/payment-methods/visa.svg" alt=""
-                                    class="h-30px me-3 rounded-1">
+                                <img src="../../../assets/media/svg/payment-methods/visa.svg" alt="" class="h-30px me-3 rounded-1">
 
-                                <img src="../../../assets/media/svg/payment-methods/mastercard.svg" alt=""
-                                    class="h-30px me-3 rounded-1">
+                                <img src="../../../assets/media/svg/payment-methods/mastercard.svg" alt="" class="h-30px me-3 rounded-1">
 
-                                <img src="../../../assets/media/svg/payment-methods/americanexpress.svg" alt=""
-                                    class="h-30px rounded-1">
+                                <img src="../../../assets/media/svg/payment-methods/americanexpress.svg" alt="" class="h-30px rounded-1">
                             </div>
                             <!--end::Payment methods-->
 
@@ -5985,9 +5544,7 @@
     </div>
     <!--end::Exolore drawer-->
     <!--begin::Help drawer-->
-    <div id="kt_help" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="help" data-kt-drawer-activate="true"
-        data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'350px', 'md': '525px'}"
-        data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_help_toggle" data-kt-drawer-close="#kt_help_close">
+    <div id="kt_help" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="help" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'350px', 'md': '525px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_help_toggle" data-kt-drawer-close="#kt_help_close">
 
         <!--begin::Card-->
         <div class="card shadow-none rounded-0 w-100">
@@ -6007,15 +5564,12 @@
             <!--begin::Body-->
             <div class="card-body" id="kt_help_body">
                 <!--begin::Content-->
-                <div id="kt_help_scroll" class="hover-scroll-overlay-y" data-kt-scroll="true"
-                    data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_help_body"
-                    data-kt-scroll-dependencies="#kt_help_header" data-kt-scroll-offset="5px">
+                <div id="kt_help_scroll" class="hover-scroll-overlay-y" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_help_body" data-kt-scroll-dependencies="#kt_help_header" data-kt-scroll-offset="5px">
 
                     <!--begin::Support-->
                     <div class="rounded border border-dashed border-gray-300 p-6 p-lg-8 mb-10">
                         <!--begin::Heading-->
-                        <h2 class="fw-bold mb-5">Support at <a href="https://devs.keenthemes.com"
-                                class="">devs.keenthemes.com</a></h2>
+                        <h2 class="fw-bold mb-5">Support at <a href="https://devs.keenthemes.com" class="">devs.keenthemes.com</a></h2>
                         <!--end::Heading-->
 
                         <!--begin::Description-->
@@ -6034,13 +5588,10 @@
                     <!--end::Support-->
 
                     <!--begin::Link-->
-                    <a href="https://preview.keenthemes.com/html/open-html-pro/docs"
-                        class="parent-hover d-flex align-items-center mb-7">
+                    <a href="https://preview.keenthemes.com/html/open-html-pro/docs" class="parent-hover d-flex align-items-center mb-7">
                         <!--begin::Icon-->
-                        <div
-                            class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-warning">
-                            <i class="ki-duotone ki-abstract-26 text-warning fs-2x fs-lg-3x"><i class="path1"></i><i
-                                    class="path2"></i></i>
+                        <div class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-warning">
+                            <i class="ki-duotone ki-abstract-26 text-warning fs-2x fs-lg-3x"><i class="path1"></i><i class="path2"></i></i>
                         </div>
                         <!--end::Icon-->
 
@@ -6061,20 +5612,16 @@
                             </div>
                             <!--end::Wrapper-->
 
-                            <i class="ki-duotone ki-arrow-right text-gray-400 fs-2"><i class="path1"></i><i
-                                    class="path2"></i></i>
+                            <i class="ki-duotone ki-arrow-right text-gray-400 fs-2"><i class="path1"></i><i class="path2"></i></i>
                         </div>
                         <!--end::Info-->
                     </a>
                     <!--end::Link-->
                     <!--begin::Link-->
-                    <a href="https://preview.keenthemes.com/html/open-html-pro/docs//base/utilities"
-                        class="parent-hover d-flex align-items-center mb-7">
+                    <a href="https://preview.keenthemes.com/html/open-html-pro/docs//base/utilities" class="parent-hover d-flex align-items-center mb-7">
                         <!--begin::Icon-->
-                        <div
-                            class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-primary">
-                            <i class="ki-duotone ki-wallet text-primary fs-2x fs-lg-3x"><i class="path1"></i><i
-                                    class="path2"></i><i class="path3"></i><i class="path4"></i></i>
+                        <div class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-primary">
+                            <i class="ki-duotone ki-wallet text-primary fs-2x fs-lg-3x"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i>
                         </div>
                         <!--end::Icon-->
 
@@ -6094,8 +5641,7 @@
                             </div>
                             <!--end::Wrapper-->
 
-                            <i class="ki-duotone ki-arrow-right text-gray-400 fs-2"><i class="path1"></i><i
-                                    class="path2"></i></i>
+                            <i class="ki-duotone ki-arrow-right text-gray-400 fs-2"><i class="path1"></i><i class="path2"></i></i>
                         </div>
                         <!--end::Info-->
                     </a>
@@ -6103,8 +5649,7 @@
                     <!--begin::Link-->
                     <a href="../../../layout-builder.html" class="parent-hover d-flex align-items-center mb-7">
                         <!--begin::Icon-->
-                        <div
-                            class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-info">
+                        <div class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-info">
                             <i class="ki-duotone ki-design-1 text-info fs-2x fs-lg-3x"></i>
                         </div>
                         <!--end::Icon-->
@@ -6126,20 +5671,16 @@
                             </div>
                             <!--end::Wrapper-->
 
-                            <i class="ki-duotone ki-arrow-right text-gray-400 fs-2"><i class="path1"></i><i
-                                    class="path2"></i></i>
+                            <i class="ki-duotone ki-arrow-right text-gray-400 fs-2"><i class="path1"></i><i class="path2"></i></i>
                         </div>
                         <!--end::Info-->
                     </a>
                     <!--end::Link-->
                     <!--begin::Link-->
-                    <a href="https://preview.keenthemes.com/html/open-html-pro/docs/getting-started/changelog"
-                        class="parent-hover d-flex align-items-center mb-7">
+                    <a href="https://preview.keenthemes.com/html/open-html-pro/docs/getting-started/changelog" class="parent-hover d-flex align-items-center mb-7">
                         <!--begin::Icon-->
-                        <div
-                            class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-danger">
-                            <i class="ki-duotone ki-keyboard text-danger fs-2x fs-lg-3x"><i class="path1"></i><i
-                                    class="path2"></i></i>
+                        <div class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-danger">
+                            <i class="ki-duotone ki-keyboard text-danger fs-2x fs-lg-3x"><i class="path1"></i><i class="path2"></i></i>
                         </div>
                         <!--end::Icon-->
 
@@ -6149,18 +5690,17 @@
                             <div class="d-flex flex-column me-2 me-lg-5">
                                 <!--begin::Title-->
                                 <div class="text-dark parent-hover-primary fw-bold fs-6 fs-lg-4 mb-1">
-                                    What's New ? </div>
-                                <!--end::Title-->
+                                     </div>
 
-                                <!--begin::Description-->
+
+
                                 <div class="text-muted fw-semibold fs-7 fs-lg-6">
                                     Latest features and improvements added with our users feedback in mind. </div>
                                 <!--end::Description-->
                             </div>
                             <!--end::Wrapper-->
 
-                            <i class="ki-duotone ki-arrow-right text-gray-400 fs-2"><i class="path1"></i><i
-                                    class="path2"></i></i>
+                            <i class="ki-duotone ki-arrow-right text-gray-400 fs-2"><i class="path1"></i><i class="path2"></i></i>
                         </div>
                         <!--end::Info-->
                     </a>
@@ -6172,18 +5712,16 @@
         </div>
         <!--end::Card-->
     </div>
-    <!--end::Help drawer--><!--end::Engage drawers-->
+    <!--end::Help drawer-->
+    <!--end::Engage drawers-->
 
     <!--begin::Engage toolbar-->
-    <div
-        class="engage-toolbar d-flex position-fixed px-5 fw-bold zindex-2 top-50 end-0 transform-90 mt-5 mt-lg-20 gap-2">
+    <div class="engage-toolbar d-flex position-fixed px-5 fw-bold zindex-2 top-50 end-0 transform-90 mt-5 mt-lg-20 gap-2">
 
 
 
         <!--begin::Exolore drawer toggle-->
-        <button id="kt_explore_toggle" class="engage-explore-toggle engage-btn btn shadow-sm fs-6 px-4 rounded-top-0"
-            title="Explore Open HTML Pro" data-bs-custom-class="tooltip-inverse" data-bs-toggle="tooltip"
-            data-bs-placement="left" data-bs-dismiss="click" data-bs-trigger="hover">
+        <button id="kt_explore_toggle" class="engage-explore-toggle engage-btn btn shadow-sm fs-6 px-4 rounded-top-0" title="Explore Open HTML Pro" data-bs-custom-class="tooltip-inverse" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-dismiss="click" data-bs-trigger="hover">
 
             <span id="kt_explore_toggle_label">
                 Explore </span>
@@ -6191,23 +5729,21 @@
         <!--end::Exolore drawer toggle-->
 
         <!--begin::Help drawer toggle-->
-        <button id="kt_help_toggle" class="engage-help-toggle btn engage-btn shadow-sm px-5 rounded-top-0"
-            title="Learn & Get Inspired" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-inverse"
-            data-bs-placement="left" data-bs-dismiss="click" data-bs-trigger="hover">
+        <button id="kt_help_toggle" class="engage-help-toggle btn engage-btn shadow-sm px-5 rounded-top-0" title="Learn & Get Inspired" data-bs-toggle="tooltip" data-bs-custom-class="tooltip-inverse" data-bs-placement="left" data-bs-dismiss="click" data-bs-trigger="hover">
             Help
         </button>
         <!--end::Help drawer toggle-->
 
         <!--begin::Purchase link-->
-        <a href="https://keenthemes.com/products/open-html-pro" target="_blank"
-            class="engage-purchase-link btn engage-btn px-5 shadow-sm rounded-top-0">
+        <a href="https://keenthemes.com/products/open-html-pro" target="_blank" class="engage-purchase-link btn engage-btn px-5 shadow-sm rounded-top-0">
             Buy now
         </a>
         <!--end::Purchase link-->
 
 
     </div>
-    <!--end::Engage toolbar--><!--begin::Scrolltop-->
+    <!--end::Engage toolbar-->
+    <!--begin::Scrolltop-->
     <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
         <i class="ki-duotone ki-arrow-up"><i class="path1"></i><i class="path2"></i></i>
     </div>
@@ -6262,8 +5798,7 @@
                     <!--end::Separator-->
 
                     <!--begin::Textarea-->
-                    <textarea class="form-control form-control-solid mb-8" rows="3"
-                        placeholder="Type or paste emails here">
+                    <textarea class="form-control form-control-solid mb-8" rows="3" placeholder="Type or paste emails here">
                 </textarea>
                     <!--end::Textarea-->
 
@@ -6298,8 +5833,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2" selected="">Owner</option>
                                         <option value="3">Can Edit</option>
@@ -6332,8 +5866,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1" selected="">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3">Can Edit</option>
@@ -6365,8 +5898,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3" selected="">Can Edit</option>
@@ -6398,8 +5930,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2" selected="">Owner</option>
                                         <option value="3">Can Edit</option>
@@ -6431,8 +5962,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3" selected="">Can Edit</option>
@@ -6465,8 +5995,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2" selected="">Owner</option>
                                         <option value="3">Can Edit</option>
@@ -6498,8 +6027,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3" selected="">Can Edit</option>
@@ -6532,8 +6060,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2" selected="">Owner</option>
                                         <option value="3">Can Edit</option>
@@ -6566,8 +6093,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1" selected="">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3">Can Edit</option>
@@ -6599,8 +6125,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3" selected="">Can Edit</option>
@@ -6633,8 +6158,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2" selected="">Owner</option>
                                         <option value="3">Can Edit</option>
@@ -6666,8 +6190,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1" selected="">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3">Can Edit</option>
@@ -6700,8 +6223,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3" selected="">Can Edit</option>
@@ -6733,8 +6255,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3" selected="">Can Edit</option>
@@ -6767,8 +6288,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2" selected="">Owner</option>
                                         <option value="3">Can Edit</option>
@@ -6800,8 +6320,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1" selected="">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3">Can Edit</option>
@@ -6833,8 +6352,7 @@
 
                                 <!--begin::Access menu-->
                                 <div class="ms-2 w-100px">
-                                    <select class="form-select form-select-solid form-select-sm" data-control="select2"
-                                        data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
+                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-dropdown-parent="#kt_modal_invite_friends" data-hide-search="true">
                                         <option value="1">Guest</option>
                                         <option value="2">Owner</option>
                                         <option value="3" selected="">Can Edit</option>
@@ -6875,7 +6393,8 @@
         </div>
         <!--end::Modal dialog-->
     </div>
-    <!--end::Modal - Invite Friend--><!--begin::Modal - Create App-->
+    <!--end::Modal - Invite Friend-->
+    <!--begin::Modal - Create App-->
     <div class="modal fade" id="kt_modal_create_app" tabindex="-1" aria-hidden="true">
         <!--begin::Modal dialog-->
         <div class="modal-dialog modal-dialog-centered mw-900px">
@@ -6898,11 +6417,9 @@
                 <!--begin::Modal body-->
                 <div class="modal-body py-lg-10 px-lg-10">
                     <!--begin::Stepper-->
-                    <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid"
-                        id="kt_modal_create_app_stepper">
+                    <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid" id="kt_modal_create_app_stepper">
                         <!--begin::Aside-->
-                        <div
-                            class="d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px">
+                        <div class="d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px">
                             <!--begin::Nav-->
                             <div class="stepper-nav ps-lg-10">
                                 <!--begin::Step 1-->
@@ -7072,14 +6589,12 @@
                                             <!--begin::Label-->
                                             <label class="d-flex align-items-center fs-5 fw-semibold mb-2">
                                                 <span class="required">App Name</span>
-                                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                                                    title="Specify your unique app name"></i>
+                                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify your unique app name"></i>
                                             </label>
                                             <!--end::Label-->
 
                                             <!--begin::Input-->
-                                            <input type="text" class="form-control form-control-lg form-control-solid"
-                                                name="name" placeholder="" value="">
+                                            <input type="text" class="form-control form-control-lg form-control-solid" name="name" placeholder="" value="">
                                             <!--end::Input-->
                                         </div>
                                         <!--end::Input group-->
@@ -7091,8 +6606,7 @@
                                                 <span class="required">Category</span>
 
 
-                                                <span class="ms-1" data-bs-toggle="tooltip"
-                                                    title="Select your app category">
+                                                <span class="ms-1" data-bs-toggle="tooltip" title="Select your app category">
                                                 </span> </label>
                                             <!--end::Label-->
 
@@ -7105,8 +6619,7 @@
                                                         <!--begin:Icon-->
                                                         <span class="symbol symbol-50px me-6">
                                                             <span class="symbol-label bg-light-primary">
-                                                                <i class="ki-duotone ki-compass fs-1 text-primary"><i
-                                                                        class="path1"></i><i class="path2"></i></i>
+                                                                <i class="ki-duotone ki-compass fs-1 text-primary"><i class="path1"></i><i class="path2"></i></i>
                                                             </span>
                                                         </span>
                                                         <!--end:Icon-->
@@ -7124,8 +6637,7 @@
 
                                                     <!--begin:Input-->
                                                     <span class="form-check form-check-custom form-check-solid">
-                                                        <input class="form-check-input" type="radio" name="category"
-                                                            value="1">
+                                                        <input class="form-check-input" type="radio" name="category" value="1">
                                                     </span>
                                                     <!--end:Input-->
                                                 </label>
@@ -7138,9 +6650,7 @@
                                                         <!--begin:Icon-->
                                                         <span class="symbol symbol-50px me-6">
                                                             <span class="symbol-label bg-light-danger  ">
-                                                                <i class="ki-duotone ki-element-11 fs-1 text-danger"><i
-                                                                        class="path1"></i><i class="path2"></i><i
-                                                                        class="path3"></i><i class="path4"></i></i>
+                                                                <i class="ki-duotone ki-element-11 fs-1 text-danger"><i class="path1"></i><i class="path2"></i><i class="path3"></i><i class="path4"></i></i>
                                                             </span>
                                                         </span>
                                                         <!--end:Icon-->
@@ -7158,8 +6668,7 @@
 
                                                     <!--begin:Input-->
                                                     <span class="form-check form-check-custom form-check-solid">
-                                                        <input class="form-check-input" type="radio" name="category"
-                                                            value="2">
+                                                        <input class="form-check-input" type="radio" name="category" value="2">
                                                     </span>
                                                     <!--end:Input-->
                                                 </label>
@@ -7172,9 +6681,7 @@
                                                         <!--begin:Icon-->
                                                         <span class="symbol symbol-50px me-6">
                                                             <span class="symbol-label bg-light-success">
-                                                                <i class="ki-duotone ki-timer fs-1 text-success"><i
-                                                                        class="path1"></i><i class="path2"></i><i
-                                                                        class="path3"></i></i> </span>
+                                                                <i class="ki-duotone ki-timer fs-1 text-success"><i class="path1"></i><i class="path2"></i><i class="path3"></i></i> </span>
                                                         </span>
                                                         <!--end:Icon-->
 
@@ -7191,8 +6698,7 @@
 
                                                     <!--begin:Input-->
                                                     <span class="form-check form-check-custom form-check-solid">
-                                                        <input class="form-check-input" type="radio" name="category"
-                                                            value="3">
+                                                        <input class="form-check-input" type="radio" name="category" value="3">
                                                     </span>
                                                     <!--end:Input-->
                                                 </label>
@@ -7214,8 +6720,7 @@
                                                 <span class="required">Select Framework</span>
 
 
-                                                <span class="ms-1" data-bs-toggle="tooltip"
-                                                    title="Specify your apps framework">
+                                                <span class="ms-1" data-bs-toggle="tooltip" title="Specify your apps framework">
                                                 </span> </label>
                                             <!--end::Label-->
 
@@ -7243,8 +6748,7 @@
 
                                                 <!--begin:Input-->
                                                 <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" checked=""
-                                                        name="framework" value="1">
+                                                    <input class="form-check-input" type="radio" checked="" name="framework" value="1">
                                                 </span>
                                                 <!--end:Input-->
                                             </label>
@@ -7274,8 +6778,7 @@
 
                                                 <!--begin:Input-->
                                                 <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" name="framework"
-                                                        value="2">
+                                                    <input class="form-check-input" type="radio" name="framework" value="2">
                                                 </span>
                                                 <!--end:Input-->
                                             </label>
@@ -7304,8 +6807,7 @@
 
                                                 <!--begin:Input-->
                                                 <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" name="framework"
-                                                        value="3">
+                                                    <input class="form-check-input" type="radio" name="framework" value="3">
                                                 </span>
                                                 <!--end:Input-->
                                             </label>
@@ -7335,8 +6837,7 @@
 
                                                 <!--begin:Input-->
                                                 <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" name="framework"
-                                                        value="4">
+                                                    <input class="form-check-input" type="radio" name="framework" value="4">
                                                 </span>
                                                 <!--end:Input-->
                                             </label>
@@ -7358,8 +6859,7 @@
                                             <!--end::Label-->
 
                                             <!--begin::Input-->
-                                            <input type="text" class="form-control form-control-lg form-control-solid"
-                                                name="dbname" placeholder="" value="master_db">
+                                            <input type="text" class="form-control form-control-lg form-control-solid" name="dbname" placeholder="" value="master_db">
                                             <!--end::Input-->
                                         </div>
                                         <!--end::Input group-->
@@ -7371,8 +6871,7 @@
                                                 <span class="required">Select Database Engine</span>
 
 
-                                                <span class="ms-1" data-bs-toggle="tooltip"
-                                                    title="Select your app database engine">
+                                                <span class="ms-1" data-bs-toggle="tooltip" title="Select your app database engine">
                                                 </span> </label>
                                             <!--end::Label-->
 
@@ -7400,8 +6899,7 @@
 
                                                 <!--begin::Input-->
                                                 <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" name="dbengine"
-                                                        checked="" value="1">
+                                                    <input class="form-check-input" type="radio" name="dbengine" checked="" value="1">
                                                 </span>
                                                 <!--end::Input-->
                                             </label>
@@ -7432,8 +6930,7 @@
 
                                                 <!--begin::Input-->
                                                 <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" name="dbengine"
-                                                        value="2">
+                                                    <input class="form-check-input" type="radio" name="dbengine" value="2">
                                                 </span>
                                                 <!--end::Input-->
                                             </label>
@@ -7463,8 +6960,7 @@
 
                                                 <!--begin::Input-->
                                                 <span class="form-check form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="radio" name="dbengine"
-                                                        value="3">
+                                                    <input class="form-check-input" type="radio" name="dbengine" value="3">
                                                 </span>
                                                 <!--end::Input-->
                                             </label>
@@ -7484,13 +6980,11 @@
                                                 <span class="required">Name On Card</span>
 
 
-                                                <span class="ms-1" data-bs-toggle="tooltip"
-                                                    title="Specify a card holder's name">
+                                                <span class="ms-1" data-bs-toggle="tooltip" title="Specify a card holder's name">
                                                 </span> </label>
                                             <!--end::Label-->
 
-                                            <input type="text" class="form-control form-control-solid" placeholder=""
-                                                name="card_name" value="Max Doe">
+                                            <input type="text" class="form-control form-control-solid" placeholder="" name="card_name" value="Max Doe">
                                         </div>
                                         <!--end::Input group-->
 
@@ -7503,19 +6997,14 @@
                                             <!--begin::Input wrapper-->
                                             <div class="position-relative">
                                                 <!--begin::Input-->
-                                                <input type="text" class="form-control form-control-solid"
-                                                    placeholder="Enter card number" name="card_number"
-                                                    value="4111 1111 1111 1111">
+                                                <input type="text" class="form-control form-control-solid" placeholder="Enter card number" name="card_number" value="4111 1111 1111 1111">
                                                 <!--end::Input-->
 
                                                 <!--begin::Card logos-->
                                                 <div class="position-absolute translate-middle-y top-50 end-0 me-5">
-                                                    <img src="../../../assets/media/svg/card-logos/visa.svg" alt=""
-                                                        class="h-25px">
-                                                    <img src="../../../assets/media/svg/card-logos/mastercard.svg"
-                                                        alt="" class="h-25px">
-                                                    <img src="../../../assets/media/svg/card-logos/american-express.svg"
-                                                        alt="" class="h-25px">
+                                                    <img src="../../../assets/media/svg/card-logos/visa.svg" alt="" class="h-25px">
+                                                    <img src="../../../assets/media/svg/card-logos/mastercard.svg" alt="" class="h-25px">
+                                                    <img src="../../../assets/media/svg/card-logos/american-express.svg" alt="" class="h-25px">
                                                 </div>
                                                 <!--end::Card logos-->
                                             </div>
@@ -7536,9 +7025,7 @@
                                                 <div class="row fv-row">
                                                     <!--begin::Col-->
                                                     <div class="col-6">
-                                                        <select name="card_expiry_month"
-                                                            class="form-select form-select-solid" data-control="select2"
-                                                            data-hide-search="true" data-placeholder="Month">
+                                                        <select name="card_expiry_month" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Month">
                                                             <option></option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
@@ -7558,9 +7045,7 @@
 
                                                     <!--begin::Col-->
                                                     <div class="col-6">
-                                                        <select name="card_expiry_year"
-                                                            class="form-select form-select-solid" data-control="select2"
-                                                            data-hide-search="true" data-placeholder="Year">
+                                                        <select name="card_expiry_year" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Year">
                                                             <option></option>
                                                             <option value="2023">2023</option>
                                                             <option value="2024">2024</option>
@@ -7584,27 +7069,23 @@
                                             <!--begin::Col-->
                                             <div class="col-md-4 fv-row">
                                                 <!--begin::Label-->
-                                                <label
-                                                    class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
+                                                <label class="d-flex align-items-center fs-6 fw-semibold form-label mb-2">
                                                     <span class="required">CVV</span>
 
 
-                                                    <span class="ms-1" data-bs-toggle="tooltip"
-                                                        title="Enter a card CVV code">
+                                                    <span class="ms-1" data-bs-toggle="tooltip" title="Enter a card CVV code">
                                                     </span> </label>
                                                 <!--end::Label-->
 
                                                 <!--begin::Input wrapper-->
                                                 <div class="position-relative">
                                                     <!--begin::Input-->
-                                                    <input type="text" class="form-control form-control-solid"
-                                                        minlength="3" maxlength="4" placeholder="CVV" name="card_cvv">
+                                                    <input type="text" class="form-control form-control-solid" minlength="3" maxlength="4" placeholder="CVV" name="card_cvv">
                                                     <!--end::Input-->
 
                                                     <!--begin::CVV icon-->
                                                     <div class="position-absolute translate-middle-y top-50 end-0 me-3">
-                                                        <i class="ki-duotone ki-credit-cart fs-2hx"><i
-                                                                class="path1"></i><i class="path2"></i></i>
+                                                        <i class="ki-duotone ki-credit-cart fs-2hx"><i class="path1"></i><i class="path2"></i></i>
                                                     </div>
                                                     <!--end::CVV icon-->
                                                 </div>
@@ -7627,8 +7108,7 @@
 
                                             <!--begin::Switch-->
                                             <label class="form-check form-switch form-check-custom form-check-solid">
-                                                <input class="form-check-input" type="checkbox" value="1"
-                                                    checked="checked">
+                                                <input class="form-check-input" type="checkbox" value="1" checked="checked">
                                                 <span class="form-check-label fw-semibold text-muted">
                                                     Save Card
                                                 </span>
@@ -7655,8 +7135,7 @@
 
                                         <!--begin::Illustration-->
                                         <div class="text-center px-4 py-15">
-                                            <img src="../../../assets/media/illustrations/dozzy-1/9.png" alt=""
-                                                class="mw-100 mh-300px">
+                                            <img src="../../../assets/media/illustrations/dozzy-1/9.png" alt="" class="mw-100 mh-300px">
                                         </div>
                                         <!--end::Illustration-->
                                     </div>
@@ -7668,33 +7147,26 @@
                                 <div class="d-flex flex-stack pt-10">
                                     <!--begin::Wrapper-->
                                     <div class="me-2">
-                                        <button type="button" class="btn btn-lg btn-light-primary me-3"
-                                            data-kt-stepper-action="previous">
-                                            <i class="ki-duotone ki-arrow-left fs-3 me-1"><i class="path1"></i><i
-                                                    class="path2"></i></i> Back
+                                        <button type="button" class="btn btn-lg btn-light-primary me-3" data-kt-stepper-action="previous">
+                                            <i class="ki-duotone ki-arrow-left fs-3 me-1"><i class="path1"></i><i class="path2"></i></i> Back
                                         </button>
                                     </div>
                                     <!--end::Wrapper-->
 
                                     <!--begin::Wrapper-->
                                     <div>
-                                        <button type="button" class="btn btn-lg btn-primary"
-                                            data-kt-stepper-action="submit">
+                                        <button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="submit">
                                             <span class="indicator-label">
                                                 Submit
-                                                <i class="ki-duotone ki-arrow-right fs-3 ms-2 me-0"><i
-                                                        class="path1"></i><i class="path2"></i></i> </span>
+                                                <i class="ki-duotone ki-arrow-right fs-3 ms-2 me-0"><i class="path1"></i><i class="path2"></i></i> </span>
                                             <span class="indicator-progress">
-                                                Please wait... <span
-                                                    class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                                Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
                                             </span>
                                         </button>
 
-                                        <button type="button" class="btn btn-lg btn-primary"
-                                            data-kt-stepper-action="next">
+                                        <button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">
                                             Continue
-                                            <i class="ki-duotone ki-arrow-right fs-3 ms-1 me-0"><i class="path1"></i><i
-                                                    class="path2"></i></i> </button>
+                                            <i class="ki-duotone ki-arrow-right fs-3 ms-1 me-0"><i class="path1"></i><i class="path2"></i></i> </button>
                                     </div>
                                     <!--end::Wrapper-->
                                 </div>
@@ -7746,12 +7218,10 @@
                     <div class="d-flex flex-column">
                         <!--begin::Nav group-->
                         <div class="nav-group nav-group-outline mx-auto" data-kt-buttons="true">
-                            <button class="btn btn-color-gray-400 btn-active btn-active-secondary px-6 py-3 me-2 active"
-                                data-kt-plan="month">
+                            <button class="btn btn-color-gray-400 btn-active btn-active-secondary px-6 py-3 me-2 active" data-kt-plan="month">
                                 Monthly
                             </button>
-                            <button class="btn btn-color-gray-400 btn-active btn-active-secondary px-6 py-3"
-                                data-kt-plan="annual">
+                            <button class="btn btn-color-gray-400 btn-active btn-active-secondary px-6 py-3" data-kt-plan="annual">
                                 Annual
                             </button>
                         </div>
@@ -7764,17 +7234,13 @@
                                 <!--begin::Tabs-->
                                 <div class="nav flex-column">
                                     <!--begin::Tab link-->
-                                    <label
-                                        class="nav-link btn btn-outline btn-outline-dashed btn-color-dark btn-active btn-active-primary d-flex flex-stack text-start p-6 active mb-6"
-                                        data-bs-toggle="tab" data-bs-target="#kt_upgrade_plan_startup">
+                                    <label class="nav-link btn btn-outline btn-outline-dashed btn-color-dark btn-active btn-active-primary d-flex flex-stack text-start p-6 active mb-6" data-bs-toggle="tab" data-bs-target="#kt_upgrade_plan_startup">
 
                                         <!--end::Description-->
                                         <div class="d-flex align-items-center me-2">
                                             <!--begin::Radio-->
-                                            <div
-                                                class="form-check form-check-custom form-check-solid form-check-success flex-shrink-0 me-6">
-                                                <input class="form-check-input" type="radio" name="plan"
-                                                    checked="checked" value="startup">
+                                            <div class="form-check form-check-custom form-check-solid form-check-success flex-shrink-0 me-6">
+                                                <input class="form-check-input" type="radio" name="plan" checked="checked" value="startup">
                                             </div>
                                             <!--end::Radio-->
 
@@ -7794,8 +7260,7 @@
                                         <div class="ms-5">
                                             <span class="mb-2">$</span>
 
-                                            <span class="fs-3x fw-bold" data-kt-plan-price-month="39"
-                                                data-kt-plan-price-annual="399">
+                                            <span class="fs-3x fw-bold" data-kt-plan-price-month="39" data-kt-plan-price-annual="399">
                                                 39 </span>
 
                                             <span class="fs-7 opacity-50">/
@@ -7806,17 +7271,13 @@
                                     </label>
                                     <!--end::Tab link-->
                                     <!--begin::Tab link-->
-                                    <label
-                                        class="nav-link btn btn-outline btn-outline-dashed btn-color-dark btn-active btn-active-primary d-flex flex-stack text-start p-6  mb-6"
-                                        data-bs-toggle="tab" data-bs-target="#kt_upgrade_plan_advanced">
+                                    <label class="nav-link btn btn-outline btn-outline-dashed btn-color-dark btn-active btn-active-primary d-flex flex-stack text-start p-6  mb-6" data-bs-toggle="tab" data-bs-target="#kt_upgrade_plan_advanced">
 
                                         <!--end::Description-->
                                         <div class="d-flex align-items-center me-2">
                                             <!--begin::Radio-->
-                                            <div
-                                                class="form-check form-check-custom form-check-solid form-check-success flex-shrink-0 me-6">
-                                                <input class="form-check-input" type="radio" name="plan"
-                                                    value="advanced">
+                                            <div class="form-check form-check-custom form-check-solid form-check-success flex-shrink-0 me-6">
+                                                <input class="form-check-input" type="radio" name="plan" value="advanced">
                                             </div>
                                             <!--end::Radio-->
 
@@ -7836,8 +7297,7 @@
                                         <div class="ms-5">
                                             <span class="mb-2">$</span>
 
-                                            <span class="fs-3x fw-bold" data-kt-plan-price-month="339"
-                                                data-kt-plan-price-annual="3399">
+                                            <span class="fs-3x fw-bold" data-kt-plan-price-month="339" data-kt-plan-price-annual="3399">
                                                 339 </span>
 
                                             <span class="fs-7 opacity-50">/
@@ -7848,17 +7308,13 @@
                                     </label>
                                     <!--end::Tab link-->
                                     <!--begin::Tab link-->
-                                    <label
-                                        class="nav-link btn btn-outline btn-outline-dashed btn-color-dark btn-active btn-active-primary d-flex flex-stack text-start p-6  mb-6"
-                                        data-bs-toggle="tab" data-bs-target="#kt_upgrade_plan_enterprise">
+                                    <label class="nav-link btn btn-outline btn-outline-dashed btn-color-dark btn-active btn-active-primary d-flex flex-stack text-start p-6  mb-6" data-bs-toggle="tab" data-bs-target="#kt_upgrade_plan_enterprise">
 
                                         <!--end::Description-->
                                         <div class="d-flex align-items-center me-2">
                                             <!--begin::Radio-->
-                                            <div
-                                                class="form-check form-check-custom form-check-solid form-check-success flex-shrink-0 me-6">
-                                                <input class="form-check-input" type="radio" name="plan"
-                                                    value="enterprise">
+                                            <div class="form-check form-check-custom form-check-solid form-check-success flex-shrink-0 me-6">
+                                                <input class="form-check-input" type="radio" name="plan" value="enterprise">
                                             </div>
                                             <!--end::Radio-->
 
@@ -7866,8 +7322,7 @@
                                             <div class="flex-grow-1">
                                                 <div class="d-flex align-items-center fs-2 fw-bold flex-wrap">
                                                     Enterprise
-                                                    <span
-                                                        class="badge badge-light-success ms-2 py-2 px-3 fs-7">Popular</span>
+                                                    <span class="badge badge-light-success ms-2 py-2 px-3 fs-7">Popular</span>
                                                 </div>
                                                 <div class="fw-semibold opacity-75">
                                                     Best value for 1000+ team </div>
@@ -7880,8 +7335,7 @@
                                         <div class="ms-5">
                                             <span class="mb-2">$</span>
 
-                                            <span class="fs-3x fw-bold" data-kt-plan-price-month="999"
-                                                data-kt-plan-price-annual="9999">
+                                            <span class="fs-3x fw-bold" data-kt-plan-price-month="999" data-kt-plan-price-annual="9999">
                                                 999 </span>
 
                                             <span class="fs-7 opacity-50">/
@@ -7892,15 +7346,12 @@
                                     </label>
                                     <!--end::Tab link-->
                                     <!--begin::Tab link-->
-                                    <label
-                                        class="nav-link btn btn-outline btn-outline-dashed btn-color-dark btn-active btn-active-primary d-flex flex-stack text-start p-6 mb-6"
-                                        data-bs-toggle="tab" data-bs-target="#kt_upgrade_plan_custom">
+                                    <label class="nav-link btn btn-outline btn-outline-dashed btn-color-dark btn-active btn-active-primary d-flex flex-stack text-start p-6 mb-6" data-bs-toggle="tab" data-bs-target="#kt_upgrade_plan_custom">
 
                                         <!--end::Description-->
                                         <div class="d-flex align-items-center me-2">
                                             <!--begin::Radio-->
-                                            <div
-                                                class="form-check form-check-custom form-check-solid form-check-success flex-shrink-0 me-6">
+                                            <div class="form-check form-check-custom form-check-solid form-check-success flex-shrink-0 me-6">
                                                 <input class="form-check-input" type="radio" name="plan" value="custom">
                                             </div>
                                             <!--end::Radio-->
@@ -7951,56 +7402,49 @@
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Up to 10 Active Users </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Up to 30 Project Integrations </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Analytics Module </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-muted flex-grow-1">
                                                     Finance Module </span>
-                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i
-                                                        class="path2"></i></i>
+                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-muted flex-grow-1">
                                                     Accounting Module </span>
-                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i
-                                                        class="path2"></i></i>
+                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-muted flex-grow-1">
                                                     Network Platform </span>
-                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i
-                                                        class="path2"></i></i>
+                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center ">
                                                 <span class="fw-semibold fs-5 text-muted flex-grow-1">
                                                     Unlimited Cloud Space </span>
-                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i
-                                                        class="path2"></i></i>
+                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                         </div>
@@ -8025,56 +7469,49 @@
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Up to 10 Active Users </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Up to 30 Project Integrations </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Analytics Module </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Finance Module </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Accounting Module </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-muted flex-grow-1">
                                                     Network Platform </span>
-                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i
-                                                        class="path2"></i></i>
+                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center ">
                                                 <span class="fw-semibold fs-5 text-muted flex-grow-1">
                                                     Unlimited Cloud Space </span>
-                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i
-                                                        class="path2"></i></i>
+                                                <i class="ki-duotone ki-cross-circle fs-1"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                         </div>
@@ -8099,56 +7536,49 @@
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Up to 10 Active Users </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Up to 30 Project Integrations </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Analytics Module </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Finance Module </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Accounting Module </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Network Platform </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center ">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Unlimited Cloud Space </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                         </div>
@@ -8173,56 +7603,49 @@
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Unlimited Users </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Unlimited Project Integrations </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Analytics Module </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Finance Module </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Accounting Module </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center mb-7">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Network Platform </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                             <!--begin::Item-->
                                             <div class="d-flex align-items-center ">
                                                 <span class="fw-semibold fs-5 text-gray-700 flex-grow-1">
                                                     Unlimited Cloud Space </span>
-                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i
-                                                        class="path1"></i><i class="path2"></i></i>
+                                                <i class="ki-duotone ki-check-circle fs-1 text-success"><i class="path1"></i><i class="path2"></i></i>
                                             </div>
                                             <!--end::Item-->
                                         </div>
@@ -8266,7 +7689,8 @@
         </div>
         <!--end::Modal dialog-->
     </div>
-    <!--end::Modal - Upgrade plan--><!--begin::Modal - Users Search-->
+    <!--end::Modal - Upgrade plan-->
+    <!--begin::Modal - Users Search-->
     <div class="modal fade" id="kt_modal_users_search" tabindex="-1" aria-hidden="true">
         <!--begin::Modal dialog-->
         <div class="modal-dialog modal-dialog-centered mw-650px">
@@ -8295,8 +7719,7 @@
                     <!--end::Content-->
 
                     <!--begin::Search-->
-                    <div id="kt_modal_users_search_handler" data-kt-search-keypress="true" data-kt-search-min-length="2"
-                        data-kt-search-enter="enter" data-kt-search-layout="inline">
+                    <div id="kt_modal_users_search_handler" data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter" data-kt-search-layout="inline">
 
                         <!--begin::Form-->
                         <form data-kt-search-element="form" class="w-100 position-relative mb-5" autocomplete="off">
@@ -8305,29 +7728,22 @@
                             <!--end::Hidden input-->
 
                             <!--begin::Icon-->
-                            <i
-                                class="ki-duotone ki-magnifier fs-2 fs-lg-1 text-gray-500 position-absolute top-50 ms-5 translate-middle-y"><i
-                                    class="path1"></i><i class="path2"></i></i> <!--end::Icon-->
+                            <i class="ki-duotone ki-magnifier fs-2 fs-lg-1 text-gray-500 position-absolute top-50 ms-5 translate-middle-y"><i class="path1"></i><i class="path2"></i></i>
+                            <!--end::Icon-->
 
                             <!--begin::Input-->
-                            <input type="text" class="form-control form-control-lg form-control-solid px-15"
-                                name="search" value="" placeholder="Search by username, full name or email..."
-                                data-kt-search-element="input">
+                            <input type="text" class="form-control form-control-lg form-control-solid px-15" name="search" value="" placeholder="Search by username, full name or email..." data-kt-search-element="input">
                             <!--end::Input-->
 
                             <!--begin::Spinner-->
-                            <span class="position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5"
-                                data-kt-search-element="spinner">
+                            <span class="position-absolute top-50 end-0 translate-middle-y lh-0 d-none me-5" data-kt-search-element="spinner">
                                 <span class="spinner-border h-15px w-15px align-middle text-muted"></span>
                             </span>
                             <!--end::Spinner-->
 
                             <!--begin::Reset-->
-                            <span
-                                class="btn btn-flush btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 me-5 d-none"
-                                data-kt-search-element="clear">
-                                <i class="ki-duotone ki-cross fs-2 fs-lg-1 me-0"><i class="path1"></i><i
-                                        class="path2"></i></i> </span>
+                            <span class="btn btn-flush btn-active-color-primary position-absolute top-50 end-0 translate-middle-y lh-0 me-5 d-none" data-kt-search-element="clear">
+                                <i class="ki-duotone ki-cross fs-2 fs-lg-1 me-0"><i class="path1"></i><i class="path2"></i></i> </span>
                             <!--end::Reset-->
                         </form>
                         <!--end::Form-->
@@ -8343,8 +7759,7 @@
                                 <!--begin::Users-->
                                 <div class="mh-375px scroll-y me-n7 pe-7">
                                     <!--begin::User-->
-                                    <a href="#"
-                                        class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
+                                    <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                                         <!--begin::Avatar-->
                                         <div class="symbol symbol-35px symbol-circle me-5">
                                             <img alt="Pic" src="../../../assets/media/avatars/300-6.jpg">
@@ -8360,8 +7775,7 @@
                                     </a>
                                     <!--end::User-->
                                     <!--begin::User-->
-                                    <a href="#"
-                                        class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
+                                    <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                                         <!--begin::Avatar-->
                                         <div class="symbol symbol-35px symbol-circle me-5">
                                             <span class="symbol-label bg-light-danger text-danger fw-semibold">
@@ -8378,8 +7792,7 @@
                                     </a>
                                     <!--end::User-->
                                     <!--begin::User-->
-                                    <a href="#"
-                                        class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
+                                    <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                                         <!--begin::Avatar-->
                                         <div class="symbol symbol-35px symbol-circle me-5">
                                             <img alt="Pic" src="../../../assets/media/avatars/300-1.jpg">
@@ -8395,8 +7808,7 @@
                                     </a>
                                     <!--end::User-->
                                     <!--begin::User-->
-                                    <a href="#"
-                                        class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
+                                    <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                                         <!--begin::Avatar-->
                                         <div class="symbol symbol-35px symbol-circle me-5">
                                             <img alt="Pic" src="../../../assets/media/avatars/300-5.jpg">
@@ -8412,8 +7824,7 @@
                                     </a>
                                     <!--end::User-->
                                     <!--begin::User-->
-                                    <a href="#"
-                                        class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
+                                    <a href="#" class="d-flex align-items-center p-3 rounded bg-state-light bg-state-opacity-50 mb-1">
                                         <!--begin::Avatar-->
                                         <div class="symbol symbol-35px symbol-circle me-5">
                                             <img alt="Pic" src="../../../assets/media/avatars/300-25.jpg">
@@ -8443,9 +7854,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='0']"
-                                                    value="0">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='0']" value="0">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8457,8 +7866,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma
                                                     Smith</a>
 
                                                 <div class="fw-semibold text-muted">smith@kpmg.com</div>
@@ -8469,8 +7877,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2" selected="">Owner</option>
                                                 <option value="3">Can Edit</option>
@@ -8490,9 +7897,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='1']"
-                                                    value="1">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='1']" value="1">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8505,8 +7910,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Melody
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Melody
                                                     Macy</a>
 
                                                 <div class="fw-semibold text-muted">melody@altbox.com</div>
@@ -8517,8 +7921,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1" selected="">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3">Can Edit</option>
@@ -8538,9 +7941,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='2']"
-                                                    value="2">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='2']" value="2">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8552,8 +7953,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Max
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Max
                                                     Smith</a>
 
                                                 <div class="fw-semibold text-muted">max@kt.com</div>
@@ -8564,8 +7964,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3" selected="">Can Edit</option>
@@ -8585,9 +7984,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='3']"
-                                                    value="3">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='3']" value="3">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8599,8 +7996,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Sean
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Sean
                                                     Bean</a>
 
                                                 <div class="fw-semibold text-muted">sean@dellito.com</div>
@@ -8611,8 +8007,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2" selected="">Owner</option>
                                                 <option value="3">Can Edit</option>
@@ -8632,9 +8027,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='4']"
-                                                    value="4">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='4']" value="4">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8646,8 +8039,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Brian
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Brian
                                                     Cox</a>
 
                                                 <div class="fw-semibold text-muted">brian@exchange.com</div>
@@ -8658,8 +8050,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3" selected="">Can Edit</option>
@@ -8679,9 +8070,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='5']"
-                                                    value="5">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='5']" value="5">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8694,8 +8083,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Mikaela
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Mikaela
                                                     Collins</a>
 
                                                 <div class="fw-semibold text-muted">mik@pex.com</div>
@@ -8706,8 +8094,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2" selected="">Owner</option>
                                                 <option value="3">Can Edit</option>
@@ -8727,9 +8114,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='6']"
-                                                    value="6">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='6']" value="6">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8741,8 +8126,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Francis
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Francis
                                                     Mitcham</a>
 
                                                 <div class="fw-semibold text-muted">f.mit@kpmg.com</div>
@@ -8753,8 +8137,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3" selected="">Can Edit</option>
@@ -8774,9 +8157,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='7']"
-                                                    value="7">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='7']" value="7">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8789,8 +8170,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Olivia
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Olivia
                                                     Wild</a>
 
                                                 <div class="fw-semibold text-muted">olivia@corpmail.com</div>
@@ -8801,8 +8181,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2" selected="">Owner</option>
                                                 <option value="3">Can Edit</option>
@@ -8822,9 +8201,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='8']"
-                                                    value="8">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='8']" value="8">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8837,8 +8214,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Neil
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Neil
                                                     Owen</a>
 
                                                 <div class="fw-semibold text-muted">owen.neil@gmail.com</div>
@@ -8849,8 +8225,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1" selected="">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3">Can Edit</option>
@@ -8870,9 +8245,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='9']"
-                                                    value="9">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='9']" value="9">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8884,8 +8257,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Dan
                                                     Wilson</a>
 
                                                 <div class="fw-semibold text-muted">dam@consilting.com</div>
@@ -8896,8 +8268,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3" selected="">Can Edit</option>
@@ -8917,9 +8288,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='10']"
-                                                    value="10">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='10']" value="10">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8932,8 +8301,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Emma
                                                     Bold</a>
 
                                                 <div class="fw-semibold text-muted">emma@intenso.com</div>
@@ -8944,8 +8312,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2" selected="">Owner</option>
                                                 <option value="3">Can Edit</option>
@@ -8965,9 +8332,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='11']"
-                                                    value="11">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='11']" value="11">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -8979,8 +8344,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ana
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ana
                                                     Crown</a>
 
                                                 <div class="fw-semibold text-muted">ana.cf@limtel.com</div>
@@ -8991,8 +8355,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1" selected="">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3">Can Edit</option>
@@ -9012,9 +8375,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='12']"
-                                                    value="12">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='12']" value="12">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -9027,8 +8388,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Robert
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Robert
                                                     Doe</a>
 
                                                 <div class="fw-semibold text-muted">robert@benko.com</div>
@@ -9039,8 +8399,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3" selected="">Can Edit</option>
@@ -9060,9 +8419,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='13']"
-                                                    value="13">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='13']" value="13">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -9074,8 +8431,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">John
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">John
                                                     Miller</a>
 
                                                 <div class="fw-semibold text-muted">miller@mapple.com</div>
@@ -9086,8 +8442,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3" selected="">Can Edit</option>
@@ -9107,9 +8462,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='14']"
-                                                    value="14">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='14']" value="14">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -9122,8 +8475,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Lucy
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Lucy
                                                     Kunic</a>
 
                                                 <div class="fw-semibold text-muted">lucy.m@fentech.com</div>
@@ -9134,8 +8486,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2" selected="">Owner</option>
                                                 <option value="3">Can Edit</option>
@@ -9155,9 +8506,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='15']"
-                                                    value="15">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='15']" value="15">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -9169,8 +8518,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ethan
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Ethan
                                                     Wilder</a>
 
                                                 <div class="fw-semibold text-muted">ethan@loop.com.au</div>
@@ -9181,8 +8529,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1" selected="">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3">Can Edit</option>
@@ -9202,9 +8549,7 @@
                                         <div class="d-flex align-items-center">
                                             <!--begin::Checkbox-->
                                             <label class="form-check form-check-custom form-check-solid me-5">
-                                                <input class="form-check-input" type="checkbox" name="users"
-                                                    data-kt-check="true" data-kt-check-target="[data-user-id='16']"
-                                                    value="16">
+                                                <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='16']" value="16">
                                             </label>
                                             <!--end::Checkbox-->
 
@@ -9217,8 +8562,7 @@
 
                                             <!--begin::Details-->
                                             <div class="ms-5">
-                                                <a href="#"
-                                                    class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Mikaela
+                                                <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary mb-2">Mikaela
                                                     Collins</a>
 
                                                 <div class="fw-semibold text-muted">mik@pex.com</div>
@@ -9229,8 +8573,7 @@
 
                                         <!--begin::Access menu-->
                                         <div class="ms-2 w-100px">
-                                            <select class="form-select form-select-solid form-select-sm"
-                                                data-control="select2" data-hide-search="true">
+                                            <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
                                                 <option value="1">Guest</option>
                                                 <option value="2">Owner</option>
                                                 <option value="3" selected="">Can Edit</option>
@@ -9246,8 +8589,7 @@
 
                                 <!--begin::Actions-->
                                 <div class="d-flex flex-center mt-15">
-                                    <button type="reset" id="kt_modal_users_search_reset" data-bs-dismiss="modal"
-                                        class="btn btn-active-light me-3">
+                                    <button type="reset" id="kt_modal_users_search_reset" data-bs-dismiss="modal" class="btn btn-active-light me-3">
                                         Cancel
                                     </button>
 
@@ -9270,8 +8612,7 @@
 
                                 <!--begin::Illustration-->
                                 <div class="text-center px-5">
-                                    <img src="../../../assets/media/illustrations/dozzy-1/1.png" alt=""
-                                        class="w-100 h-200px h-sm-325px">
+                                    <img src="../../../assets/media/illustrations/dozzy-1/1.png" alt="" class="w-100 h-200px h-sm-325px">
                                 </div>
                                 <!--end::Illustration-->
                             </div>
@@ -9287,23 +8628,26 @@
         </div>
         <!--end::Modal dialog-->
     </div>
-    <!--end::Modal - Users Search--> <!--end::Modals-->
+    <!--end::Modal - Users Search-->
+    <!--end::Modals-->
 
     <!--begin::Javascript-->
     <script>
-        var hostUrl = "/open-html-pro/assets/";        </script>
+        var hostUrl = "/open-html-pro/assets/";
+
+    </script>
 
     <!--begin::Global Javascript Bundle(mandatory for all pages)-->
     <script src="../../../assets/plugins/global/plugins.bundle.js"></script>
     <script src="../../../assets/js/scripts.bundle.js"></script>
     <!--end::Global Javascript Bundle-->
 
-    <!--begin::Vendors Javascript(used for this page only)-->
+
     <script src="../../../assets/plugins/custom/datatables/datatables.bundle.js"></script>
     <script src="../../../assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
-    <!--end::Vendors Javascript-->
 
-    <!--begin::Custom Javascript(used for this page only)-->
+
+
     <script src="../../../assets/js/custom/apps/ecommerce/catalog/save-product.js"></script>
     <script src="../../../assets/js/widgets.bundle.js"></script>
     <script src="../../../assets/js/custom/widgets.js"></script>

@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\CategoriaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CursoController;
 use App\Http\Controllers\UsuariosController;
+use App\Models\Categoria;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +19,7 @@ use App\Http\Controllers\UsuariosController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.Master');
 });
 
 Route::controller(HomeController::class)->group(function () {
@@ -31,8 +33,9 @@ Route::controller(UsuariosController::class)->group(function () {
 
 });
 
-Route::controller(CursoController::class)->group(function () {
-    Route::get('cursos', 'index')->name('cursos');
+Route::controller(CategoriaController::class)->group(function () {
+    Route::get('categoria', 'index')->name('categoria');
+    Route::get('getCategorias', 'getCategorias')->name('getCategorias');
 
 });
 
