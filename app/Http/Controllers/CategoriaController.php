@@ -15,13 +15,7 @@ class CategoriaController extends Controller
         return view('Categorias.index') ;
     }
 
-    public function getCategorias(Request $request)
-    {
-
-        $category = DB::table('categorias')->get();
-        return view('Categorias.index',compact('category'));
-
-    }
+   
 
     public function create()
     {
